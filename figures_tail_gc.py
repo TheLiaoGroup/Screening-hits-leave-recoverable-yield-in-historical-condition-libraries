@@ -5,7 +5,7 @@ import pandas as pd
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-from figure_style_gc import configure_fonts, panel_title
+from figure_style_gc import SMALL, align_panels, configure_fonts, panel_title
 
 P=Path(__file__).resolve().parent
 data=P/'out/review_tail_curve_pooled.csv'
@@ -24,16 +24,17 @@ for ax,cohort,title in zip(axes,['full_gt0','full_ge20pct'],
             for row in marked.itertuples():
                 ax.annotate(f'{100*row.tail_rate:.1f}%',(row.k,100*row.tail_rate),
                             xytext=(0,8 if row.k==24 else -16),textcoords='offset points',
-                            ha='center',fontsize=8,color=color)
+                            ha='center',fontsize=SMALL,color=color)
     ax._panel_title = title
-    ax.set_xlabel('Conditions per substrate pair, k', fontsize=8)
+    ax.set_xlabel('Conditions per substrate pair, k')
     ax.set_xticks([1,6,9,12,18,24]); ax.set_xlim(.5,25); ax.set_ylim(0,51)
     ax.grid(axis='y',color='#E3E3E3',lw=.6)
-axes[0].set_ylabel('Pairs losing >20 yield percentage points (%)', fontsize=8)
-axes[1].legend(frameon=False,fontsize=8,loc='upper right')
+axes[0].set_ylabel('Pairs losing >20 yield percentage points (%)')
+axes[1].legend(frameon=False,loc='upper right')
 fig.tight_layout(rect=(0, 0, 1, .92))
 for i,ax in enumerate(axes):
-    panel_title(fig, ax, chr(ord('a')+i), ax._panel_title, fontsize=8, letter_size=9)
+    panel_title(fig, ax, chr(ord('a')+i), ax._panel_title, row=0, col=i)
+align_panels(fig)
 stem=P/'figures/SupplementaryFigure1_tail'
 fig.savefig(stem.with_suffix('.png'),dpi=300)
 fig.savefig(stem.with_suffix('.pdf'))

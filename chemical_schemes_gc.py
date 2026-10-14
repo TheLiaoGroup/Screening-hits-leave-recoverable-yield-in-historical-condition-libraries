@@ -203,6 +203,48 @@ def scheme_raster(row):
     return scheme_drawing(row)[:3]
 
 
+def arial_lettering(pdf, resize=None):
+    """Re-set the lettering of a ChemDraw-exported scheme PDF in Arial, in place.
+
+    ChemDraw draws in Arial (ACS Document 1996), but MuPDF's SVG import substitutes a Helvetica
+    clone. Arial is metrically compatible with Helvetica, so each span is re-set at its own origin
+    and the line art is untouched. `resize` maps a source size (pt) to the size to set instead.
+    Returns the number of spans re-set; a PDF already lettered in Arial is left as it is.
+    """
+    import pymupdf
+    bold_file = Path(font_manager.findfont(font_manager.FontProperties(family="Arial", weight="bold"),
+                                           fallback_to_default=False))
+    resize = resize or {}
+    with pymupdf.open(pdf) as document:
+        page = document[0]
+        spans = []
+        for block in page.get_text("rawdict")["blocks"]:
+            for line in block.get("lines", []):
+                for span in line["spans"]:
+                    text = "".join(c["c"] for c in span["chars"])
+                    if text.strip() and "Arial" not in span["font"]:
+                        spans.append(span | {"text": text})
+        if not spans:
+            return 0
+        for span in spans:
+            page.add_redact_annot(span["bbox"])
+        page.apply_redactions(images=pymupdf.PDF_REDACT_IMAGE_NONE,
+                              graphics=pymupdf.PDF_REDACT_LINE_ART_NONE)
+        for span in spans:
+            bold = "Bold" in span["font"]
+            size = next((new for old, new in resize.items() if abs(span["size"] - old) < 0.01), span["size"])
+            colour = pymupdf.sRGB_to_pdf(span["color"])
+            page.insert_text(span["origin"], span["text"], fontsize=size, color=colour,
+                             fontname="ArialBold" if bold else "Arial",
+                             fontfile=str(bold_file if bold else ARIAL))
+        left = [s["font"] for b in page.get_text("dict")["blocks"] for l in b.get("lines", [])
+                for s in l["spans"] if s["text"].strip() and "Arial" not in s["font"]]
+        assert not left, "non-Arial lettering remains in %s: %s" % (pdf, sorted(set(left)))
+        payload = document.tobytes(garbage=4, deflate=True)
+    Path(pdf).write_bytes(payload)
+    return len(spans)
+
+
 def external_panel():
     """Prefer the author-edited panel without silently recomputing its chemistry."""
     png = HERE / "figures" / "transformation_schemes.png"

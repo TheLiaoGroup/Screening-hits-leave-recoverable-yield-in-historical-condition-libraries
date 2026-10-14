@@ -65,8 +65,8 @@ def graphic():
     plt.rcParams.update({"font.family": "Arial", "font.size": 7.5})
     E, D, cohort = example()
     fig = plt.figure(figsize=(W, H))
-    fig.text(W / 2 / W, 1.71 / H, "One hit in %s below 80%% leaves >20 yield points in its library"
-             % WORDS[cohort["one_in"]], ha="center", va="top", fontsize=7.5, fontweight="bold")
+    fig.text(W / 2 / W, 1.71 / H, "One hit in %s below 80%% leaves >20 points in its library"
+             % WORDS[cohort["one_in"]], ha="center", va="top", fontsize=8, fontweight="bold")
     scheme(fig, E, 0.08, 1.49, W - 0.16)
 
     ax = fig.add_axes([0.16 / W, 0.32 / H, 2.86 / W, 0.66 / H])
@@ -82,19 +82,20 @@ def graphic():
     ax.annotate("", xy=(best - 1.5, 0.45), xytext=(hit, 0.45),
                 arrowprops=dict(arrowstyle="->", lw=0.8, color=GAP, shrinkA=0, shrinkB=0))
     ax.text((hit + best) / 2, 0.53, "hit %.1f%%, library best %.1f%%" % (hit, best),
-            ha="center", va="bottom", fontsize=7.5, color=GAP)
-    ax.set_xlim(0, 100); ax.set_ylim(0, 1.0)
+            ha="center", va="bottom", fontsize=8, color=GAP)
+    # A little room either side so wells at 0% are drawn whole; the axis line still spans 0-100%.
+    ax.set_xlim(-2, 101); ax.set_ylim(0, 1.0)
     ax.set_yticks([]); ax.set_xticks([0, 50, 100]); ax.set_xticklabels(["0%", "50%", "100%"])
-    ax.tick_params(labelsize=7.5, length=2, pad=1)
+    ax.tick_params(labelsize=8, length=2, pad=1)
     for side in ("left", "right", "top"):
         ax.spines[side].set_visible(False)
-    ax.spines["bottom"].set_linewidth(0.6)
+    ax.spines["bottom"].set_linewidth(0.6); ax.spines["bottom"].set_bounds(0, 100)
 
     legend = [("first six", BLUE), ("next six, from yield history", LIGHT), ("rest of library", GREY)]
     x = 0.10
     for label, colour in legend:
-        fig.text(x / W, 0.075 / H, "●", color=colour, fontsize=7.5, va="center")
-        t = fig.text((x + 0.09) / W, 0.075 / H, label, fontsize=7, va="center")
+        fig.text(x / W, 0.075 / H, "●", color=colour, fontsize=8, va="center")
+        t = fig.text((x + 0.09) / W, 0.075 / H, label, fontsize=8, va="center")
         fig.canvas.draw()
         x = t.get_window_extent().x1 / fig.dpi + 0.10
     fig._toc_example = E
