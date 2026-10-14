@@ -1,0 +1,62 @@
+{
+ "scored_from": "FREEZE_transported_panel.json",
+ "freeze_sha256": "56a2af01eea141ed8749332ba8f600a32745bddd9f0fa34b90b936d64a8494e6",
+ "thresholds": {
+  "supports": "T1 at k=6 at or above 0.60 and T2 at or above 0.70",
+  "does_not_support": "T1 below 0.60 or T2 below 0.70; the manuscript then reports the shortfall in the abstract",
+  "rationale": "The array's cross-validated R6 in the manuscript is 0.71, the lowest of the eighteen, and its severe-loss rate 38.5%, the highest. Thresholds are set below the in-sample values because new pairs are unseen, and above the value a random six-condition panel reaches on this array (0.39 in Table 1)."
+ },
+ "blocks": [
+  {
+   "screen": "Buchwald-Hartwig|2",
+   "label": "C-N (Pd/Cu/Ni)",
+   "pairs": 44,
+   "pairs_with_any_product": 38,
+   "pairs_reaching_0.20": 35,
+   "pairs_dead": 6,
+   "T1_R6": 0.8150711132172355,
+   "T1_R6_ci": [
+    0.7210423335557857,
+    0.8947512838644603
+   ],
+   "T1_R12": null,
+   "T1_R12_ci": null,
+   "k12_status": "WITHDRAWN: the frozen panel source out/kit_members.csv holds six conditions, so no twelve-condition panel was frozen for this block",
+   "T2_hit_recovery": 0.8857142857142857,
+   "T2_counts": [
+    31,
+    35
+   ],
+   "T2_ci": [
+    0.7326219562807548,
+    0.967968830970902
+   ],
+   "T3_severe_k6": 0.23684210526315788,
+   "T3_severe_k6_counts": [
+    9,
+    38
+   ],
+   "T3_severe_k6_ci": [
+    0.1144417048225307,
+    0.4024123605714909
+   ],
+   "T3_severe_k12": null,
+   "T3_severe_k12_counts": null,
+   "mean_full_array_best": 0.5119269545454544,
+   "mean_yield_all_measured_wells": 0.046217268270515886,
+   "predictions_in_sample": {
+    "R6_in_sample": 0.8576055654832255,
+    "hit_recovery_in_sample": 0.9215686274509803,
+    "severe_loss_k6_in_sample": 0.19230769230769232,
+    "note": "computed on the array's own analysed pairs with the same transported panel; in-sample, so the new pairs are expected to fall at or below these values",
+    "manuscript_cross_validated_R6": 0.71
+   }
+  }
+ ],
+ "verdict": [
+  [
+   "C-N (Pd/Cu/Ni)",
+   "supports"
+  ]
+ ]
+}

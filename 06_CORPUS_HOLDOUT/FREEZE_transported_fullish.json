@@ -1,0 +1,146 @@
+{
+ "status": "PRE-SCORING. No yield value from these pairs has been read.",
+ "relation_to_earlier_freezes": "Freezes 1, 2 and 3 stand as recorded. This freeze adds three near-full-library blocks on pairs none of them used, and retests Suzuki, which freeze 3's compressed reference set could not resolve.",
+ "source": {
+  "private_csv": "C:\\Users\\Kb\\我的云端硬盘\\ManuscriptForSubmission\\HTE-Data-Papers\\HTE data\\03_不公开\\PRIVATE_never_release.csv",
+  "private_sha256": "33e658caa7d6003c082001b9d3d6d372b7b242dd0ea4389a1dac05c13cfcaba0",
+  "kit_members": "C:\\Users\\Kb\\我的云端硬盘\\ManuscriptForSubmission\\HTE-Data-Papers\\NS-Balancing reactivity discovery and yield optimisation in reaction screening\\out\\kit_members.csv",
+  "kit_members_sha256": "dcaf0cb4ed2f3ce8b7557ab161c596824ee691f9bfaff5292beae71bb6903ca3",
+  "allocation_filter": "reserve: outside any qualifying screen",
+  "check_passed": true
+ },
+ "thresholds": {
+  "MIN_COV": 0.8,
+  "MIN_PAIRS": 10,
+  "MIN_REACH": 8,
+  "PCT_GATE": 0.9,
+  "RANDOM_DRAWS": 20000
+ },
+ "blocks": [
+  {
+   "screen": "Suzuki|1",
+   "rxn_class": "Suzuki",
+   "panel6": [
+    "C35",
+    "C37",
+    "C34",
+    "C89",
+    "C38",
+    "C40"
+   ],
+   "panel_source": "out/kit_members.csv, selected on this array's analysed pairs only",
+   "never_read_pairs": 17,
+   "library_conditions": 94,
+   "wells": 1375,
+   "coverage_min": 0.809,
+   "coverage_median": 0.862,
+   "coverage_max": 0.894,
+   "membership_file": "fullish_Suzuki_1.csv",
+   "membership_sha256": "d5f8fe977c8a1c59883dbd6c1cd9969a4d0a817b8d7913019fd038020c507506",
+   "coverage_bias_control": {
+    "analysed_pairs": 242,
+    "R6_full_library": 0.8691704590033691,
+    "R6_masked_to_the_blocks_coverage_mean": 0.8754758867331798,
+    "R6_masked_p2.5": 0.87252065315663,
+    "R6_masked_p97.5": 0.8790788113178372,
+    "inflation_from_partial_coverage": 0.0063054277298106864,
+    "draws": 200
+   }
+  },
+  {
+   "screen": "Acylation|1",
+   "rxn_class": "Acylation",
+   "panel6": [
+    "C20",
+    "C37",
+    "C23",
+    "C64",
+    "C34",
+    "C89"
+   ],
+   "panel_source": "out/kit_members.csv, selected on this array's analysed pairs only",
+   "never_read_pairs": 15,
+   "library_conditions": 94,
+   "wells": 1226,
+   "coverage_min": 0.809,
+   "coverage_median": 0.872,
+   "coverage_max": 0.894,
+   "membership_file": "fullish_Acylation_1.csv",
+   "membership_sha256": "f2ff66771dd337c9cbb0a4c6280892d93d792fa42ec2891cdbc4ded76bc4cc28",
+   "coverage_bias_control": {
+    "analysed_pairs": 578,
+    "R6_full_library": 0.908482883354078,
+    "R6_masked_to_the_blocks_coverage_mean": 0.9148130029125565,
+    "R6_masked_p2.5": 0.9120872443123026,
+    "R6_masked_p97.5": 0.9175753299431614,
+    "inflation_from_partial_coverage": 0.006330119558478509,
+    "draws": 200
+   }
+  },
+  {
+   "screen": "Grignard|1",
+   "rxn_class": "Grignard",
+   "panel6": [
+    "C38",
+    "C25",
+    "C15",
+    "C34",
+    "C39",
+    "C35"
+   ],
+   "panel_source": "out/kit_members.csv, selected on this array's analysed pairs only",
+   "never_read_pairs": 14,
+   "library_conditions": 46,
+   "wells": 569,
+   "coverage_min": 0.826,
+   "coverage_median": 0.891,
+   "coverage_max": 0.913,
+   "membership_file": "fullish_Grignard_1.csv",
+   "membership_sha256": "4d9fe94ce214c83012afd2cc4267c33af68023faa27e213f273b70a3d862b932",
+   "coverage_bias_control": {
+    "analysed_pairs": 62,
+    "R6_full_library": 0.9442303811468522,
+    "R6_masked_to_the_blocks_coverage_mean": 0.9470569529419959,
+    "R6_masked_p2.5": 0.9442303811468522,
+    "R6_masked_p97.5": 0.952925995459042,
+    "inflation_from_partial_coverage": 0.002826571795143673,
+    "draws": 200
+   }
+  }
+ ],
+ "criteria": {
+  "estimand": "R6 = sum over the block's pairs of the best yield among the six transported conditions, divided by the sum of the best yield over the conditions that pair was measured on (at least 80% of the array's library, and always including all six panel members).",
+  "endpoints": {
+   "F1_retention": "R6 per block, with a paired bootstrap interval over pairs",
+   "F2_random_six_percentile": "the share of 20,000 random six-condition subsets of the block's measured conditions that the transported panel beats on R6",
+   "F3_hit_recovery": "among pairs whose reference best is at least 0.20, the share whose best within the six is at least 0.20",
+   "F4_severe_loss": "among pairs whose reference best exceeds 0, the share losing more than 0.20 absolute yield"
+  },
+  "resolvability_rule_fixed_before_scoring": {
+   "min_pairs_reaching_0.20": 8,
+   "effect": "a block with fewer than 8 never-read pairs reaching 0.20 is reported UNRESOLVED and is excluded from every pooled figure",
+   "floor_of_the_whole_freeze": "if fewer than two blocks are resolvable, the freeze reports UNRESOLVED as a whole"
+  },
+  "outcomes_fixed_in_advance": {
+   "a_block_supports": "F1 at or above 0.60 AND F2 at or above 0.90. Both are required: retention alone cannot distinguish a good panel from an easy block.",
+   "a_block_does_not_support": "either condition fails; the manuscript then names the transformation and reports both numbers",
+   "the_freeze_supports": "every resolvable block supports",
+   "direction": "One-sided upward for F2 and F1: a panel above its threshold is support, and there is no upper bound at which support becomes failure.",
+   "why_F2_is_primary_here": "Freeze 3 registered retention without a random baseline and its Suzuki block therefore counted as support at the 61st percentile of random sixes, beating them by 0.007. That will not recur under these criteria."
+  },
+  "reported_alongside_every_value": [
+   "the never-read pair count and the count reaching 0.20",
+   "the coverage range of the block's pairs",
+   "inflation_from_partial_coverage, measured on the array's analysed pairs masked to this block's own coverage patterns, so the reader can discount the retention rather than take it at face value"
+  ],
+  "rules": [
+   "Eligibility used measurement presence and the platform validation flag only; no yield was read.",
+   "No pair used by freezes 1, 2 or 3 appears here; disjointness is asserted at build time.",
+   "Panels are transported and never refitted, so no greedy tie-break can affect any result.",
+   "No block, pair, condition or endpoint may be added, dropped or redefined once scoring begins.",
+   "Suzuki is retested here because freeze 3 could not resolve it, and that is stated wherever its result appears."
+  ]
+ },
+ "total_never_read_pairs": 46,
+ "total_wells": 3170
+}

@@ -1,0 +1,60 @@
+{
+ "status": "PRE-SCORING. No yield value from these pairs has been read.",
+ "supersedes_nothing": "freeze 1 (FREEZE_corpus_holdout.json) stands as recorded, including its verdict",
+ "registered_after": "the freeze 1 result, which is disclosed: three of its five blocks had three or four productive pairs and could not resolve the endpoint",
+ "source": {
+  "private_csv": "C:\\Users\\Kb\\我的云端硬盘\\ManuscriptForSubmission\\HTE-Data-Papers\\HTE data\\03_不公开\\PRIVATE_never_release.csv",
+  "private_sha256": "33e658caa7d6003c082001b9d3d6d372b7b242dd0ea4389a1dac05c13cfcaba0",
+  "kit_members": "C:\\Users\\Kb\\我的云端硬盘\\ManuscriptForSubmission\\HTE-Data-Papers\\NS-Balancing reactivity discovery and yield optimisation in reaction screening\\out\\kit_members.csv",
+  "kit_members_sha256": "dcaf0cb4ed2f3ce8b7557ab161c596824ee691f9bfaff5292beae71bb6903ca3"
+ },
+ "blocks": [
+  {
+   "screen": "Buchwald-Hartwig|2",
+   "label": "C-N (Pd/Cu/Ni)",
+   "panel12": [
+    "C159",
+    "C157",
+    "C156",
+    "C170",
+    "C151",
+    "C147"
+   ],
+   "panel_source": "out/kit_members.csv, selected on the analysed pairs only",
+   "eligible_pairs": 44,
+   "array_conditions": 89,
+   "min_coverage": 0.9,
+   "wells": 3741,
+   "sensitivity_pairs_cov_0.70": 52,
+   "membership_file": "transported_Buchwald-Hartwig_2.csv",
+   "membership_sha256": "38c3757892875d78e8b20214f36cf522d4d0f1a482674bdef1be5bca45b9db96",
+   "predictions": {
+    "R6_in_sample": 0.8576055654832255,
+    "hit_recovery_in_sample": 0.9215686274509803,
+    "severe_loss_k6_in_sample": 0.19230769230769232,
+    "note": "computed on the array's own analysed pairs with the same transported panel; in-sample, so the new pairs are expected to fall at or below these values",
+    "manuscript_cross_validated_R6": 0.71
+   }
+  }
+ ],
+ "criteria": {
+  "design": "The manuscript's own six- and twelve-condition panels, selected on the analysed pairs, are applied unchanged to substrate pairs of the same array that no analysis has read. No panel is refitted, so no tie-break rule can affect the result.",
+  "endpoints": {
+   "T1_retention": "R_k = sum of best-in-panel over the new pairs / sum of best-over-the-array, k = 6 and 12",
+   "T2_hit_recovery": "among new pairs whose array best is at least 0.20, the share whose best within the six is at least 0.20",
+   "T3_severe_loss": "among new pairs whose array best exceeds 0, the share losing more than 0.20 absolute yield, k = 6 and 12"
+  },
+  "outcomes_fixed_in_advance": {
+   "supports": "T1 at k=6 at or above 0.60 and T2 at or above 0.70",
+   "does_not_support": "T1 below 0.60 or T2 below 0.70; the manuscript then reports the shortfall in the abstract",
+   "rationale": "The array's cross-validated R6 in the manuscript is 0.71, the lowest of the eighteen, and its severe-loss rate 38.5%, the highest. Thresholds are set below the in-sample values because new pairs are unseen, and above the value a random six-condition panel reaches on this array (0.39 in Table 1)."
+  },
+  "rules": [
+   "Eligibility used measurement presence and the platform validation flag only; no yield value was read.",
+   "Pairs scored under freeze 1 are excluded.",
+   "No pair, condition or endpoint may be added, dropped or redefined after scoring begins.",
+   "Pairs whose array best is zero contribute to neither T2 nor T3 and are counted separately.",
+   "The 0.70-coverage set is a sensitivity analysis only. Its array best comes from fewer conditions, which can only raise measured retention, so it is an upper bound and is reported as one."
+  ]
+ }
+}

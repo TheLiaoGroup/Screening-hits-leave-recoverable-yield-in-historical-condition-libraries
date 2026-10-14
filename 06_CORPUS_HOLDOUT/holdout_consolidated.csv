@@ -1,0 +1,14 @@
+tier,transformation,rxn_class,panel,pairs,reference_conditions,coverage,R6,R6_lo,R6_hi,random6_median,random6_percentile,hit,hit_of,severe,severe_of,membership
+A,C-N (Pd/Cu/Ni),Buchwald-Hartwig,transported,44,89,>=0.90,0.8150711132172355,0.7210423335557857,0.8947512838644603,0.337,1.0,31,35,9,38,transported_Buchwald-Hartwig_2.csv
+A,Suzuki,Suzuki,transported,17,94,median 0.86,0.9179941414603948,0.8718585599209494,0.9564230663549544,0.8134502813901273,0.99485,17,17,1,17,fullish_Suzuki_1.csv
+A,Acylation,Acylation,transported,15,94,median 0.87,0.9126500275456705,0.8739009827679421,0.9497287881704525,0.8083953145428043,0.9877,14,14,1,14,fullish_Acylation_1.csv
+A,Grignard,Grignard,transported,14,46,median 0.89,0.9215286586703763,0.8660309398034057,0.9642462077146381,0.8429899609529536,0.9972,14,14,0,14,fullish_Grignard_1.csv
+B,Acylation,Acylation,transported,32,25,complete submatrix of 25 of 94,0.9609538292807206,0.9118892604739451,0.9895097150826213,0.9099,0.9938,31,31,1,31,seven_Acylation_1.csv
+B,Buchwald-Hartwig,Buchwald-Hartwig,transported,17,31,complete submatrix of 31 of 95,0.9609950156707135,0.91449511448711,0.9901702992378844,0.8195,0.9909,14,14,1,16,seven_Buchwald-Hartwig_1.csv
+B,Heck,Heck,transported,13,26,complete submatrix of 26 of 90,0.9457601057066326,0.8981399699482532,0.981625869612827,0.8614,0.9711,13,13,0,13,seven_Heck_1.csv
+B,Kumada,Kumada,transported,14,28,complete submatrix of 28 of 89,0.9823898357813982,0.9600341113735886,1.0,0.7647,1.0,14,14,0,14,seven_Kumada_1.csv
+B,Sonogashira,Sonogashira,transported,11,29,complete submatrix of 29 of 95,0.8982463211391882,0.8152887543944433,0.9643159597525969,0.8188,0.8889,11,11,3,11,seven_Sonogashira_1.csv
+B,Suzuki,Suzuki,transported,31,32,complete submatrix of 32 of 94,0.8977296813662297,0.8618809248982578,0.9336000675831737,0.8905,0.6045,29,30,2,31,seven_Suzuki_1.csv
+B,Ullmann,Ullmann,transported,11,35,complete submatrix of 35 of 95,0.9187550741333795,0.8295657252356047,0.9891422238485319,0.7576,0.9683,11,11,1,11,seven_Ullmann_1.csv
+C,Chan-Lam 25C,Chan-Lam,refitted (cross-validated),61,32,complete,0.9824337291458568,0.9499537216098262,1.0,0.6999370912611748,,15,15,0,19,Chan-Lam_25C.csv
+C,Chan-Lam 70C,Chan-Lam,refitted (cross-validated),116,32,complete,0.9087420553854632,0.8293989069680084,0.9758787081964976,0.7184049076949957,,13,14,1,23,Chan-Lam_70C.csv

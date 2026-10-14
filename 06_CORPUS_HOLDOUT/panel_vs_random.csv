@@ -1,0 +1,9 @@
+freeze,block,pairs,reference_conditions,pairs_reaching_0.20,panel_R6,random6_median,random6_p95,random6_best_seen,margin_over_random_median,panel_percentile,best_single_condition_R6
+freeze 3,Acylation,32,25,31,0.961,0.9099,0.9464,0.9785,0.0511,0.9938,0.8782
+freeze 3,Buchwald-Hartwig,17,31,14,0.961,0.8195,0.9331,0.9896,0.1415,0.9909,0.7407
+freeze 3,Heck,13,26,13,0.9458,0.8614,0.9385,0.9888,0.0844,0.9711,0.7347
+freeze 3,Kumada,14,28,14,0.9824,0.7647,0.9101,0.983,0.2176,1.0,0.749
+freeze 3,Sonogashira,11,29,11,0.8982,0.8188,0.917,0.9811,0.0794,0.8889,0.7362
+freeze 3,Suzuki,31,32,30,0.8977,0.8905,0.9316,0.9745,0.0073,0.6045,0.7965
+freeze 3,Ullmann,11,35,11,0.9188,0.7576,0.9117,0.9744,0.1611,0.9683,0.8511
+freeze 2,C-N (Pd/Cu/Ni),44,89,35,0.8151,0.337,0.6096,0.7806,0.4781,1.0,0.5233

@@ -1,0 +1,8 @@
+rxn_class,library_conditions,reference_conditions,condition_share,variables,levels_in_library,levels_in_reference_set,level_share,narrowest_variable,narrowest_share
+Acylation,94,25,0.266,3,60,23,0.383,activator,0.293
+Buchwald-Hartwig,95,31,0.326,5,105,45,0.429,ligand,0.333
+Heck,90,26,0.289,5,79,46,0.582,additive,0.429
+Kumada,89,28,0.315,5,78,40,0.513,solvent,0.273
+Sonogashira,95,29,0.305,6,76,40,0.526,additive,0.077
+Suzuki,94,32,0.34,6,96,50,0.521,metal,0.333
+Ullmann,95,35,0.368,6,97,46,0.474,ligand,0.4

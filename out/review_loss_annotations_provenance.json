@@ -1,0 +1,18 @@
+{
+  "source_file_name": "DATASET_analysis.csv",
+  "source_sha256": "7f6aee587f6774e1ec33c9582791523be5b190b6f90ae8f818a5f6bf8545be56",
+  "source_rows": 191632,
+  "export_columns": [
+    "screen",
+    "subpair",
+    "sub_1_smiles",
+    "sub_2_smiles",
+    "sub_1_FG",
+    "sub_2_FG"
+  ],
+  "export_pairs": 2360,
+  "source_unique_pairs": 2360,
+  "conflicting_annotation_keys": 0,
+  "export_sha256": "31db6406e650b6452699ef51488d51280de92944242d5647f9f7e5dbfba10ce6",
+  "annotation_policy": "Existing source labels copied verbatim; no chemical labels inferred from yield."
+}

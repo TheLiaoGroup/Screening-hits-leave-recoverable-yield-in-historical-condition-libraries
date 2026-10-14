@@ -1,0 +1,159 @@
+{
+  "status": "Public release authorized by the data owner on 2026-10-09 for this subset.",
+  "scope": "Fixed frozen-member scoring; not corpus-wide membership selection or new validation.",
+  "original_sources": {
+    "private_sha256": "33e658caa7d6003c082001b9d3d6d372b7b242dd0ea4389a1dac05c13cfcaba0",
+    "raw_condition_sha256": "8cd865ca3d4763dd93a09ee60d73c63b3006f8fff3b7a5c8b81b4f4ba768d319"
+  },
+  "subset_files": {
+    "wells.csv": {
+      "sha256": "4cd65a116efc0fc46793c5a38f753f5d321802308c254108f7f1c9b56fabf4fc",
+      "rows": 23617
+    },
+    "conditions.csv": {
+      "sha256": "5db4c229ccca0fbb5054e4166f2309155395287a0d1f7e669466b14facff202f",
+      "rows": 739
+    }
+  },
+  "freeze_hashes": {
+    "FREEZE_corpus_holdout.json": "31f3d1318c8b1b729e32707029af9c55fd68d8f30103f01a6afae72a4d3409d4",
+    "FREEZE_transported_panel.json": "56a2af01eea141ed8749332ba8f600a32745bddd9f0fa34b90b936d64a8494e6",
+    "FREEZE_transported_seven.json": "4ff78309f9492f896e505efba1839b0ccbb319370a1cd2c31919d696d149bfa0",
+    "FREEZE_transported_fullish.json": "11b0b291d4cede1bb6da321f173102a8513456b21ce29c61f3ef7e88003e2bb9"
+  },
+  "membership_hashes": {
+    "Chan-Lam_25C.csv": "0057b7932386b71badbe197546b0bee56fc1592d98414d82d7601ca16ddbb045",
+    "Chan-Lam_70C.csv": "346cacd33b205b1173639c87b06dd6cf27a5509ed8a5b9eca84f1a27189fb3eb",
+    "Allylic-substitution_25C.csv": "00ba334b39efb5be7b9f2ff1dad1e60189742a5de51571ff0784a56576ac4a4a",
+    "Pd-carbonylation_100C.csv": "0bfb928de5a4cc049af2bc48c760cf5fcd9fbcf4f8cffadbbeb9c2f004af0d58",
+    "Minisci_60C.csv": "baba62c33f2933022b3b91a70e67375c0d732fca3c4a5da27f0276558531d464",
+    "transported_Buchwald-Hartwig_2.csv": "38c3757892875d78e8b20214f36cf522d4d0f1a482674bdef1be5bca45b9db96",
+    "seven_Acylation_1.csv": "13a4e4f5e34e62223a7d3b7d868f33f6660f25007a51b8a4bf29f2e43acffc28",
+    "seven_Buchwald-Hartwig_1.csv": "b7d74a64e908487936e424b95fac5f9a14051198ec609b64bd74d8ff211f1e6f",
+    "seven_Heck_1.csv": "c3a900cc27eb98d899ddf5278f57a32b781e3c1322353ef1c0a5c9f34bc608b3",
+    "seven_Kumada_1.csv": "17337e81e4042367eacb5bd143c6e8ea0420ec2dea953acbe0b0294eb4af52d1",
+    "seven_Sonogashira_1.csv": "a945a3f5236c06e6e5f7b8298b46592b1e07cbaf9912661ce6912a65d2aebd93",
+    "seven_Suzuki_1.csv": "385df030c47a82c60f30ee2e20aa8d0c556cb729f03f91efc83eea4ce31a394b",
+    "seven_Ullmann_1.csv": "ef59be09f4fe918d656db265aa428e7d1f3bb2bcdd54f14cdc92f2d41684b15e",
+    "fullish_Suzuki_1.csv": "d5f8fe977c8a1c59883dbd6c1cd9969a4d0a817b8d7913019fd038020c507506",
+    "fullish_Acylation_1.csv": "f2ff66771dd337c9cbb0a4c6280892d93d792fa42ec2891cdbc4ded76bc4cc28",
+    "fullish_Grignard_1.csv": "4d9fe94ce214c83012afd2cc4267c33af68023faa27e213f273b70a3d862b932"
+  },
+  "blocks": [
+    {
+      "freeze": "FREEZE_corpus_holdout.json",
+      "block": "Chan-Lam|25C",
+      "wells": 1952,
+      "pairs": 61,
+      "conditions": 32
+    },
+    {
+      "freeze": "FREEZE_corpus_holdout.json",
+      "block": "Chan-Lam|70C",
+      "wells": 3712,
+      "pairs": 116,
+      "conditions": 32
+    },
+    {
+      "freeze": "FREEZE_corpus_holdout.json",
+      "block": "Allylic-substitution|25C",
+      "wells": 4050,
+      "pairs": 45,
+      "conditions": 90
+    },
+    {
+      "freeze": "FREEZE_corpus_holdout.json",
+      "block": "Pd-carbonylation|100C",
+      "wells": 2688,
+      "pairs": 32,
+      "conditions": 84
+    },
+    {
+      "freeze": "FREEZE_corpus_holdout.json",
+      "block": "Minisci|60C",
+      "wells": 551,
+      "pairs": 19,
+      "conditions": 29
+    },
+    {
+      "freeze": "FREEZE_transported_panel.json",
+      "block": "Buchwald-Hartwig|2",
+      "wells": 3741,
+      "pairs": 44,
+      "conditions": 89
+    },
+    {
+      "freeze": "FREEZE_transported_seven.json",
+      "block": "Acylation|1",
+      "wells": 800,
+      "pairs": 32,
+      "conditions": 25
+    },
+    {
+      "freeze": "FREEZE_transported_seven.json",
+      "block": "Buchwald-Hartwig|1",
+      "wells": 527,
+      "pairs": 17,
+      "conditions": 31
+    },
+    {
+      "freeze": "FREEZE_transported_seven.json",
+      "block": "Heck|1",
+      "wells": 338,
+      "pairs": 13,
+      "conditions": 26
+    },
+    {
+      "freeze": "FREEZE_transported_seven.json",
+      "block": "Kumada|1",
+      "wells": 392,
+      "pairs": 14,
+      "conditions": 28
+    },
+    {
+      "freeze": "FREEZE_transported_seven.json",
+      "block": "Sonogashira|1",
+      "wells": 319,
+      "pairs": 11,
+      "conditions": 29
+    },
+    {
+      "freeze": "FREEZE_transported_seven.json",
+      "block": "Suzuki|1",
+      "wells": 992,
+      "pairs": 31,
+      "conditions": 32
+    },
+    {
+      "freeze": "FREEZE_transported_seven.json",
+      "block": "Ullmann|1",
+      "wells": 385,
+      "pairs": 11,
+      "conditions": 35
+    },
+    {
+      "freeze": "FREEZE_transported_fullish.json",
+      "block": "Suzuki|1",
+      "wells": 1375,
+      "pairs": 17,
+      "conditions": 94
+    },
+    {
+      "freeze": "FREEZE_transported_fullish.json",
+      "block": "Acylation|1",
+      "wells": 1226,
+      "pairs": 15,
+      "conditions": 94
+    },
+    {
+      "freeze": "FREEZE_transported_fullish.json",
+      "block": "Grignard|1",
+      "wells": 569,
+      "pairs": 14,
+      "conditions": 46
+    }
+  ],
+  "io_changes": "Private full-file gates replaced by extracted-subset manifest checks; recipe XLSX read replaced by CSV read. Algorithms, seeds, thresholds, panels, frozen criteria and output calculations unchanged.",
+  "excluded_cells": "26 cells read by transported selectors but masked out of their matrices are not supplied.",
+  "provenance_limit": "The subset has source CSV row numbers but the source CSV lacks measurement ID, plate and well fields. Hashes identify files and do not establish registration chronology or analytical validity."
+}

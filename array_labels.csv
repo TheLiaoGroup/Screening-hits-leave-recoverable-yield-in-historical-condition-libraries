@@ -1,0 +1,19 @@
+screen,display_name
+Acylation|1,Amide coupling
+Buchwald-Hartwig(CMC)|1,C–N (process C)
+Buchwald-Hartwig(CMC)|2,C–N (process A)
+Buchwald-Hartwig(CMC)|3,C–N (process B)
+Buchwald-Hartwig|1,C–N (Pd ligand)
+Buchwald-Hartwig|2,C–N (Pd/Cu/Ni)
+C-O competitive reactions|1,C–O coupling
+Chan-Lam|1,Chan–Lam (Cu)
+Esterification|1,Esterification
+Grignard|1,Grignard addition
+Heck|1,Heck (solvent/base)
+Hiyama|1,Hiyama (Pd)
+Kumada|1,Kumada (Pd/Ni/Fe)
+Reductive-amination|1,Reductive amination
+SNAr|1,SNAr (base/solvent)
+Sonogashira|1,Sonogashira (solvent/base)
+Suzuki|1,Suzuki (Pd)
+Ullmann|1,Ullmann C–O (Cu)

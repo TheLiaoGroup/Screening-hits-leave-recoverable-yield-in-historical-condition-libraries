@@ -1,0 +1,740 @@
+note,reaction_type,condition_id,Reagent1_HTE_CAS,Reagent1_HTE_Equiv,Reagent1_Standardized Name,Reagent1_id,Reagent2_HTE_CAS,Reagent2_HTE_Equiv,Reagent2_Standardized Name,Reagent2_id,Reagent3_HTE_CAS,Reagent3_HTE_Equiv,Reagent3_Standardized Name,Reagent3_id,Reagent4_HTE_CAS,Reagent4_HTE_Equiv,Reagent4_Standardized Name,Reagent4_id,Reagent5_HTE_CAS,Reagent5_HTE_Equiv,Reagent5_Standardized Name,Reagent5_id,Reagent6_HTE_CAS,Reagent6_HTE_Equiv,Reagent6_Standardized Name,Reagent6_id,Standardized Name,solvent_id,temp_id,time_id
+,heck,C11,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,,,,,‘584-08-7,2.0,K2CO3,CMP0334,‘1643-19-2,2.0,Bu4NBr,CMP0374,,,,,,,,,DMF,CMP0552,100,16
+,heck,C12,‘14588-08-0,0.05,Pd(OAc)2(PPh3)2,CMP0074,,,,,‘127-09-3,2.0,NaOAc,CMP0355,,,,,,,,,,,,,DMF,CMP0552,100,16
+,heck,C17,‘3375-31-3,0.1,Pd(OAc)2,CMP0073,‘6737-42-4,0.2,dppp,CMP0230,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,,,,,DMF,CMP0552,100,16
+,heck,C19,‘3375-31-3,0.1,Pd(OAc)2,CMP0073,‘484-11-7,0.2,neocuproine,CMP0231,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,,,,,DMF,CMP0552,100,16
+,heck,C21,‘3375-31-3,0.1,Pd(OAc)2,CMP0073,,,,,‘127-08-2,2.0,KOAc,CMP0354,‘1112-67-0,2.0,TBAC,CMP0384,,,,,,,,,MeOH/DMF (1:10),CMP0598,100,16
+,heck,C22,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,,,,,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,DMF,CMP0552,100,16
+,heck,C24,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,,,,,‘298-14-6,2.0,KHCO3,CMP0336,‘1112-67-0,2.0,TBAC,CMP0384,,,,,,,,,DMF,CMP0552,100,16
+,heck,C26,‘32005-36-0,0.05,Pd(dba)2,CMP0069,‘312959-24-3,0.1,QPhos,CMP0206,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,,,,,DMF,CMP0552,100,16
+,heck,C28,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,,,,,‘7087-68-5,2.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,100,16
+,heck,C29,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘603-35-0,0.1,PPh3,CMP0200,‘110-18-9,2.0,TMEDA,CMP0221,,,,,,,,,,,,,DMF,CMP0552,100,16
+,heck,C31,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘49676-42-8,0.1,"P(2,4-Me-Ph)3",CMP0232,,,,,,,,,,,,,,,,,TEA,CMP0269,100,16
+,heck,C36,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘23897-15-6,0.1,P(Mes)3,CMP0234,‘127-09-3,2.0,NaOAc,CMP0355,,,,,,,,,,,,,DMA,CMP0550,100,16
+,heck,C43,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘258278-25-0,0.1,SIPr.HCl,CMP0235,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,DMA,CMP0550,100,16
+,heck,C46,‘172418-32-5,0.05,trans-di(μ-acetato)bis[o-(di-o-tolylphosphino)benzyl]dipalladium(II),CMP0111,,,,,‘127-09-3,2.0,NaOAc,CMP0355,‘1643-19-2,2.0,Bu4NBr,CMP0374,,,,,,,,,DMA,CMP0550,100,16
+,heck,C50,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘213697-53-1,0.1,DavePhos,CMP0196,‘51012-12-5,2.0,TBAE,CMP0376,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,heck,C54,‘7647-10-1,0.05,PdCl2,CMP0087,‘213697-53-1,0.1,DavePhos,CMP0196,‘51012-12-5,2.0,TBAE,CMP0376,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,heck,C55,‘51364-51-3,0.05,Pd2(dba)3,CMP0080,‘213697-53-1,0.1,DavePhos,CMP0196,‘51012-12-5,2.0,TBAE,CMP0376,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,heck,C57,‘51364-51-3,0.05,Pd2(dba)3,CMP0080,‘13716-12-6,0.1,P(tBu)3,CMP0203,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,heck,C61,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘213697-53-1,0.1,DavePhos,CMP0196,‘51012-12-5,2.0,TBAE,CMP0376,,,,,,,,,,,,,THF,CMP0569,100,16
+,heck,C75,‘3375-31-3,0.1,Pd(OAc)2,CMP0073,‘603-35-0,0.2,PPh3,CMP0200,‘497-19-8,2.0,Na2CO3,CMP0335,,,,,,,,,,,,,DMI,CMP0318,100,16
+,heck,C78,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,,,,,‘7560-83-0,2.0,Cy2NMe,CMP0379,‘1112-67-0,2.0,TBAC,CMP0384,,,,,,,,,DMF/DMA (1:10),CMP0586,100,16
+,heck,C81,‘3375-31-3,0.1,Pd(OAc)2,CMP0073,‘603-35-0,0.2,PPh3,CMP0200,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,,,,,MeCN,CMP0558,100,16
+,heck,C83,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘7447-41-8,0.1,LiCl,CMP0350,‘298-14-6,2.0,KHCO3,CMP0336,‘1643-19-2,2.0,Bu4NBr,CMP0374,,,,,,,,,MeCN,CMP0558,100,16
+,heck,C85,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘6163-58-2,0.1,P(o-tolyl)3,CMP0216,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,,,,,MeCN,CMP0558,100,16
+,heck,C86,‘14221-01-3,0.05,Pd(PPh3)4,CMP0075,,,,,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,,,,,MeCN,CMP0558,100,16
+,heck,C91,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘6163-58-2,0.1,P(o-tolyl)3,CMP0216,,,,,,,,,,,,,,,,,iPr2NH,CMP0373,100,16
+,ullmann,C9,‘7681-65-4,0.1,CuI,CMP0038,‘1118-71-4,0.8,dipivaloylmethane,CMP0167,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,DMF,CMP0552,130,16
+,ullmann,C11,‘7681-65-4,0.01,CuI,CMP0038,,,,,‘7778-53-2,2.0,K3PO4,CMP0338,‘14024-18-1,0.02,Fe(acac)3,CMP0047,,,,,,,,,DMF,CMP0552,130,16
+,ullmann,C13,‘7681-65-4,0.01,CuI,CMP0038,,,,,‘534-17-8,2.0,Cs2CO3,CMP0333,‘14024-18-1,0.02,Fe(acac)3,CMP0047,,,,,,,,,DMF,CMP0552,130,16
+,ullmann,C18,‘42152-46-5,0.02,Cu2(OTf)2.benzene,CMP0029,‘56-87-1,0.02,lysine,CMP0299,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,DMF,CMP0552,130,16
+,ullmann,C19,‘7681-65-4,0.15,CuI,CMP0038,‘66-71-7,0.3,"1,10-Phen",CMP0222,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,DMSO,CMP0527,130,16
+,ullmann,C20,‘7681-65-4,0.15,CuI,CMP0038,‘34052-90-9,0.3,"1,3-PBO",CMP0292,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,DMSO,CMP0527,130,16
+,ullmann,C21,‘7758-89-6,0.15,CuCl,CMP0035,‘66-71-7,0.3,"1,10-Phen",CMP0222,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,DMSO,CMP0527,130,16
+,ullmann,C22,‘7787-70-4,0.15,CuBr,CMP0032,‘66-71-7,0.3,"1,10-Phen",CMP0222,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,DMSO,CMP0527,130,16
+,ullmann,C24,‘7681-65-4,0.15,CuI,CMP0038,‘66-71-7,0.3,"1,10-Phen",CMP0222,‘584-08-7,2.0,K2CO3,CMP0334,,,,,,,,,,,,,DMSO,CMP0527,130,16
+,ullmann,C25,‘7681-65-4,0.1,CuI,CMP0038,‘98-98-6,0.2,picolinic acid,CMP0268,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,DMSO,CMP0527,130,16
+,ullmann,C27,‘7681-65-4,0.05,CuI,CMP0038,‘634-97-9,0.02,1H-pyrrole-2-carboxylic acid ,CMP0302,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,DMSO,CMP0527,130,16
+,ullmann,C29,‘7787-70-4,0.05,CuBr,CMP0032,‘6302-02-9,0.1,1-(pyridin-2-yl)propan-2-one,CMP0301,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,DMSO,CMP0527,130,16
+,ullmann,C30,‘7758-89-6,0.05,CuCl,CMP0035,‘6302-02-9,0.1,1-(pyridin-2-yl)propan-2-one,CMP0301,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,DMSO,CMP0527,130,16
+,ullmann,C31,‘13395-16-9,0.05,Cu(acac)2,CMP0021,‘6302-02-9,0.1,1-(pyridin-2-yl)propan-2-one,CMP0301,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,DMSO,CMP0527,130,16
+,ullmann,C32,‘1317-39-1,0.05,Cu2O,CMP0031,‘6302-02-9,0.1,1-(pyridin-2-yl)propan-2-one,CMP0301,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,DMSO,CMP0527,130,16
+,ullmann,C33,‘7681-65-4,0.05,CuI,CMP0038,‘39207-65-3,0.1,2-isobutyrylcyclohexanone,CMP0294,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,DMSO,CMP0527,130,16
+,ullmann,C34,‘7681-65-4,0.1,CuI,CMP0038,‘1655-07-8,0.2,ethyl 2-oxocyclohexanecarboxylate,CMP0288,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,DMSO,CMP0527,130,16
+,ullmann,C55,‘7681-65-4,0.1,CuI,CMP0038,‘4097-89-6,0.1,TAEA,CMP0295,‘865-47-4,2.0,KOtBu,CMP0347,,,,,,,,,,,,,"1,4-dioxane",CMP0543,130,16
+,ullmann,C57,‘7758-89-6,0.1,CuCl,CMP0035,‘148-24-3,0.2,8-hydroxyquinoline,CMP0266,‘100-67-4,2.0,KOPh,CMP0395,,,,,,,,,,,,,diglyme,CMP0549,130,16
+,ullmann,C58,‘7758-89-6,0.1,CuCl,CMP0035,‘4097-89-6,0.1,TAEA,CMP0295,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,"1,4-dioxane",CMP0543,130,16
+,ullmann,C61,‘7681-65-4,0.1,CuI,CMP0038,‘4097-89-6,0.1,TAEA,CMP0295,‘584-08-7,2.0,K2CO3,CMP0334,,,,,,,,,,,,,"1,4-dioxane",CMP0543,130,16
+,ullmann,C63,‘3375-31-3,0.01,Pd(OAc)2,CMP0073,‘1239478-87-5,0.02,AdBippyPhos,CMP0159,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,xylene,CMP0571,130,16
+,ullmann,C65,‘7681-65-4,0.2,CuI,CMP0038,‘1118-68-9,0.2,"N,N-dimethylglycine",CMP0264,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,"1,4-dioxane",CMP0543,130,16
+,ullmann,C71,‘7681-65-4,0.3,CuI,CMP0038,‘475-11-6,1.0,N-methyl-L-proline,CMP0297,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,"1,4-dioxane",CMP0543,130,16
+,ullmann,C74,‘7681-65-4,0.3,CuI,CMP0038,‘366-18-7,0.5,"2,2-bipyridine",CMP0223,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,"1,4-dioxane",CMP0543,130,16
+,ullmann,C76,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘161265-03-8,0.1,XantPhos,CMP0180,‘584-08-7,2.0,K2CO3,CMP0334,,,,,,,,,,,,,"1,4-dioxane",CMP0543,130,16
+,ullmann,C77,‘7681-65-4,0.15,CuI,CMP0038,‘66-71-7,0.3,"1,10-Phen",CMP0222,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,DMF,CMP0552,130,16
+,ullmann,C78,‘7681-65-4,0.15,CuI,CMP0038,‘66-71-7,0.3,"1,10-Phen",CMP0222,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,xylene,CMP0571,130,16
+,ullmann,C79,‘7681-65-4,0.15,CuI,CMP0038,‘66-71-7,0.3,"1,10-Phen",CMP0222,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,DMSO,CMP0527,130,16
+,ullmann,C80,‘7681-65-4,0.1,CuI,CMP0038,‘4316-42-1,0.1,1-butylimidazole,CMP0296,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,MeCN,CMP0558,130,16
+,ullmann,C82,‘7440-50-8,0.2,Cu,CMP0020,‘10354-53-7,0.2,N-phenylpicolinamide,CMP0262,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,MeCN,CMP0558,130,16
+,ullmann,C84,‘1317-39-1,0.1,Cu2O,CMP0031,‘95-45-4,0.2,Dimethylglyoxime,CMP0307,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,MeCN,CMP0558,130,16
+,ullmann,C86,‘7787-70-4,0.1,CuBr,CMP0032,‘94-67-7,0.2,salicylaldoxime,CMP0306,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,MeCN,CMP0558,130,16
+,ullmann,C87,‘1317-38-0,0.1,CuO,CMP0039,‘94-67-7,0.2,salicylaldoxime,CMP0306,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,MeCN,CMP0558,130,16
+,ullmann,C94,‘7681-65-4,0.2,CuI,CMP0038,‘13811-71-7,0.2,diethyl D-tartrate,CMP0285,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,MeCN,CMP0558,130,16
+,kumada,C3,‘15629-92-2,0.05,NiCl2(dppp),CMP0057,,,,,,,,,,,,,,,,,,,,,THF,CMP0569,25,2
+,kumada,C6,‘3375-31-3,0.1,Pd(OAc)2,CMP0073,‘603-35-0,0.2,PPh3,CMP0200,,,,,,,,,,,,,,,,,THF,CMP0569,25,2
+,kumada,C8,‘14221-01-3,0.05,Pd(PPh3)4,CMP0075,,,,,,,,,,,,,,,,,,,,,THF,CMP0569,25,2
+,kumada,C10,‘14024-18-1,0.1,Fe(acac)3,CMP0047,‘110-18-9,2.0,TMEDA,CMP0221,,,,,,,,,,,,,,,,,THF,CMP0569,25,2
+,kumada,C11,‘14024-18-1,0.1,Fe(acac)3,CMP0047,‘3470-98-2,2.0,NBP,CMP0310,,,,,,,,,,,,,,,,,THF,CMP0569,25,2
+NMP当量不同,kumada,C13,‘14024-18-1,0.1,Fe(acac)3,CMP0047,,,,,‘872-50-4,0.5,NMP,CMP0316,,,,,,,,,,,,,THF,CMP0569,25,2
+,kumada,C17,‘72287-26-4,0.05,PdCl2(dppf),CMP0090,,,,,‘7646-85-7,1.0,ZnCl2,CMP0429,,,,,,,,,,,,,THF,CMP0569,25,2
+,kumada,C19,‘72287-26-4,0.1,PdCl2(dppf),CMP0090,,,,,‘7699-45-8,1.2,ZnBr2,CMP0490,,,,,,,,,,,,,THF,CMP0569,25,2
+,kumada,C20,‘14024-18-1,0.1,Fe(acac)3,CMP0047,‘7226-23-5,2.0,DMPU,CMP0311,,,,,,,,,,,,,,,,,THF,CMP0569,25,2
+,kumada,C22,‘3264-82-2,0.1,Ni(acac)2,CMP0051,‘603-35-0,0.2,PPh3,CMP0200,,,,,,,,,,,,,,,,,THF,CMP0569,25,2
+,kumada,C23,‘14221-01-3,0.05,Pd(PPh3)4,CMP0075,,,,,‘7699-45-8,1.5,ZnBr2,CMP0490,,,,,,,,,,,,,THF,CMP0569,25,2
+,kumada,C25,‘72287-26-4,0.1,PdCl2(dppf),CMP0090,,,,,‘1191-15-7,0.2,DIBAL-H,CMP0493,,,,,,,,,,,,,THF,CMP0569,25,2
+,kumada,C37,‘3264-82-2,0.05,Ni(acac)2,CMP0051,,,,,‘106-99-0,0.2,butadiene,CMP0488,,,,,,,,,,,,,THF,CMP0569,25,2
+,kumada,C44,‘29046-78-4,0.05,NiCl2-glyme,CMP0061,‘72914-19-3,0.05,DTBPY,CMP0315,‘13446-34-9,0.2,MnCl2,CMP0492,,,,,,,,,,,,,THF,CMP0569,25,2
+,kumada,C45,‘72287-26-4,0.1,PdCl2(dppf),CMP0090,‘12150-46-8,0.2,dppf,CMP0211,,,,,,,,,,,,,,,,,THF,CMP0569,25,2
+,kumada,C46,‘67292-34-6,0.1,Ni(dppf)Cl2,CMP0121,,,,,‘7681-11-0,0.1,KI,CMP0352,,,,,,,,,,,,,THF,CMP0569,25,2
+,kumada,C51,‘14647-23-5,0.1,NiCl2(dppe),CMP0056,,,,,‘7681-82-5,0.05,NaI,CMP0489,,,,,,,,,,,,,THF,CMP0569,25,2
+,kumada,C52,‘14024-18-1,0.1,Fe(acac)3,CMP0047,‘80-73-9,2.0,DMI,CMP0318,,,,,,,,,,,,,,,,,THF,CMP0569,25,2
+,kumada,C53,‘7705-08-0,0.1,FeCl3,CMP0048,‘632-22-4,2.0,TMU,CMP0314,,,,,,,,,,,,,,,,,THF,CMP0569,25,2
+,kumada,C54,‘13965-03-2,0.1,PdCl2(PPh3)2,CMP0097,,,,,‘7646-85-7,1.0,ZnCl2,CMP0429,,,,,,,,,,,,,THF,CMP0569,25,2
+,kumada,C70,‘67292-34-6,0.1,Ni(dppf)Cl2,CMP0121,,,,,,,,,,,,,,,,,,,,,Et2O,CMP0554,25,2
+,kumada,C77,‘14024-18-1,0.1,Fe(acac)3,CMP0047,‘2556-73-2,2.0,N-Me-CPL,CMP0317,,,,,,,,,,,,,,,,,THF,CMP0569,25,2
+,kumada,C78,‘14024-17-0,0.1,Fe(acac)2,CMP0122,,,,,‘872-50-4,0.15,NMP,CMP0316,,,,,,,,,,,,,THF,CMP0569,25,2
+,kumada,C80,‘14221-01-3,0.05,Pd(PPh3)4,CMP0075,,,,,‘7646-85-7,1.0,ZnCl2,CMP0429,,,,,,,,,,,,,THF,CMP0569,25,2
+,kumada,C84,‘15133-82-1,0.05,Ni(PPh3)4,CMP0120,,,,,,,,,,,,,,,,,,,,,THF/Et2O (1:1),CMP0620,25,2
+,kumada,C86,‘14647-23-5,0.1,NiCl2(dppe),CMP0056,,,,,,,,,,,,,,,,,,,,,THF/Et2O (1:1),CMP0620,25,2
+,kumada,C91,‘14024-18-1,0.1,Fe(acac)3,CMP0047,,,,,‘872-50-4,0.5,NMP,CMP0316,,,,,,,,,,,,,THF/Et2O (1:1),CMP0620,25,2
+,kumada,C96,‘15629-92-2,0.05,NiCl2(dppp),CMP0057,,,,,,,,,,,,,,,,,,,,,THF/Et2O (1:1),CMP0620,25,2
+,sonogashira,C12,‘3375-31-3,0.01,Pd(OAc)2,CMP0073,‘7681-65-4,0.01,CuI,CMP0038,‘161265-03-8,0.01,XantPhos,CMP0180,‘534-17-8,3.0,Cs2CO3,CMP0333,,,,,,,,,DMF,CMP0552,80,12
+,sonogashira,C16,‘13965-03-2,0.05,PdCl2(PPh3)2,CMP0097,‘7681-65-4,0.1,CuI,CMP0038,,,,,‘108-18-9,3.0,iPr2NH,CMP0373,,,,,,,,,DMF,CMP0552,80,12
+,sonogashira,C17,‘14221-01-3,0.1,Pd(PPh3)4,CMP0075,‘7681-65-4,0.1,CuI,CMP0038,,,,,‘121-44-8,3.0,TEA,CMP0269,,,,,,,,,DMF,CMP0552,80,12
+,sonogashira,C18,‘13965-03-2,0.1,PdCl2(PPh3)2,CMP0097,‘7681-65-4,0.1,CuI,CMP0038,,,,,‘121-44-8,3.0,TEA,CMP0269,,,,,,,,,DMF,CMP0552,80,12
+,sonogashira,C25,‘13965-03-2,0.02,PdCl2(PPh3)2,CMP0097,‘14243-64-2,0.02,AuCl(PPh3),CMP0012,,,,,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,DMF,CMP0552,80,12
+,sonogashira,C26,‘13965-03-2,0.02,PdCl2(PPh3)2,CMP0097,‘14243-64-2,0.02,AuCl(PPh3),CMP0012,,,,,‘534-17-8,3.0,Cs2CO3,CMP0333,,,,,,,,,DMF,CMP0552,80,12
+,sonogashira,C28,‘51364-51-3,0.01,Pd2(dba)3,CMP0080,,,,,‘564483-18-7,0.01,XPhos,CMP0165,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,DMA,CMP0550,80,12
+,sonogashira,C33,‘3375-31-3,0.005,Pd(OAc)2,CMP0073,,,,,‘564483-18-7,0.015,XPhos,CMP0165,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,THF,CMP0569,80,12
+,sonogashira,C34,‘14221-01-3,0.1,Pd(PPh3)4,CMP0075,,,,,,,,,‘4039-32-1,3.0,LiHMDS,CMP0365,,,,,,,,,THF,CMP0569,80,12
+,sonogashira,C45,‘13965-03-2,0.02,PdCl2(PPh3)2,CMP0097,‘7681-65-4,0.04,CuI,CMP0038,,,,,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,THF,CMP0569,80,12
+,sonogashira,C58,‘13965-03-2,0.1,PdCl2(PPh3)2,CMP0097,‘7681-65-4,0.1,CuI,CMP0038,,,,,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,"1,4-dioxane",CMP0543,80,12
+,sonogashira,C59,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘603-35-0,0.12,PPh3,CMP0200,‘7778-53-2,1.2,K3PO4,CMP0338,,,,,,,,,DMSO,CMP0527,80,12
+,sonogashira,C60,‘13965-03-2,0.025,PdCl2(PPh3)2,CMP0097,,,,,‘7688-25-7,0.05,dppb,CMP0236,‘6674-22-2,2.0,DBU,CMP0372,,,,,,,,,DMSO,CMP0527,80,12
+,sonogashira,C61,‘13965-03-2,0.025,PdCl2(PPh3)2,CMP0097,‘13395-16-9,0.1,Cu(acac)2,CMP0021,‘7688-25-7,0.05,dppb,CMP0236,‘6674-22-2,2.0,DBU,CMP0372,,,,,,,,,DMSO,CMP0527,80,12
+,sonogashira,C62,‘29934-17-6,0.03,PdCl2(PCy3)2,CMP0094,,,,,,,,,‘534-17-8,3.0,Cs2CO3,CMP0333,,,,,,,,,DMSO,CMP0527,80,12
+,sonogashira,C63,‘14221-01-3,0.05,Pd(PPh3)4,CMP0075,,,,,,,,,‘6674-22-2,2.0,DBU,CMP0372,,,,,,,,,DMSO,CMP0527,80,12
+,sonogashira,C73,‘13965-03-2,0.05,PdCl2(PPh3)2,CMP0097,‘7681-65-4,0.1,CuI,CMP0038,,,,,‘108-18-9,3.0,iPr2NH,CMP0373,,,,,,,,,MeCN,CMP0558,80,12
+,sonogashira,C74,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘7681-65-4,0.1,CuI,CMP0038,‘6163-58-2,0.1,P(o-tolyl)3,CMP0216,‘108-18-9,3.0,iPr2NH,CMP0373,,,,,,,,,MeCN,CMP0558,80,12
+,sonogashira,C75,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘7681-65-4,0.1,CuI,CMP0038,‘564483-18-7,0.1,XPhos,CMP0165,‘108-18-9,3.0,iPr2NH,CMP0373,,,,,,,,,MeCN,CMP0558,80,12
+,sonogashira,C76,‘13965-03-2,0.1,PdCl2(PPh3)2,CMP0097,‘7681-65-4,0.1,CuI,CMP0038,,,,,‘121-44-8,3.0,TEA,CMP0269,,,,,,,,,MeCN,CMP0558,80,12
+,sonogashira,C77,‘14221-01-3,0.01,Pd(PPh3)4,CMP0075,‘7681-65-4,0.03,CuI,CMP0038,,,,,‘121-44-8,3.0,TEA,CMP0269,,,,,,,,,MeCN,CMP0558,80,12
+,sonogashira,C79,‘7647-10-1,0.1,PdCl2,CMP0087,‘7681-65-4,0.2,CuI,CMP0038,‘603-35-0,0.2,PPh3,CMP0200,‘121-44-8,3.0,TEA,CMP0269,,,,,,,,,MeCN,CMP0558,80,12
+,sonogashira,C83,‘13965-03-2,0.05,PdCl2(PPh3)2,CMP0097,‘7681-65-4,0.1,CuI,CMP0038,,,,,‘498-63-5,4.0,prolinol,CMP0391,,,,,,,,,DMF/H2O (5:1),CMP0611,80,12
+,sonogashira,C84,‘7647-10-1,0.04,PdCl2,CMP0087,,,,,‘603-35-0,0.04,PPh3,CMP0200,,,,,,,,,,,,,sBuNH2/H2O (1:1),CMP0612,80,12
+,sonogashira,C85,‘13965-03-2,0.02,PdCl2(PPh3)2,CMP0097,,,,,,,,,,,,,,,,,,,,,sBuNH2/H2O (1:1),CMP0612,80,12
+,sonogashira,C86,‘95464-05-4,0.1,Pd(dppf)Cl2·CH2Cl2,CMP0091,‘7681-65-4,0.1,CuI,CMP0038,,,,,,,,,,,,,,,,,DMF/TEA (5:3),CMP0613,80,12
+,sonogashira,C92,‘51364-51-3,0.025,Pd2(dba)3,CMP0080,‘7681-65-4,0.05,CuI,CMP0038,‘603-35-0,0.1,PPh3,CMP0200,,,,,,,,,,,,,THF/TEA (4:1),CMP0615,80,12
+,sonogashira,C93,‘13965-03-2,0.05,PdCl2(PPh3)2,CMP0097,‘7681-65-4,0.1,CuI,CMP0038,‘603-35-0,0.2,PPh3,CMP0200,,,,,,,,,,,,,TEA/DMF (2:1),CMP0616,80,12
+,sonogashira,C94,‘13965-03-2,0.02,PdCl2(PPh3)2,CMP0097,‘7681-65-4,0.02,CuI,CMP0038,,,,,,,,,,,,,,,,,DMSO/TEA (16:13),CMP0617,80,12
+,chan-lam,C2,‘142-71-2,0.2,Cu(OAc)2,CMP0026,‘110-18-9,0.4,TMEDA,CMP0221,‘110-86-1,2.0,Py,CMP0141,,,,,,,,,,,,,"1,4-dioxane",CMP0543,25,16
+,chan-lam,C9,‘142-71-2,0.2,Cu(OAc)2,CMP0026,,,,,‘102-71-6,2.0,triethanolamine,CMP0378,‘694-59-7,0.2,PNO,CMP0434,,,,,,,,,DMF,CMP0552,25,16
+,chan-lam,C15,‘13778-31-9,0.2,Cu(NO3)2·5H2O,CMP0025,‘110-18-9,0.4,TMEDA,CMP0221,,,,,,,,,,,,,,,,,MeCN,CMP0558,25,16
+,chan-lam,C17,‘142-71-2,0.2,Cu(OAc)2,CMP0026,‘66-71-7,0.4,"1,10-Phen",CMP0222,‘584-08-7,2.0,K2CO3,CMP0334,,,,,,,,,,,,,MeCN,CMP0558,25,16
+,chan-lam,C18,‘15418-29-8,0.5,Cu(MeCN)4BF4,CMP0022,,,,,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,MeCN,CMP0558,25,16
+,chan-lam,C19,‘15418-29-8,0.5,Cu(MeCN)4BF4,CMP0022,,,,,‘102-71-6,2.0,triethanolamine,CMP0378,,,,,,,,,,,,,MeCN,CMP0558,25,16
+,chan-lam,C20,‘48209-28-5,0.2,Cu2(OTf)2.toluene,CMP0030,‘110-70-3,0.4,DMEDA,CMP0308,,,,,,,,,,,,,,,,,MeCN,CMP0558,25,16
+,chan-lam,C21,‘13778-31-9,0.2,Cu(NO3)2·5H2O,CMP0025,‘110-18-9,0.4,TMEDA,CMP0221,‘102-71-6,2.0,triethanolamine,CMP0378,,,,,,,,,,,,,MeCN,CMP0558,25,16
+,chan-lam,C22,‘34946-82-2,0.2,Cu(OTf)2,CMP0028,‘110-18-9,0.4,TMEDA,CMP0221,‘102-71-6,2.0,triethanolamine,CMP0378,,,,,,,,,,,,,MeCN,CMP0558,25,16
+,chan-lam,C23,‘34946-82-2,0.2,Cu(OTf)2,CMP0028,‘110-18-9,0.4,TMEDA,CMP0221,,,,,,,,,,,,,,,,,MeCN,CMP0558,25,16
+,chan-lam,C25,‘142-71-2,0.2,Cu(OAc)2,CMP0026,,,,,‘102-71-6,2.0,triethanolamine,CMP0378,‘2564-83-2,0.2,TEMPO,CMP0435,,,,,,,,,DMF,CMP0552,25,16
+,chan-lam,C26,‘3251-23-8,0.2,Cu(NO3)2,CMP0024,‘110-70-3,0.4,DMEDA,CMP0308,,,,,,,,,,,,,,,,,MeOH,CMP0559,25,16
+,chan-lam,C27,‘142-71-2,0.2,Cu(OAc)2,CMP0026,,,,,‘110-86-1,2.0,Py,CMP0141,‘2564-83-2,0.2,TEMPO,CMP0435,,,,,,,,,DMF,CMP0552,25,16
+,chan-lam,C28,‘3251-23-8,0.2,Cu(NO3)2,CMP0024,,,,,‘102-71-6,2.0,triethanolamine,CMP0378,,,,,,,,,,,,,MeOH,CMP0559,25,16
+,chan-lam,C29,‘34946-82-2,0.2,Cu(OTf)2,CMP0028,,,,,,,,,,,,,,,,,,,,,MeOH,CMP0559,25,16
+,chan-lam,C30,‘142-71-2,1.5,Cu(OAc)2,CMP0026,‘110-18-9,3.0,TMEDA,CMP0221,,,,,,,,,,,,,,,,,MeOH,CMP0559,25,16
+,chan-lam,C31,‘7447-39-4,0.2,CuCl2,CMP0036,,,,,,,,,,,,,,,,,,,,,MeOH,CMP0559,25,16
+,chan-lam,C32,‘7447-39-4,0.2,CuCl2,CMP0036,,,,,‘584-08-7,2.0,K2CO3,CMP0334,,,,,,,,,,,,,MeOH,CMP0559,25,16
+,chan-lam,C33,‘142-71-2,1.5,Cu(OAc)2,CMP0026,,,,,‘102-71-6,2.0,triethanolamine,CMP0378,‘694-59-7,0.2,PNO,CMP0434,,,,,,,,,DMF,CMP0552,25,16
+,chan-lam,C36,‘142-71-2,0.2,Cu(OAc)2,CMP0026,,,,,‘102-71-6,2.0,triethanolamine,CMP0378,‘7529-22-8,0.2,NMO,CMP0436,,,,,,,,,DMF,CMP0552,25,16
+,chan-lam,C37,‘142-71-2,0.2,Cu(OAc)2,CMP0026,,,,,‘110-86-1,2.0,Py,CMP0141,‘7529-22-8,0.2,NMO,CMP0436,,,,,,,,,DMF,CMP0552,25,16
+,chan-lam,C38,‘7447-39-4,0.2,CuCl2,CMP0036,,,,,‘108-48-5,2.0,"2,6-lutidine",CMP0157,,,,,,,,,,,,,DMF,CMP0552,25,16
+,chan-lam,C39,‘142-71-2,1.5,Cu(OAc)2,CMP0026,,,,,‘110-86-1,2.0,Py,CMP0141,,,,,,,,,,,,,MeOH,CMP0559,25,16
+,chan-lam,C40,‘142-71-2,0.2,Cu(OAc)2,CMP0026,‘110-18-9,0.4,TMEDA,CMP0221,‘1907-33-1,2.0,LiOtBu,CMP0349,,,,,,,,,,,,,THF,CMP0569,25,16
+,chan-lam,C41,‘7447-39-4,0.2,CuCl2,CMP0036,,,,,‘102-71-6,2.0,triethanolamine,CMP0378,,,,,,,,,,,,,"1,4-dioxane",CMP0543,25,16
+,chan-lam,C42,‘142-71-2,1.5,Cu(OAc)2,CMP0026,,,,,‘110-86-1,2.0,Py,CMP0141,,,,,,,,,,,,,"1,4-dioxane",CMP0543,25,16
+,chan-lam,C43,‘142-71-2,0.2,Cu(OAc)2,CMP0026,,,,,‘110-86-1,2.0,Py,CMP0141,‘694-59-7,0.2,PNO,CMP0434,,,,,,,,,DMF,CMP0552,25,16
+,chan-lam,C44,‘142-71-2,0.2,Cu(OAc)2,CMP0026,‘366-18-7,0.4,"2,2-bipyridine",CMP0223,‘584-08-7,2.0,K2CO3,CMP0334,,,,,,,,,,,,,DCE,CMP0548,25,16
+,chan-lam,C45,‘142-71-2,1.5,Cu(OAc)2,CMP0026,,,,,‘110-86-1,2.0,Py,CMP0141,,,,,,,,,,,,,DCE,CMP0548,25,16
+,chan-lam,C46,‘142-71-2,0.2,Cu(OAc)2,CMP0026,,,,,‘584-08-7,2.0,K2CO3,CMP0334,‘1313-13-9,0.2,MnO2,CMP0437,,,,,,,,,DCE,CMP0548,25,16
+,chan-lam,C47,‘142-71-2,0.2,Cu(OAc)2,CMP0026,,,,,‘108-48-5,2.0,"2,6-lutidine",CMP0157,‘334-48-5,0.2,decanoic acid,CMP0438,,,,,,,,,toluene,CMP0570,25,16
+,chan-lam,C48,‘7791-20-0,0.2,NiCl2.6H2O,CMP0060,‘366-18-7,0.4,"2,2-bipyridine",CMP0223,‘6674-22-2,2.0,DBU,CMP0372,,,,,,,,,,,,,toluene,CMP0570,25,16
+,chan-lam,C50,‘142-71-2,0.2,Cu(OAc)2,CMP0026,,,,,‘7087-68-5,2.0,DIPEA,CMP0369,‘109-52-4,0.2,valeric acid,CMP0439,,,,,,,,,DMSO,CMP0527,70,16
+,chan-lam,C51,‘142-71-2,0.2,Cu(OAc)2,CMP0026,,,,,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,,,,,DMSO,CMP0527,70,16
+,chan-lam,C52,‘142-71-2,0.2,Cu(OAc)2,CMP0026,,,,,‘497-19-8,2.0,Na2CO3,CMP0335,,,,,,,,,,,,,DMSO,CMP0527,70,16
+,chan-lam,C55,‘7447-39-4,0.2,CuCl2,CMP0036,,,,,‘7087-68-5,2.0,DIPEA,CMP0369,,,,,,,,,,,,,DMSO,CMP0527,70,16
+,chan-lam,C56,‘7447-39-4,0.2,CuCl2,CMP0036,,,,,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,,,,,DMSO,CMP0527,70,16
+,chan-lam,C59,‘142-71-2,0.2,Cu(OAc)2,CMP0026,‘110-70-3,0.4,DMEDA,CMP0308,‘497-19-8,2.0,Na2CO3,CMP0335,,,,,,,,,,,,,DCE,CMP0548,70,16
+,chan-lam,C61,‘142-71-2,0.2,Cu(OAc)2,CMP0026,‘110-86-1,3.0,Py,CMP0141,‘497-19-8,2.0,Na2CO3,CMP0335,,,,,,,,,,,,,DCE,CMP0548,70,16
+,chan-lam,C62,‘142-71-2,0.2,Cu(OAc)2,CMP0026,‘110-86-1,0.4,Py,CMP0141,‘497-19-8,2.0,Na2CO3,CMP0335,,,,,,,,,,,,,DCE,CMP0548,70,16
+,chan-lam,C64,‘142-71-2,0.2,Cu(OAc)2,CMP0026,‘110-18-9,0.4,TMEDA,CMP0221,‘497-19-8,2.0,Na2CO3,CMP0335,,,,,,,,,,,,,DCE,CMP0548,70,16
+,chan-lam,C65,‘142-71-2,0.2,Cu(OAc)2,CMP0026,‘66-71-7,0.4,"1,10-Phen",CMP0222,‘497-19-8,2.0,Na2CO3,CMP0335,,,,,,,,,,,,,DCE,CMP0548,70,16
+,chan-lam,C66,‘142-71-2,0.2,Cu(OAc)2,CMP0026,‘366-18-7,3.0,"2,2-bipyridine",CMP0223,‘497-19-8,2.0,Na2CO3,CMP0335,,,,,,,,,,,,,DCE,CMP0548,70,16
+,chan-lam,C67,‘142-71-2,0.2,Cu(OAc)2,CMP0026,‘366-18-7,0.4,"2,2-bipyridine",CMP0223,‘497-19-8,2.0,Na2CO3,CMP0335,,,,,,,,,,,,,DCE,CMP0548,70,16
+,chan-lam,C69,‘142-71-2,0.2,Cu(OAc)2,CMP0026,‘366-18-7,0.4,"2,2-bipyridine",CMP0223,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,DCE,CMP0548,70,16
+,chan-lam,C70,‘142-71-2,0.2,Cu(OAc)2,CMP0026,‘366-18-7,0.4,"2,2-bipyridine",CMP0223,‘584-08-7,2.0,K2CO3,CMP0334,,,,,,,,,,,,,DCE,CMP0548,70,16
+,chan-lam,C71,‘7447-39-4,0.2,CuCl2,CMP0036,,,,,‘497-19-8,2.0,Na2CO3,CMP0335,,,,,,,,,,,,,DCE,CMP0548,70,16
+,chan-lam,C72,‘142-71-2,0.2,Cu(OAc)2,CMP0026,,,,,‘7087-68-5,2.0,DIPEA,CMP0369,,,,,,,,,,,,,DCE,CMP0548,70,16
+,chan-lam,C73,‘7447-39-4,0.2,CuCl2,CMP0036,,,,,‘108-48-5,2.0,"2,6-lutidine",CMP0157,,,,,,,,,,,,,DCE,CMP0548,70,16
+,chan-lam,C74,‘34946-82-2,0.2,Cu(OTf)2,CMP0028,,,,,‘108-48-5,2.0,"2,6-lutidine",CMP0157,,,,,,,,,,,,,DCE,CMP0548,70,16
+,chan-lam,C75,‘142-71-2,0.2,Cu(OAc)2,CMP0026,,,,,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,,,,,DCE,CMP0548,70,16
+,chan-lam,C77,‘142-71-2,0.2,Cu(OAc)2,CMP0026,,,,,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,,,,,MeCN,CMP0558,70,16
+,chan-lam,C78,‘142-71-2,0.2,Cu(OAc)2,CMP0026,‘366-18-7,0.4,"2,2-bipyridine",CMP0223,‘497-19-8,2.0,Na2CO3,CMP0335,,,,,,,,,,,,,MeCN,CMP0558,70,16
+,chan-lam,C79,‘142-71-2,0.2,Cu(OAc)2,CMP0026,,,,,‘497-19-8,2.0,Na2CO3,CMP0335,,,,,,,,,,,,,MeCN,CMP0558,70,16
+,chan-lam,C80,‘142-71-2,0.2,Cu(OAc)2,CMP0026,,,,,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,MeCN,CMP0558,70,16
+,chan-lam,C82,‘142-71-2,0.2,Cu(OAc)2,CMP0026,,,,,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,DMF,CMP0552,70,16
+,chan-lam,C84,‘7447-39-4,0.2,CuCl2,CMP0036,‘366-18-7,0.4,"2,2-bipyridine",CMP0223,‘497-19-8,2.0,Na2CO3,CMP0335,,,,,,,,,,,,,DMF,CMP0552,70,16
+,chan-lam,C85,‘142-71-2,0.2,Cu(OAc)2,CMP0026,,,,,‘584-08-7,2.0,K2CO3,CMP0334,,,,,,,,,,,,,DMF,CMP0552,70,16
+,chan-lam,C86,‘142-71-2,0.2,Cu(OAc)2,CMP0026,,,,,‘497-19-8,2.0,Na2CO3,CMP0335,,,,,,,,,,,,,DMF,CMP0552,70,16
+,chan-lam,C87,‘142-71-2,0.2,Cu(OAc)2,CMP0026,,,,,‘127-09-3,2.0,NaOAc,CMP0355,,,,,,,,,,,,,DMF,CMP0552,70,16
+,chan-lam,C91,‘7447-39-4,0.2,CuCl2,CMP0036,‘1122-58-3,0.2,DMAP,CMP0136,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,DMF,CMP0552,70,16
+,chan-lam,C94,‘7447-39-4,0.2,CuCl2,CMP0036,,,,,‘108-48-5,2.0,"2,6-lutidine",CMP0157,,,,,,,,,,,,,t-BuOH,CMP0567,70,16
+,chan-lam,C95,‘7447-39-4,0.2,CuCl2,CMP0036,,,,,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,NMP,CMP0316,70,16
+,chan-lam,C96,‘142-71-2,0.2,Cu(OAc)2,CMP0026,,,,,,,,,‘110-05-4,0.2,DTBP,CMP0440,,,,,,,,,toluene,CMP0570,70,16
+,grignard,C2,,,,,,,,,,,,,,,,,,,,,,,,,THF,CMP0569,25,3
+,grignard,C3,‘66-71-7,0.055,"1,10-Phen",CMP0222,,,,,,,,,,,,,,,,,,,,,THF,CMP0569,25,3
+,grignard,C4,‘101003-65-0,0.1,"(2,2:6,2-Terpyridin)-4-ol",CMP0495,,,,,,,,,,,,,,,,,,,,,THF,CMP0569,25,3
+,grignard,C5,‘7787-70-4,1.0,CuBr,CMP0032,,,,,,,,,,,,,,,,,,,,,THF,CMP0569,25,3
+,grignard,C6,‘10108-64-2,0.1,CdCl2,CMP0498,,,,,,,,,,,,,,,,,,,,,THF,CMP0569,25,3
+,grignard,C7,‘7790-86-5,1.5,CeCl3,CMP0499,,,,,,,,,,,,,,,,,,,,,THF,CMP0569,25,3
+,grignard,C8,‘7646-79-9,0.05,CoCl2,CMP0500,,,,,,,,,,,,,,,,,,,,,THF,CMP0569,25,3
+,grignard,C9,‘1271-19-8,0.05,Cp2TiCl2,CMP0501,,,,,,,,,,,,,,,,,,,,,THF,CMP0569,25,3
+,grignard,C10,‘7440-50-8,0.1,Cu,CMP0020,,,,,,,,,,,,,,,,,,,,,THF,CMP0569,25,3
+,grignard,C11,‘7646-85-7,1.0,ZnCl2,CMP0429,,,,,,,,,,,,,,,,,,,,,THF,CMP0569,25,3
+,grignard,C12,‘7681-65-4,0.5,CuI,CMP0038,,,,,,,,,,,,,,,,,,,,,THF,CMP0569,25,3
+,grignard,C13,‘7553-56-2,0.05,I2,CMP0503,,,,,,,,,,,,,,,,,,,,,THF,CMP0569,25,3
+,grignard,C14,‘584-08-7,1.2,K2CO3,CMP0334,,,,,,,,,,,,,,,,,,,,,THF,CMP0569,25,3
+,grignard,C15,‘7447-41-8,1.2,LiCl,CMP0350,,,,,,,,,,,,,,,,,,,,,THF,CMP0569,25,3
+,grignard,C16,‘7447-41-8,3.0,LiCl,CMP0350,‘7646-85-7,3.0,ZnCl2,CMP0429,,,,,,,,,,,,,,,,,THF,CMP0569,25,3
+,grignard,C17,‘70197-13-6,0.1,MTO,CMP0506,,,,,,,,,,,,,,,,,,,,,THF,CMP0569,25,3
+,grignard,C18,‘14221-01-3,0.01,Pd(PPh3)4,CMP0075,,,,,,,,,,,,,,,,,,,,,THF,CMP0569,25,3
+,grignard,C19,‘14405-49-3,0.05,Iron dibzacac,CMP0508,,,,,,,,,,,,,,,,,,,,,THF,CMP0569,25,3
+,grignard,C20,‘7699-45-8,2.0,ZnBr2,CMP0490,,,,,,,,,,,,,,,,,,,,,THF,CMP0569,25,3
+,grignard,C22,‘29858-07-9,2.0,MgBr2.Et2O,CMP0505,,,,,,,,,,,,,,,,,,,,,THF,CMP0569,25,3
+,grignard,C23,‘106356-53-0,1.0,B-allyldiisopinocampheylborane,CMP0496,,,,,,,,,,,,,,,,,,,,,THF,CMP0569,25,3
+,grignard,C24,‘13292-87-0,0.1,BMS,CMP0497,,,,,,,,,,,,,,,,,,,,,THF,CMP0569,25,3
+,grignard,C25,‘680-31-9,1.35,HMPA,CMP0326,,,,,,,,,,,,,,,,,,,,,THF,CMP0569,25,3
+,grignard,C26,‘7550-45-0,1.0,TiCl4,CMP0507,,,,,,,,,,,,,,,,,,,,,THF,CMP0569,25,3
+,grignard,C27,‘112246-73-8,1.0,(+)-DIP-Chloride,CMP0494,,,,,,,,,,,,,,,,,,,,,THF,CMP0569,25,3
+,grignard,C28,‘7681-65-4,0.5,CuI,CMP0038,,,,,,,,,,,,,,,,,,,,,Et2O,CMP0554,25,3
+,grignard,C29,‘10108-64-2,0.1,CdCl2,CMP0498,,,,,,,,,,,,,,,,,,,,,Et2O,CMP0554,25,3
+,grignard,C30,‘16853-85-3,0.1,LAH,CMP0504,,,,,,,,,,,,,,,,,,,,,Et2O,CMP0554,25,3
+,grignard,C31,‘7787-70-4,1.0,CuBr,CMP0032,,,,,,,,,,,,,,,,,,,,,Et2O,CMP0554,25,3
+,grignard,C32,,,,,,,,,,,,,,,,,,,,,,,,,Et2O,CMP0554,25,3
+,grignard,C33,‘112246-73-8,1.0,(+)-DIP-Chloride,CMP0494,,,,,,,,,,,,,,,,,,,,,Et2O,CMP0554,25,3
+,grignard,C34,‘1191-15-7,0.1,DIBAL-H,CMP0493,,,,,,,,,,,,,,,,,,,,,CPME,CMP0547,25,3
+,grignard,C35,‘13292-87-0,0.1,BMS,CMP0497,,,,,,,,,,,,,,,,,,,,,CPME,CMP0547,25,3
+,grignard,C36,‘54678-23-8,3.4,CuBr.Me2S,CMP0502,,,,,,,,,,,,,,,,,,,,,Et2O,CMP0554,25,3
+,grignard,C37,‘16853-85-3,0.1,LAH,CMP0504,,,,,,,,,,,,,,,,,,,,,CPME,CMP0547,25,3
+,grignard,C38,‘7553-56-2,0.05,I2,CMP0503,,,,,,,,,,,,,,,,,,,,,CPME,CMP0547,25,3
+,grignard,C39,‘7699-45-8,2.0,ZnBr2,CMP0490,,,,,,,,,,,,,,,,,,,,,CPME,CMP0547,25,3
+,grignard,C40,,,,,,,,,,,,,,,,,,,,,,,,,CPME,CMP0547,25,3
+,grignard,C41,‘7699-45-8,2.0,ZnBr2,CMP0490,,,,,,,,,,,,,,,,,,,,,2-MeTHF,CMP0544,25,3
+,grignard,C42,,,,,,,,,,,,,,,,,,,,,,,,,2-MeTHF,CMP0544,25,3
+,grignard,C43,‘7790-86-5,1.5,CeCl3,CMP0499,,,,,,,,,,,,,,,,,,,,,2-MeTHF,CMP0544,25,3
+,grignard,C44,‘7553-56-2,0.05,I2,CMP0503,,,,,,,,,,,,,,,,,,,,,2-MeTHF,CMP0544,25,3
+,grignard,C45,‘7646-85-7,1.0,ZnCl2,CMP0429,,,,,,,,,,,,,,,,,,,,,hexane/THF (1:1),CMP0623,25,3
+,grignard,C46,,,,,,,,,,,,,,,,,,,,,,,,,hexane,CMP0572,25,3
+,grignard,C47,,,,,,,,,,,,,,,,,,,,,,,,,DEM/THF (1:1),CMP0624,25,3
+,grignard,C48,,,,,,,,,,,,,,,,,,,,,,,,,DME,CMP0551,25,3
+,allylic-substitution,C2,,,,,,,,,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C3,,,,,,,,,‘7646-69-7,1.8,NaH,CMP0405,,,,,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C4,,,,,,,,,‘534-17-8,3.0,Cs2CO3,CMP0333,,,,,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C5,,,,,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C6,,,,,,,,,‘4111-54-0,3.0,LDA,CMP0406,,,,,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C7,,,,,,,,,‘4039-32-1,3.0,LiHMDS,CMP0365,‘680-31-9,2.0,HMPA,CMP0326,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C8,,,,,,,,,‘865-47-4,3.0,KOtBu,CMP0347,,,,,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C9,,,,,,,,,‘497-19-8,3.0,Na2CO3,CMP0335,,,,,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C10,,,,,,,,,,,,,‘109-72-8,2.0,n-Butyllithium,CMP0412,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C11,,,,,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,‘7681-11-0,2.0,KI,CMP0352,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C12,,,,,,,,,‘121-44-8,3.0,TEA,CMP0269,,,,,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C13,,,,,,,,,‘584-08-7,3.0,K2CO3,CMP0334,‘7681-82-5,2.0,NaI,CMP0489,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C14,,,,,,,,,,,,,‘7681-11-0,2.0,KI,CMP0352,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C15,,,,,,,,,‘144-55-8,3.0,NaHCO3,CMP0337,,,,,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C16,,,,,,,,,‘1310-73-2,3.0,NaOH,CMP0341,,,,,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C17,,,,,,,,,‘108-18-9,3.0,iPr2NH,CMP0373,‘109-72-8,2.0,n-Butyllithium,CMP0412,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C18,,,,,,,,,‘1310-58-3,3.0,KOH,CMP0342,,,,,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C19,,,,,,,,,‘534-17-8,3.0,Cs2CO3,CMP0333,‘311-28-4,2.0,TBAI,CMP0291,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C20,,,,,,,,,‘1310-73-2,3.0,NaOH,CMP0341,‘1643-19-2,2.0,Bu4NBr,CMP0374,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C21,,,,,,,,,‘1070-89-9,3.0,NaHMDS,CMP0366,,,,,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C22,,,,,,,,,‘40949-94-8,3.0,KHMDS,CMP0367,,,,,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C23,,,,,,,,,‘584-08-7,3.0,K2CO3,CMP0334,‘311-28-4,2.0,TBAI,CMP0291,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C24,,,,,,,,,‘7646-69-7,1.8,NaH,CMP0405,‘109-72-8,2.0,n-Butyllithium,CMP0412,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C25,,,,,,,,,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,,,,,DCE,CMP0548,25,16
+,allylic-substitution,C26,,,,,,,,,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,,,,,DMSO,CMP0527,25,16
+,allylic-substitution,C27,,,,,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DCE,CMP0548,25,16
+,allylic-substitution,C28,,,,,,,,,,,,,‘7681-82-5,2.0,NaI,CMP0489,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C29,,,,,,,,,‘1310-73-2,3.0,NaOH,CMP0341,‘32503-27-8,2.0,Bu4NHSO4,CMP0432,,,,,,,,,DCE,CMP0548,25,16
+,allylic-substitution,C30,,,,,,,,,‘124-41-4,3.0,NaOMe,CMP0346,,,,,,,,,,,,,MeOH,CMP0559,25,16
+,allylic-substitution,C31,,,,,,,,,‘6674-22-2,3.0,DBU,CMP0372,,,,,,,,,,,,,benzene,CMP0545,25,16
+,allylic-substitution,C32,,,,,,,,,‘1310-73-2,3.0,NaOH,CMP0341,‘1643-19-2,2.0,Bu4NBr,CMP0374,,,,,,,,,DCE,CMP0548,25,16
+,allylic-substitution,C33,,,,,,,,,‘141-52-6,3.0,EtONa,CMP0407,,,,,,,,,,,,,EtOH,CMP0555,25,16
+,allylic-substitution,C34,,,,,,,,,‘1310-58-3,3.0,KOH,CMP0342,,,,,,,,,,,,,DMSO,CMP0527,25,16
+,allylic-substitution,C35,,,,,,,,,‘4111-54-0,3.0,LDA,CMP0406,‘7447-41-8,2.0,LiCl,CMP0350,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C36,,,,,,,,,‘1310-66-3,3.0,LiOH·H2O,CMP0408,,,,,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C37,,,,,,,,,‘4111-54-0,3.0,LDA,CMP0406,‘680-31-9,2.0,HMPA,CMP0326,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C38,,,,,,,,,‘35103-79-8,3.0,CsOH·H2O,CMP0409,‘1643-19-2,2.0,Bu4NBr,CMP0374,,,,,,,,,DCE,CMP0548,25,16
+,allylic-substitution,C39,,,,,,,,,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,,,,,benzene,CMP0545,25,16
+,allylic-substitution,C40,,,,,,,,,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,,,,,DME,CMP0551,25,16
+,allylic-substitution,C41,,,,,,,,,‘497-19-8,3.0,Na2CO3,CMP0335,,,,,,,,,,,,,EtOH,CMP0555,25,16
+,allylic-substitution,C42,,,,,,,,,,,,,‘7681-11-0,2.0,KI,CMP0352,,,,,,,,,DMSO,CMP0527,25,16
+,allylic-substitution,C43,,,,,,,,,‘865-47-4,3.0,KOtBu,CMP0347,,,,,,,,,,,,,DCE,CMP0548,25,16
+,allylic-substitution,C44,,,,,,,,,‘7646-69-7,1.8,NaH,CMP0405,‘311-28-4,2.0,TBAI,CMP0291,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C45,,,,,,,,,‘534-17-8,3.0,Cs2CO3,CMP0333,,,,,,,,,,,,,THF/DMF (5:1),CMP0645,25,16
+,allylic-substitution,C46,,,,,,,,,‘121-44-8,3.0,TEA,CMP0269,,,,,,,,,,,,,MeOH,CMP0559,25,16
+,allylic-substitution,C47,,,,,,,,,‘121-44-8,3.0,TEA,CMP0269,,,,,,,,,,,,,benzene,CMP0545,25,16
+,allylic-substitution,C48,,,,,,,,,‘7646-69-7,1.8,NaH,CMP0405,‘311-28-4,2.0,TBAI,CMP0291,,,,,,,,,DME,CMP0551,25,16
+,allylic-substitution,C49,,,,,,,,,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,,,,,EtOH,CMP0555,25,16
+,allylic-substitution,C50,,,,,,,,,‘584-08-7,3.0,K2CO3,CMP0334,‘7681-82-5,2.0,NaI,CMP0489,,,,,,,,,MeCN,CMP0558,25,16
+,allylic-substitution,C51,,,,,,,,,‘534-17-8,3.0,Cs2CO3,CMP0333,,,,,,,,,,,,,MeCN,CMP0558,25,16
+,allylic-substitution,C52,,,,,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,MeCN,CMP0558,25,16
+,allylic-substitution,C53,,,,,,,,,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,,,,,THF/DMF (5:1),CMP0645,25,16
+,allylic-substitution,C54,,,,,,,,,‘584-08-7,3.0,K2CO3,CMP0334,‘7681-11-0,2.0,KI,CMP0352,,,,,,,,,MeCN,CMP0558,25,16
+,allylic-substitution,C55,,,,,,,,,‘121-44-8,3.0,TEA,CMP0269,,,,,,,,,,,,,MeCN,CMP0558,25,16
+,allylic-substitution,C56,,,,,,,,,‘497-19-8,3.0,Na2CO3,CMP0335,,,,,,,,,,,,,MeCN,CMP0558,25,16
+,allylic-substitution,C57,,,,,,,,,‘4111-54-0,3.0,LDA,CMP0406,‘680-31-9,2.0,HMPA,CMP0326,,,,,,,,,THF,CMP0569,25,16
+,allylic-substitution,C58,,,,,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,‘7681-11-0,2.0,KI,CMP0352,,,,,,,,,MeCN,CMP0558,25,16
+,allylic-substitution,C59,,,,,,,,,‘121-44-8,3.0,TEA,CMP0269,‘7681-82-5,2.0,NaI,CMP0489,,,,,,,,,MeCN,CMP0558,25,16
+,allylic-substitution,C60,,,,,,,,,‘4111-54-0,3.0,LDA,CMP0406,‘7447-41-8,2.0,LiCl,CMP0350,,,,,,,,,THF,CMP0569,25,16
+,allylic-substitution,C61,,,,,,,,,‘144-55-8,3.0,NaHCO3,CMP0337,,,,,,,,,,,,,MeCN,CMP0558,25,16
+,allylic-substitution,C62,,,,,,,,,‘584-08-7,3.0,K2CO3,CMP0334,‘311-28-4,2.0,TBAI,CMP0291,,,,,,,,,MeCN,CMP0558,25,16
+,allylic-substitution,C63,,,,,,,,,‘4111-54-0,3.0,LDA,CMP0406,‘7226-23-5,2.0,DMPU,CMP0311,,,,,,,,,THF,CMP0569,25,16
+,allylic-substitution,C64,,,,,,,,,‘584-08-7,3.0,K2CO3,CMP0334,‘17455-13-9,2.0,18-crown-6-ether,CMP0420,,,,,,,,,MeCN,CMP0558,25,16
+,allylic-substitution,C65,,,,,,,,,‘7789-23-3,3.0,KF,CMP0351,,,,,,,,,,,,,MeCN,CMP0558,25,16
+,allylic-substitution,C66,,,,,,,,,‘865-47-4,3.0,KOtBu,CMP0347,,,,,,,,,,,,,DMSO,CMP0527,25,16
+,allylic-substitution,C67,,,,,,,,,‘4039-32-1,3.0,LiHMDS,CMP0365,‘7226-23-5,2.0,DMPU,CMP0311,,,,,,,,,THF,CMP0569,25,16
+,allylic-substitution,C68,,,,,,,,,‘144-55-8,3.0,NaHCO3,CMP0337,‘7681-11-0,2.0,KI,CMP0352,,,,,,,,,MeCN,CMP0558,25,16
+,allylic-substitution,C69,,,,,,,,,‘4039-32-1,3.0,LiHMDS,CMP0365,‘7447-41-8,2.0,LiCl,CMP0350,,,,,,,,,THF,CMP0569,25,16
+,allylic-substitution,C70,,,,,,,,,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,,,,,MeOH,CMP0559,25,16
+,allylic-substitution,C71,,,,,,,,,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,,,,,MeCN,CMP0558,25,16
+,allylic-substitution,C74,,,,,,,,,‘7646-69-7,1.8,NaH,CMP0405,‘311-28-4,2.0,TBAI,CMP0291,,,,,,,,,THF,CMP0569,25,16
+,allylic-substitution,C78,,,,,,,,,‘7646-69-7,1.8,NaH,CMP0405,,,,,,,,,,,,,THF,CMP0569,25,16
+,allylic-substitution,C79,,,,,,,,,‘4039-32-1,3.0,LiHMDS,CMP0365,,,,,,,,,,,,,THF,CMP0569,25,16
+,allylic-substitution,C80,,,,,,,,,‘4111-54-0,3.0,LDA,CMP0406,,,,,,,,,,,,,THF,CMP0569,25,16
+,allylic-substitution,C81,,,,,,,,,‘1070-89-9,3.0,NaHMDS,CMP0366,,,,,,,,,,,,,THF,CMP0569,25,16
+,allylic-substitution,C82,,,,,,,,,‘121-44-8,3.0,TEA,CMP0269,,,,,,,,,,,,,THF,CMP0569,25,16
+,allylic-substitution,C83,,,,,,,,,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,,,,,THF,CMP0569,25,16
+,allylic-substitution,C84,,,,,,,,,‘584-08-7,3.0,K2CO3,CMP0334,‘7681-11-0,2.0,KI,CMP0352,,,,,,,,,THF,CMP0569,25,16
+,allylic-substitution,C85,,,,,,,,,‘7646-69-7,1.8,NaH,CMP0405,‘680-31-9,2.0,HMPA,CMP0326,,,,,,,,,THF,CMP0569,25,16
+,allylic-substitution,C86,,,,,,,,,,,,,‘109-72-8,2.0,n-Butyllithium,CMP0412,,,,,,,,,THF,CMP0569,25,16
+,allylic-substitution,C87,,,,,,,,,‘40949-94-8,3.0,KHMDS,CMP0367,,,,,,,,,,,,,THF,CMP0569,25,16
+,allylic-substitution,C88,,,,,,,,,‘497-19-8,3.0,Na2CO3,CMP0335,,,,,,,,,,,,,THF,CMP0569,25,16
+,allylic-substitution,C89,,,,,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,THF,CMP0569,25,16
+,allylic-substitution,C90,,,,,,,,,‘534-17-8,3.0,Cs2CO3,CMP0333,,,,,,,,,,,,,THF,CMP0569,25,16
+,allylic-substitution,C91,,,,,,,,,‘865-48-5,3.0,NaOtBu,CMP0348,,,,,,,,,,,,,THF,CMP0569,25,16
+,allylic-substitution,C92,,,,,,,,,‘584-08-7,3.0,K2CO3,CMP0334,‘7681-11-0,2.0,KI,CMP0352,,,,,,,,,DMF,CMP0552,25,16
+,allylic-substitution,C93,,,,,,,,,‘584-08-7,3.0,K2CO3,CMP0334,‘603-35-0,0.1,PPh3,CMP0200,,,,,,,,,THF,CMP0569,25,16
+,allylic-substitution,C94,,,,,,,,,‘1310-73-2,3.0,NaOH,CMP0341,,,,,,,,,,,,,THF,CMP0569,25,16
+,allylic-substitution,C95,,,,,,,,,‘7646-69-7,1.8,NaH,CMP0405,‘7681-11-0,2.0,KI,CMP0352,,,,,,,,,THF,CMP0569,25,16
+,allylic-substitution,C96,,,,,,,,,‘865-47-4,3.0,KOtBu,CMP0347,,,,,,,,,,,,,THF,CMP0569,25,16
+,pd-carbonylation,C2,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘131274-22-1,0.12,P(tBu)3.HBF4,CMP0195,‘6674-22-2,2.0,DBU,CMP0372,,,,,,,,,o-xylene,CMP0563,100,16
+,pd-carbonylation,C3,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.06,XantPhos,CMP0180,‘121-44-8,2.0,TEA,CMP0269,,,,,‘538-75-0,2.0,DCC,CMP0410,DMF,CMP0552,100,16
+,pd-carbonylation,C4,‘14220-64-5,0.05,PdCl2(PhCN)2,CMP0096,,,,,‘161265-03-8,0.05,XantPhos,CMP0180,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,DMF,CMP0552,100,16
+,pd-carbonylation,C6,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,,,,,‘12150-46-8,0.1,dppf,CMP0211,‘121-44-8,2.0,TEA,CMP0269,,,,,‘538-75-0,2.0,DCC,CMP0410,DMF,CMP0552,100,16
+,pd-carbonylation,C7,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.06,XantPhos,CMP0180,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,DMF,CMP0552,100,16
+,pd-carbonylation,C8,‘3375-31-3,0.06,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.06,XantPhos,CMP0180,‘7087-68-5,2.0,DIPEA,CMP0369,,,,,‘538-75-0,2.0,DCC,CMP0410,DMF,CMP0552,100,16
+,pd-carbonylation,C9,‘14220-64-5,0.05,PdCl2(PhCN)2,CMP0096,,,,,‘101-02-0,0.05,P(OPh)3,CMP0228,‘7087-68-5,2.0,DIPEA,CMP0369,,,,,,,,,DMF,CMP0552,100,16
+,pd-carbonylation,C10,‘3375-31-3,0.1,Pd(OAc)2,CMP0073,,,,,‘1663-45-2,0.15,dppe,CMP0233,‘7087-68-5,2.0,DIPEA,CMP0369,,,,,,,,,DMF,CMP0552,100,16
+,pd-carbonylation,C11,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.06,XantPhos,CMP0180,,,,,,,,,‘25952-53-8,2.0,EDC-HCl,CMP0455,DMF,CMP0552,100,16
+,pd-carbonylation,C12,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘131274-22-1,0.12,P(tBu)3.HBF4,CMP0195,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,DMF,CMP0552,100,16
+,pd-carbonylation,C13,‘7647-10-1,0.02,PdCl2,CMP0087,‘15243-33-1,0.03,Ru3(CO)12,CMP0134,,,,,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,DMF,CMP0552,100,16
+,pd-carbonylation,C18,‘14220-64-5,0.05,PdCl2(PhCN)2,CMP0096,,,,,‘6737-42-4,0.05,dppp,CMP0230,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,DMF,CMP0552,100,16
+,pd-carbonylation,C19,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.06,XantPhos,CMP0180,‘6674-22-2,2.0,DBU,CMP0372,,,,,,,,,DMF,CMP0552,100,16
+,pd-carbonylation,C20,‘7647-10-1,0.02,PdCl2,CMP0087,,,,,‘603-35-0,0.03,PPh3,CMP0200,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,DMF,CMP0552,100,16
+,pd-carbonylation,C21,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘603-35-0,0.06,PPh3,CMP0200,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,DMF,CMP0552,100,16
+,pd-carbonylation,C22,‘32005-36-0,0.02,Pd(dba)2,CMP0069,,,,,‘166330-10-5,0.025,DPEPHOS,CMP0237,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,DMSO,CMP0527,100,16
+,pd-carbonylation,C23,‘14220-64-5,0.05,PdCl2(PhCN)2,CMP0096,,,,,‘98327-87-8,0.05,rac-BINAP,CMP0197,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,DMF,CMP0552,100,16
+,pd-carbonylation,C24,‘14220-64-5,0.05,PdCl2(PhCN)2,CMP0096,,,,,‘161265-03-8,0.05,XantPhos,CMP0180,‘7087-68-5,2.0,DIPEA,CMP0369,,,,,,,,,DMF,CMP0552,100,16
+,pd-carbonylation,C26,‘14220-64-5,0.05,PdCl2(PhCN)2,CMP0096,,,,,‘161265-03-8,0.05,XantPhos,CMP0180,,,,,,,,,‘25952-53-8,2.0,EDC-HCl,CMP0455,DMF,CMP0552,100,16
+,pd-carbonylation,C28,‘14221-01-3,0.05,Pd(PPh3)4,CMP0075,,,,,,,,,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,DMF,CMP0552,100,16
+,pd-carbonylation,C29,‘14221-01-3,0.05,Pd(PPh3)4,CMP0075,,,,,,,,,‘6674-22-2,2.0,DBU,CMP0372,,,,,,,,,DMF,CMP0552,100,16
+,pd-carbonylation,C30,‘14221-01-3,0.05,Pd(PPh3)4,CMP0075,,,,,,,,,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,DMF,CMP0552,100,16
+,pd-carbonylation,C31,‘7647-10-1,0.02,PdCl2,CMP0087,‘15243-33-1,0.03,Ru3(CO)12,CMP0134,,,,,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,DMF,CMP0552,100,16
+,pd-carbonylation,C32,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,,,,,‘131274-22-1,0.2,P(tBu)3.HBF4,CMP0195,‘6674-22-2,2.0,DBU,CMP0372,,,,,‘108-95-2,1.0,phenol,CMP0533,DMF,CMP0552,100,16
+,pd-carbonylation,C34,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘131274-22-1,0.12,P(tBu)3.HBF4,CMP0195,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,DMF,CMP0552,100,16
+,pd-carbonylation,C35,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘131274-22-1,0.12,P(tBu)3.HBF4,CMP0195,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,DMF,CMP0552,100,16
+,pd-carbonylation,C36,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘131274-22-1,0.12,P(tBu)3.HBF4,CMP0195,‘110-18-9,2.0,TMEDA,CMP0221,,,,,,,,,DMF,CMP0552,100,16
+,pd-carbonylation,C37,‘14220-64-5,0.05,PdCl2(PhCN)2,CMP0096,,,,,‘161265-03-8,0.05,XantPhos,CMP0180,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,DMF,CMP0552,100,16
+,pd-carbonylation,C38,‘14220-64-5,0.05,PdCl2(PhCN)2,CMP0096,,,,,‘161265-03-8,0.05,XantPhos,CMP0180,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,DMF,CMP0552,100,16
+,pd-carbonylation,C39,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,,,,,‘12150-46-8,0.1,dppf,CMP0211,‘6674-22-2,2.0,DBU,CMP0372,,,,,‘538-75-0,2.0,DCC,CMP0410,DMF,CMP0552,100,16
+,pd-carbonylation,C41,‘14221-01-3,0.05,Pd(PPh3)4,CMP0075,,,,,‘161265-03-8,0.02,XantPhos,CMP0180,,,,,,,,,‘1538-75-6,1.5,Piv2O,CMP0534,benzene,CMP0545,100,16
+,pd-carbonylation,C42,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘131274-22-1,0.12,P(tBu)3.HBF4,CMP0195,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,MeCN,CMP0558,100,16
+,pd-carbonylation,C43,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.06,XantPhos,CMP0180,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,MeCN,CMP0558,100,16
+,pd-carbonylation,C44,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.06,XantPhos,CMP0180,‘6674-22-2,2.0,DBU,CMP0372,,,,,,,,,MeCN,CMP0558,100,16
+,pd-carbonylation,C45,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘15243-33-1,0.07,Ru3(CO)12,CMP0134,‘321921-71-5,0.2,CataCXiumA,CMP0166,‘6674-22-2,2.0,DBU,CMP0372,,,,,,,,,MeCN,CMP0558,100,16
+,pd-carbonylation,C46,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,,,,,‘131274-22-1,0.2,P(tBu)3.HBF4,CMP0195,‘121-44-8,2.0,TEA,CMP0269,,,,,‘108-95-2,1.0,phenol,CMP0533,MeCN,CMP0558,100,16
+,pd-carbonylation,C47,‘1445085-97-1,0.04,XantPhos Pd G3,CMP0114,,,,,,,,,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,MeCN,CMP0558,100,16
+,pd-carbonylation,C48,‘1445085-55-1,0.1,XPhos Pd G3,CMP0117,,,,,,,,,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,MeCN,CMP0558,100,16
+,pd-carbonylation,C49,‘14221-01-3,0.05,Pd(PPh3)4,CMP0075,,,,,‘161265-03-8,0.02,XantPhos,CMP0180,,,,,,,,,‘123-75-1,1.5,Pyrrolidine,CMP0535,benzene,CMP0545,100,16
+,pd-carbonylation,C50,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.06,XantPhos,CMP0180,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,o-xylene,CMP0563,100,16
+,pd-carbonylation,C51,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.06,XantPhos,CMP0180,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,MeCN,CMP0558,100,16
+,pd-carbonylation,C52,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.12,XantPhos,CMP0180,,,,,,,,,,,,,MeCN,CMP0558,100,16
+,pd-carbonylation,C53,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘15243-33-1,0.07,Ru3(CO)12,CMP0134,‘321921-71-5,0.2,CataCXiumA,CMP0166,,,,,,,,,,,,,MeCN,CMP0558,100,16
+,pd-carbonylation,C54,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.06,XantPhos,CMP0180,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,DMSO,CMP0527,100,16
+,pd-carbonylation,C55,‘1445085-97-1,0.04,XantPhos Pd G3,CMP0114,,,,,,,,,‘6674-22-2,2.0,DBU,CMP0372,,,,,,,,,MeCN,CMP0558,100,16
+,pd-carbonylation,C56,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,,,,,‘131274-22-1,0.2,P(tBu)3.HBF4,CMP0195,‘6674-22-2,2.0,DBU,CMP0372,,,,,‘108-95-2,1.0,phenol,CMP0533,MeCN,CMP0558,100,16
+,pd-carbonylation,C57,‘14220-64-5,0.05,PdCl2(PhCN)2,CMP0096,,,,,‘161265-03-8,0.05,XantPhos,CMP0180,‘6674-22-2,2.0,DBU,CMP0372,,,,,,,,,p-xylene,CMP0565,100,16
+,pd-carbonylation,C58,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.06,XantPhos,CMP0180,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,p-xylene,CMP0565,100,16
+,pd-carbonylation,C59,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.06,XantPhos,CMP0180,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,2-MeTHF,CMP0544,100,16
+,pd-carbonylation,C60,‘51364-51-3,0.05,Pd2(dba)3,CMP0080,,,,,,,,,‘121-44-8,6.0,TEA,CMP0269,‘534-17-8,3.0,Cs2CO3,CMP0333,,,,,p-xylene,CMP0565,100,16
+,pd-carbonylation,C62,‘51364-51-3,0.05,Pd2(dba)3,CMP0080,‘917511-90-1,0.1,PdCl2(dcypf),CMP0088,,,,,‘121-44-8,6.0,TEA,CMP0269,‘534-17-8,3.0,Cs2CO3,CMP0333,,,,,p-xylene,CMP0565,100,16
+,pd-carbonylation,C63,‘51364-51-3,0.05,Pd2(dba)3,CMP0080,,,,,‘131274-22-1,0.1,P(tBu)3.HBF4,CMP0195,‘121-44-8,6.0,TEA,CMP0269,‘534-17-8,3.0,Cs2CO3,CMP0333,,,,,p-xylene,CMP0565,100,16
+,pd-carbonylation,C64,‘51364-51-3,0.05,Pd2(dba)3,CMP0080,,,,,‘6163-58-2,0.1,P(o-tolyl)3,CMP0216,‘121-44-8,6.0,TEA,CMP0269,‘534-17-8,3.0,Cs2CO3,CMP0333,,,,,p-xylene,CMP0565,100,16
+,pd-carbonylation,C65,‘51364-51-3,0.05,Pd2(dba)3,CMP0080,,,,,‘5807-14-7,0.1,TBD,CMP0330,‘6674-22-2,2.0,DBU,CMP0372,,,,,,,,,p-xylene,CMP0565,100,16
+,pd-carbonylation,C66,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.06,XantPhos,CMP0180,‘6674-22-2,2.0,DBU,CMP0372,,,,,,,,,p-xylene,CMP0565,100,16
+,pd-carbonylation,C67,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.06,XantPhos,CMP0180,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,p-xylene,CMP0565,100,16
+,pd-carbonylation,C68,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.06,XantPhos,CMP0180,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,mesitylene,CMP0577,100,16
+,pd-carbonylation,C69,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.06,XantPhos,CMP0180,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,DMA,CMP0550,100,16
+,pd-carbonylation,C70,‘1375325-77-1,0.03,XantPhos Pd G2,CMP0113,,,,,,,,,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,p-xylene,CMP0565,100,16
+,pd-carbonylation,C71,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘15243-33-1,0.07,Ru3(CO)12,CMP0134,‘321921-71-5,0.2,CataCXiumA,CMP0166,‘6674-22-2,2.0,DBU,CMP0372,,,,,,,,,p-xylene,CMP0565,100,16
+,pd-carbonylation,C72,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.06,XantPhos,CMP0180,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,p-xylene,CMP0565,100,16
+,pd-carbonylation,C73,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.06,XantPhos,CMP0180,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,THF,CMP0569,100,16
+,pd-carbonylation,C74,‘51364-51-3,0.05,Pd2(dba)3,CMP0080,,,,,‘161265-03-8,0.1,XantPhos,CMP0180,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,THF,CMP0569,100,16
+,pd-carbonylation,C75,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.03,XantPhos,CMP0180,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,THF,CMP0569,100,16
+,pd-carbonylation,C76,‘72287-26-4,0.02,PdCl2(dppf),CMP0090,,,,,,,,,‘127-09-3,3.0,NaOAc,CMP0355,,,,,,,,,THF,CMP0569,100,16
+,pd-carbonylation,C77,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.06,XantPhos,CMP0180,‘6674-22-2,2.0,DBU,CMP0372,,,,,,,,,THF,CMP0569,100,16
+,pd-carbonylation,C78,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.06,XantPhos,CMP0180,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,THF,CMP0569,100,16
+,pd-carbonylation,C79,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘131274-22-1,0.12,P(tBu)3.HBF4,CMP0195,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,THF,CMP0569,100,16
+,pd-carbonylation,C80,‘72287-26-4,0.02,PdCl2(dppf),CMP0090,,,,,,,,,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,THF,CMP0569,100,16
+,pd-carbonylation,C81,‘3375-31-3,0.1,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.2,XantPhos,CMP0180,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,NMP,CMP0316,100,16
+,pd-carbonylation,C82,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘15243-33-1,0.07,Ru3(CO)12,CMP0134,‘321921-71-5,0.2,CataCXiumA,CMP0166,‘7778-53-2,1.2,K3PO4,CMP0338,,,,,,,,,NMP,CMP0316,100,16
+,pd-carbonylation,C83,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,,,,,‘131274-22-1,0.2,P(tBu)3.HBF4,CMP0195,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,2-MeTHF,CMP0544,100,16
+,pd-carbonylation,C84,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘6737-42-4,0.12,dppp,CMP0230,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,mesitylene,CMP0577,100,16
+,pd-carbonylation,C85,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘15243-33-1,0.07,Ru3(CO)12,CMP0134,‘321921-71-5,0.2,CataCXiumA,CMP0166,‘6674-22-2,2.0,DBU,CMP0372,,,,,,,,,DMA,CMP0550,100,16
+,pd-carbonylation,C86,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘15243-33-1,0.07,Ru3(CO)12,CMP0134,‘321921-71-5,0.2,CataCXiumA,CMP0166,‘6674-22-2,2.0,DBU,CMP0372,,,,,,,,,NMP,CMP0316,100,16
+,pd-carbonylation,C87,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘15243-33-1,0.07,Ru3(CO)12,CMP0134,‘321921-71-5,0.2,CataCXiumA,CMP0166,‘6674-22-2,2.0,DBU,CMP0372,,,,,,,,,diglyme,CMP0549,100,16
+,pd-carbonylation,C88,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.06,XantPhos,CMP0180,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,benzotrifluoride,CMP0546,100,16
+,pd-carbonylation,C90,‘13965-03-2,0.06,PdCl2(PPh3)2,CMP0097,,,,,,,,,‘124-41-4,1.5,NaOMe,CMP0346,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,pd-carbonylation,C91,‘3375-31-3,0.12,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.25,XantPhos,CMP0180,‘127-09-3,3.0,NaOAc,CMP0355,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,pd-carbonylation,C92,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.06,XantPhos,CMP0180,‘127-09-3,3.0,NaOAc,CMP0355,,,,,‘538-75-0,2.0,DCC,CMP0410,"1,4-dioxane",CMP0543,100,16
+,pd-carbonylation,C93,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘15243-33-1,0.07,Ru3(CO)12,CMP0134,‘321921-71-5,0.2,CataCXiumA,CMP0166,‘6674-22-2,2.0,DBU,CMP0372,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,pd-carbonylation,C94,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.06,XantPhos,CMP0180,‘121-44-8,2.0,TEA,CMP0269,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,pd-carbonylation,C95,‘14220-64-5,0.05,PdCl2(PhCN)2,CMP0096,,,,,‘161265-03-8,0.05,XantPhos,CMP0180,‘6674-22-2,2.0,DBU,CMP0372,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,pd-carbonylation,C96,‘3375-31-3,0.03,Pd(OAc)2,CMP0073,,,,,‘161265-03-8,0.06,XantPhos,CMP0180,‘6674-22-2,2.0,DBU,CMP0372,,,,,,,,,benzotrifluoride,CMP0546,100,16
+,minisci,C2,‘7761-88-8,0.2,AgNO3,CMP0125,‘7727-54-0,3.0,APS,CMP0522,‘76-05-1,1.0,TFA,CMP0363,,,,,,,,,,,,,PhCl/H2O (1:1),CMP0639,60,4
+,minisci,C3,‘7761-88-8,0.2,AgNO3,CMP0125,‘7727-54-0,3.0,APS,CMP0522,‘76-05-1,1.0,TFA,CMP0363,,,,,,,,,,,,,MeCN/H2O (1:1),CMP0595,60,4
+,minisci,C4,‘7761-88-8,0.2,AgNO3,CMP0125,‘7727-54-0,3.0,APS,CMP0522,,,,,,,,,,,,,,,,,MeCN/H2O (1:1),CMP0595,60,4
+,minisci,C5,‘7761-88-8,0.2,AgNO3,CMP0125,‘7727-21-1,3.0,K2S2O8,CMP0523,‘6046-93-1,0.1,Cu(OAc)2·H2O,CMP0402,,,,,,,,,,,,,MeCN/H2O (1:1),CMP0595,60,4
+,minisci,C6,‘7761-88-8,0.2,AgNO3,CMP0125,‘7727-21-1,3.0,K2S2O8,CMP0523,,,,,,,,,,,,,,,,,MeCN/H2O (1:1),CMP0595,60,4
+,minisci,C7,‘7761-88-8,0.2,AgNO3,CMP0125,‘7775-27-1,3.0,Na2S2O8,CMP0524,‘7664-93-9,0.1,H2SO4,CMP0137,,,,,,,,,,,,,MeCN/H2O (1:1),CMP0595,60,4
+,minisci,C8,‘7761-88-8,0.2,AgNO3,CMP0125,,,,,‘7664-93-9,0.1,H2SO4,CMP0137,,,,,,,,,,,,,MeCN/H2O (1:1),CMP0595,60,4
+,minisci,C9,‘7761-88-8,0.2,AgNO3,CMP0125,‘7727-21-1,3.0,K2S2O8,CMP0523,‘7664-93-9,0.1,H2SO4,CMP0137,,,,,,,,,,,,,MeCN/H2O (1:1),CMP0595,60,4
+,minisci,C11,‘7761-88-8,0.2,AgNO3,CMP0125,‘7727-54-0,3.0,APS,CMP0522,‘7664-93-9,0.1,H2SO4,CMP0137,,,,,,,,,,,,,MeCN/H2O (1:1),CMP0595,60,4
+,minisci,C12,‘7761-88-8,0.2,AgNO3,CMP0125,‘7727-54-0,3.0,APS,CMP0522,,,,,,,,,,,,,,,,,DCE/H2O (1:1),CMP0640,60,4
+,minisci,C13,‘7761-88-8,0.2,AgNO3,CMP0125,‘7775-27-1,3.0,Na2S2O8,CMP0524,‘7664-93-9,0.1,H2SO4,CMP0137,,,,,,,,,,,,,DCE/H2O (1:1),CMP0640,60,4
+,minisci,C14,‘7761-88-8,0.2,AgNO3,CMP0125,‘140681-55-6,3.0,Selectfluor,CMP0525,‘76-05-1,1.0,TFA,CMP0363,,,,,,,,,,,,,DCE/H2O (1:1),CMP0640,60,4
+,minisci,C15,‘7761-88-8,0.2,AgNO3,CMP0125,‘7727-54-0,3.0,APS,CMP0522,‘76-05-1,1.0,TFA,CMP0363,,,,,,,,,,,,,DCE/H2O (1:1),CMP0640,60,4
+,minisci,C16,‘7761-88-8,0.2,AgNO3,CMP0125,‘140681-55-6,3.0,Selectfluor,CMP0525,,,,,,,,,,,,,,,,,DCE/H2O (1:1),CMP0640,60,4
+,minisci,C17,‘563-63-3,0.05,AgOAc,CMP0126,‘7727-21-1,3.0,K2S2O8,CMP0523,‘76-05-1,1.0,TFA,CMP0363,,,,,,,,,,,,,DCE/H2O (1:1),CMP0640,60,4
+,minisci,C18,‘534-16-7,0.1,Ag2CO3,CMP0127,‘140681-55-6,3.0,Selectfluor,CMP0525,,,,,,,,,,,,,,,,,DCE/H2O (1:1),CMP0640,60,4
+,minisci,C19,‘2923-28-6,0.1,AgOTf,CMP0128,‘140681-55-6,3.0,Selectfluor,CMP0525,,,,,,,,,,,,,,,,,DCE/H2O (1:1),CMP0640,60,4
+,minisci,C20,‘534-16-7,0.1,Ag2CO3,CMP0127,‘7775-27-1,3.0,Na2S2O8,CMP0524,,,,,,,,,,,,,,,,,DCE/H2O (1:1),CMP0640,60,4
+,minisci,C21,‘534-16-7,0.1,Ag2CO3,CMP0127,‘7727-21-1,3.0,K2S2O8,CMP0523,,,,,,,,,,,,,,,,,DCE/H2O (1:1),CMP0640,60,4
+,minisci,C22,‘7782-63-0,0.08,FeSO4 · 7H2O,CMP0129,‘7727-54-0,3.0,APS,CMP0522,‘64-18-6,1.0,HCOOH,CMP0403,‘67-68-5,3.0,DMSO,CMP0527,,,,,,,,,DCE/H2O (1:1),CMP0640,60,4
+,minisci,C26,‘7761-88-8,0.2,AgNO3,CMP0125,‘7727-21-1,3.0,K2S2O8,CMP0523,‘7664-93-9,0.1,H2SO4,CMP0137,,,,,,,,,,,,,DCE/H2O (1:1),CMP0640,60,4
+,minisci,C27,‘7761-88-8,0.2,AgNO3,CMP0125,‘7727-21-1,3.0,K2S2O8,CMP0523,,,,,,,,,,,,,,,,,DCE/H2O (1:1),CMP0640,60,4
+,minisci,C28,‘7761-88-8,0.2,AgNO3,CMP0125,‘7727-54-0,3.0,APS,CMP0522,‘76-05-1,1.0,TFA,CMP0363,,,,,,,,,,,,,THF/H2O (1:1),CMP0641,60,4
+,minisci,C29,‘7761-88-8,0.2,AgNO3,CMP0125,‘7727-54-0,3.0,APS,CMP0522,‘76-05-1,1.0,TFA,CMP0363,,,,,,,,,,,,,DMSO/H2O (1:1),CMP0590,60,4
+,minisci,C31,‘7761-88-8,0.2,AgNO3,CMP0125,‘7727-54-0,3.0,APS,CMP0522,,,,,,,,,,,,,,,,,H2O,CMP0556,60,4
+,minisci,C34,‘7761-88-8,0.2,AgNO3,CMP0125,‘140681-55-6,3.0,Selectfluor,CMP0525,‘76-05-1,1.0,TFA,CMP0363,,,,,,,,,,,,,DCE/MeCN (1:1),CMP0642,60,4
+,minisci,C35,‘7761-88-8,0.2,AgNO3,CMP0125,‘7727-21-1,3.0,K2S2O8,CMP0523,‘76-05-1,1.0,TFA,CMP0363,,,,,,,,,,,,,DCE/MeCN (1:1),CMP0642,60,4
+,minisci,C36,‘7761-88-8,0.2,AgNO3,CMP0125,‘7727-21-1,3.0,K2S2O8,CMP0523,,,,,‘7758-98-7,0.1,CuSO4,CMP0041,,,,,,,,,MeCN,CMP0558,60,4
+,minisci,C41,‘10294-26-5,0.05,Ag2SO4,CMP0131,‘7727-21-1,3.0,K2S2O8,CMP0523,‘76-05-1,1.0,TFA,CMP0363,,,,,,,,,,,,,MeCN,CMP0558,60,4
+,acylation,C2,‘164298-23-1,1.5,TFFH,CMP0474,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C3,‘164298-25-3,1.5,BTFFH,CMP0444,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C4,‘3638-04-8,1.5,DCMT,CMP0441,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C5,‘1075198-30-9,1.5,COMU,CMP0449,,,,,‘108-48-5,3.0,"2,6-lutidine",CMP0157,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C6,‘125700-67-6,1.5,TBTU,CMP0156,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C7,‘1082951-62-9,1.5,HDMC,CMP0461,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C8,‘330641-16-2,1.5,TCTU,CMP0473,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+C75同C9重复,acylation,C9,‘125700-69-8,1.5,TDBTU,CMP0464,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C10,‘125700-73-4,1.5,TNTU,CMP0475,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C11,‘125700-71-2,1.5,TPTU,CMP0477,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C12,‘105832-38-0,1.5,TSTU,CMP0478,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C13,‘25952-53-8,1.5,EDC-HCl,CMP0455,‘2592-95-2,1.5,HOBt,CMP0479,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C14,‘56602-33-6,1.5,BOP,CMP0442,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C15,‘133894-48-1,1.5,PyClOP,CMP0470,‘2592-95-2,1.5,HOBt,CMP0479,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C16,‘133894-48-1,1.5,PyClOP,CMP0470,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C17,‘2942-58-7,1.5,(EtO)2P(O)CN,CMP0452,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C18,‘138687-69-1,1.5,FDPP,CMP0457,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C19,‘148893-10-1,1.5,HATU,CMP0139,‘39968-33-7,3.0,HOAT,CMP0480,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C20,‘148893-10-1,1.5,HATU,CMP0139,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C21,‘94790-37-1,1.5,HBTU,CMP0459,‘2592-95-2,1.5,HOBt,CMP0479,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C22,‘94790-37-1,1.5,HBTU,CMP0459,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C23,‘330645-87-9,1.5,HCTU,CMP0460,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C24,‘136849-72-4,1.5,TOTU,CMP0476,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C25,‘25952-53-8,1.5,EDC-HCl,CMP0455,‘136-32-3,1.5,"2,4,5-TRICHLOROPHENOL SODIUM SALT",CMP0481,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C26,‘25952-53-8,1.5,EDC-HCl,CMP0455,‘771-61-9,1.5,pentafluorophenol,CMP0482,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C27,‘25952-53-8,1.5,EDC-HCl,CMP0455,‘6066-82-6,1.5,NHS,CMP0483,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C28,‘25952-53-8,1.5,EDC-HCl,CMP0455,‘524-38-9,1.5,NHPI,CMP0484,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C29,‘538-75-0,1.5,DCC,CMP0410,‘136-32-3,1.5,"2,4,5-TRICHLOROPHENOL SODIUM SALT",CMP0481,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C30,‘538-75-0,1.5,DCC,CMP0410,‘771-61-9,1.5,pentafluorophenol,CMP0482,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C31,‘538-75-0,1.5,DCC,CMP0410,‘6066-82-6,1.5,NHS,CMP0483,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C32,‘538-75-0,1.5,DCC,CMP0410,‘524-38-9,1.5,NHPI,CMP0484,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C33,‘156311-83-0,1.5,PyAOP,CMP0465,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C34,‘156311-83-0,1.5,PyAOP,CMP0465,‘39968-33-7,1.5,HOAT,CMP0480,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C35,‘128625-52-5,1.5,PyBOP,CMP0466,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C36,‘128625-52-5,1.5,PyBOP,CMP0466,‘2592-95-2,1.5,HOBt,CMP0479,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C37,‘153433-21-7,1.5,PyOxim,CMP0471,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C38,‘132705-51-2,1.5,PyBrOP,CMP0467,‘2592-95-2,1.5,HOBt,CMP0479,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C39,‘132705-51-2,1.5,PyBrOP,CMP0467,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C40,‘893413-42-8,1.5,PyClocK,CMP0469,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C41,‘16357-59-8,1.5,EEDQ,CMP0456,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C42,‘165534-43-0,1.5,DEPBT,CMP0450,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C43,‘1499-21-4,1.5,DPP-Cl,CMP0453,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C44,‘3945-69-5,1.5,DMTMM,CMP0454,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C45,‘135540-11-3,1.5,PyCIU,CMP0468,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C46,‘68641-49-6,1.5,BOPCl,CMP0443,,,,,‘1122-58-3,1.5,DMAP,CMP0136,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C47,‘25952-53-8,1.5,EDC-HCl,CMP0455,,,,,‘109-02-4,3.0,NMM,CMP0398,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C48,‘164298-23-1,1.5,TFFH,CMP0474,,,,,‘109-02-4,3.0,NMM,CMP0398,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C49,‘164298-25-3,1.5,BTFFH,CMP0444,,,,,‘109-02-4,3.0,NMM,CMP0398,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C50,‘3638-04-8,1.5,DCMT,CMP0441,,,,,‘109-02-4,3.0,NMM,CMP0398,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C51,‘25952-53-8,1.5,EDC-HCl,CMP0455,‘136-32-3,1.5,"2,4,5-TRICHLOROPHENOL SODIUM SALT",CMP0481,‘109-02-4,3.0,NMM,CMP0398,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C52,‘25952-53-8,1.5,EDC-HCl,CMP0455,‘771-61-9,1.5,pentafluorophenol,CMP0482,‘109-02-4,3.0,NMM,CMP0398,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C53,‘25952-53-8,1.5,EDC-HCl,CMP0455,‘6066-82-6,1.5,NHS,CMP0483,‘109-02-4,3.0,NMM,CMP0398,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C54,‘25952-53-8,1.5,EDC-HCl,CMP0455,‘524-38-9,1.5,NHPI,CMP0484,‘109-02-4,3.0,NMM,CMP0398,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C55,‘538-75-0,1.5,DCC,CMP0410,‘136-32-3,1.5,"2,4,5-TRICHLOROPHENOL SODIUM SALT",CMP0481,‘109-02-4,3.0,NMM,CMP0398,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C56,‘538-75-0,1.5,DCC,CMP0410,‘771-61-9,1.5,pentafluorophenol,CMP0482,‘109-02-4,3.0,NMM,CMP0398,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C57,‘538-75-0,1.5,DCC,CMP0410,‘6066-82-6,1.5,NHS,CMP0483,‘109-02-4,3.0,NMM,CMP0398,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C58,‘538-75-0,1.5,DCC,CMP0410,‘524-38-9,1.5,NHPI,CMP0484,‘109-02-4,3.0,NMM,CMP0398,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C59,‘2145668-85-3,1.5,CITU,CMP0448,,,,,‘109-02-4,3.0,NMM,CMP0398,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C60,‘25952-53-8,1.5,EDC-HCl,CMP0455,‘2592-95-2,1.5,HOBt,CMP0479,‘109-02-4,3.0,NMM,CMP0398,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C61,‘156311-83-0,1.5,PyAOP,CMP0465,,,,,‘109-02-4,3.0,NMM,CMP0398,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C62,‘164298-23-1,1.5,TFFH,CMP0474,‘1122-58-3,0.1,DMAP,CMP0136,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C63,‘530-62-1,1.1,CDI,CMP0445,,,,,‘6674-22-2,0.75,DBU,CMP0372,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C64,‘3140-73-6,1.2,CDMT,CMP0446,,,,,‘109-02-4,3.0,NMM,CMP0398,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C65,‘101385-69-7,1.5,CIP,CMP0447,‘39968-33-7,1.0,HOAT,CMP0480,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C66,‘693-13-0,1.5,DIC,CMP0451,‘5417-13-0,1.1,oxyma-B,CMP0485,,,,,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C67,‘25952-53-8,1.5,EDC-HCl,CMP0455,‘771-61-9,1.5,pentafluorophenol,CMP0482,‘121-44-8,3.0,TEA,CMP0269,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C68,‘25952-53-8,1.5,EDC-HCl,CMP0455,‘6066-82-6,1.5,NHS,CMP0483,‘121-44-8,3.0,TEA,CMP0269,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C69,‘25952-53-8,1.5,EDC-HCl,CMP0455,‘524-38-9,1.5,NHPI,CMP0484,‘121-44-8,3.0,TEA,CMP0269,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C70,‘538-75-0,1.5,DCC,CMP0410,‘6066-82-6,1.5,NHS,CMP0483,‘121-44-8,3.0,TEA,CMP0269,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C71,‘538-75-0,1.5,DCC,CMP0410,‘771-61-9,1.5,pentafluorophenol,CMP0482,‘121-44-8,3.0,TEA,CMP0269,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C72,‘543-27-1,1.0,IBCF,CMP0462,,,,,‘109-02-4,3.0,NMM,CMP0398,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C73,‘538-75-0,1.5,DCC,CMP0410,‘524-38-9,1.5,NHPI,CMP0484,‘121-44-8,3.0,TEA,CMP0269,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C74,‘25952-53-8,1.5,EDC-HCl,CMP0455,‘2592-95-2,1.5,HOBt,CMP0479,‘121-44-8,3.0,TEA,CMP0269,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C76,‘94790-35-9,1.5,TCFH,CMP0472,,,,,‘616-47-7,3.0,NMI,CMP0399,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C77,‘538-75-0,1.5,DCC,CMP0410,,,,,,,,,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C78,‘538-75-0,1.5,DCC,CMP0410,‘3849-21-6,1.5,ethyl cyanoglyoxylate-2-oxime,CMP0486,,,,,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C79,‘538-75-0,1.5,DCC,CMP0410,‘39968-33-7,1.5,HOAT,CMP0480,,,,,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C80,‘538-75-0,1.5,DCC,CMP0410,‘2592-95-2,1.5,HOBt,CMP0479,,,,,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C81,‘538-75-0,1.5,DCC,CMP0410,‘26198-19-6,1.5,Cl-HOBT,CMP0487,,,,,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C82,‘538-75-0,1.5,DCC,CMP0410,‘1122-58-3,0.1,DMAP,CMP0136,,,,,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C83,‘693-13-0,1.5,DIC,CMP0451,‘3849-21-6,1.5,ethyl cyanoglyoxylate-2-oxime,CMP0486,,,,,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C84,‘693-13-0,1.5,DIC,CMP0451,‘39968-33-7,1.5,HOAT,CMP0480,,,,,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C85,‘693-13-0,1.5,DIC,CMP0451,‘2592-95-2,1.5,HOBt,CMP0479,,,,,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C86,‘693-13-0,1.5,DIC,CMP0451,‘26198-19-6,1.5,Cl-HOBT,CMP0487,,,,,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C87,‘25952-53-8,1.5,EDC-HCl,CMP0455,,,,,,,,,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C88,‘25952-53-8,1.5,EDC-HCl,CMP0455,‘3849-21-6,1.5,ethyl cyanoglyoxylate-2-oxime,CMP0486,,,,,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C89,‘25952-53-8,1.5,EDC-HCl,CMP0455,‘39968-33-7,1.5,HOAT,CMP0480,,,,,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C90,‘25952-53-8,1.5,EDC-HCl,CMP0455,‘2592-95-2,1.5,HOBt,CMP0479,‘108-48-5,3.0,"2,6-lutidine",CMP0157,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C91,‘25952-53-8,1.5,EDC-HCl,CMP0455,‘26198-19-6,1.5,Cl-HOBT,CMP0487,,,,,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C92,‘148893-10-1,1.5,HATU,CMP0139,,,,,,,,,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C93,‘125700-71-2,1.5,TPTU,CMP0477,‘2592-95-2,1.5,HOBt,CMP0479,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C94,‘105379-24-6,1.5,HBPYU,CMP0458,,,,,,,,,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C95,‘38428-14-7,1.5,IIDQ,CMP0463,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF,CMP0552,25,2
+,acylation,C96,‘136849-72-4,1.5,TOTU,CMP0476,,,,,,,,,,,,,,,,,,,,,DMF,CMP0552,25,2
+,buchwald,C8,‘51364-51-3,0.1,Pd2(dba)3,CMP0080,‘564483-19-8,0.2,tBuXphos,CMP0187,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C13,‘1470372-59-8,0.05,BrettPhos Pd G3,CMP0015,‘564483-18-7,0.2,XPhos,CMP0165,‘865-48-5,2.0,NaOtBu,CMP0348,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C20,‘3375-31-3,0.1,Pd(OAc)2,CMP0073,‘161265-03-8,0.2,XantPhos,CMP0180,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C25,‘2009020-38-4,0.05,RockPhos Pd G3,CMP0101,,,,,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C27,‘1599466-83-7,0.05,BrettPhos Pd G4,CMP0016,,,,,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C28,‘1445085-82-4,0.05,SPhos Pd G3,CMP0106,,,,,‘865-48-5,2.0,NaOtBu,CMP0348,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C31,‘1447963-75-8,0.05,tBuXPhos Pd G3,CMP0110,,,,,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C32,‘2230788-63-1,0.05,TrixiePhos Pd G3,CMP0112,,,,,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C33,‘1445085-97-1,0.05,XantPhos Pd G3,CMP0114,,,,,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C39,‘1599466-83-7,0.05,BrettPhos Pd G4,CMP0016,,,,,‘865-48-5,2.0,NaOtBu,CMP0348,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C40,‘1661042-31-4,0.05,(tBu)PhCPhos Pd G3,CMP0005,,,,,‘865-48-5,2.0,NaOtBu,CMP0348,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C41,‘1447963-73-6,0.05,CPhos Pd G3,CMP0019,,,,,‘865-48-5,2.0,NaOtBu,CMP0348,,,,,,,,,,,,,DME,CMP0551,100,16
+,buchwald,C44,‘1445086-28-1,0.05,DPPF Pd G3,CMP0045,,,,,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,DME,CMP0551,100,16
+,buchwald,C54,‘1445085-77-7,0.05,RuPhos Pd G3,CMP0103,,,,,‘865-48-5,2.0,NaOtBu,CMP0348,,,,,,,,,,,,,DME,CMP0551,100,16
+,buchwald,C58,‘1470372-59-8,0.05,BrettPhos Pd G3,CMP0015,‘787618-22-8,0.2,RuPhos,CMP0164,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,t-AmOH,CMP0566,100,16
+,buchwald,C59,‘3375-31-3,0.1,Pd(OAc)2,CMP0073,‘1070663-78-3,0.2,BrettPhos,CMP0185,‘584-08-7,2.0,K2CO3,CMP0334,,,,,,,,,,,,,t-AmOH,CMP0566,100,16
+,buchwald,C62,‘1470372-59-8,0.05,BrettPhos Pd G3,CMP0015,,,,,‘865-48-5,2.0,NaOtBu,CMP0348,,,,,,,,,,,,,t-AmOH,CMP0566,100,16
+,buchwald,C63,‘1470372-59-8,0.05,BrettPhos Pd G3,CMP0015,‘1070663-78-3,0.1,BrettPhos,CMP0185,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,t-AmOH,CMP0566,100,16
+,buchwald,C66,‘3375-31-3,0.1,Pd(OAc)2,CMP0073,‘161265-03-8,0.2,XantPhos,CMP0180,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,t-AmOH,CMP0566,100,16
+,buchwald,C69,‘1445085-77-7,0.05,RuPhos Pd G3,CMP0103,,,,,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,t-AmOH,CMP0566,100,16
+,buchwald,C70,‘1445085-77-7,0.05,RuPhos Pd G3,CMP0103,,,,,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,t-AmOH,CMP0566,100,16
+,buchwald,C71,‘1445085-55-1,0.05,XPhos Pd G3,CMP0117,‘564483-18-7,0.1,XPhos,CMP0165,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,t-AmOH,CMP0566,100,16
+,buchwald,C75,‘1148148-01-9,0.1,BrettPhos Pd,CMP0014,‘1070663-78-3,0.2,BrettPhos,CMP0185,‘4039-32-1,2.0,LiHMDS,CMP0365,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C77,‘1445085-77-7,0.05,RuPhos Pd G3,CMP0103,‘787618-22-8,0.1,RuPhos,CMP0164,‘4039-32-1,2.0,LiHMDS,CMP0365,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C79,‘1536473-72-9,0.05,tBuBrettPhos Pd G3,CMP0108,‘1160861-53-9,0.1,tBuBrettPhos,CMP0186,‘4039-32-1,2.0,LiHMDS,CMP0365,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C88,‘1599466-87-1,0.05,SPhos Pd G4,CMP0107,,,,,‘865-48-5,2.0,NaOtBu,CMP0348,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C91,‘1599466-81-5,0.05,XPhos Pd G4,CMP0118,,,,,‘865-48-5,2.0,NaOtBu,CMP0348,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C92,‘1447963-75-8,0.05,tBuXPhos Pd G3,CMP0110,,,,,‘84030-20-6,2.0,MTBD,CMP0370,,,,,,,,,,,,,DMSO,CMP0527,100,16
+,buchwald,C93,‘1445085-55-1,0.05,XPhos Pd G3,CMP0117,‘1160861-53-9,0.1,tBuBrettPhos,CMP0186,‘4039-32-1,2.0,LiHMDS,CMP0365,,,,,,,,,,,,,t-AmOH,CMP0566,100,16
+,buchwald,C94,‘51364-51-3,0.1,Pd2(dba)3,CMP0080,‘857356-94-6,0.2,Me4tBuXPhos,CMP0184,‘4039-32-1,2.0,LiHMDS,CMP0365,,,,,,,,,,,,,t-AmOH,CMP0566,100,16
+,buchwald,C95,‘3375-31-3,0.1,Pd(OAc)2,CMP0073,‘564483-18-7,0.2,XPhos,CMP0165,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,t-AmOH,CMP0566,100,16
+,buchwald,C98,‘15418-29-8,0.1,Cu(MeCN)4BF4,CMP0022,,,,,‘557-34-6,2.0,Zn(OAc)2,CMP0360,,,,,,,,,,,,,DMSO,CMP0527,100,16
+,buchwald,C99,‘3251-23-8,0.1,Cu(NO3)2,CMP0024,‘1660-93-1,0.2,Me4Phen,CMP0163,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,DMSO,CMP0527,100,16
+,buchwald,C100,‘142-71-2,0.1,Cu(OAc)2,CMP0026,‘1660-93-1,0.2,Me4Phen,CMP0163,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,DMSO,CMP0527,100,16
+,buchwald,C101,‘142-71-2,0.1,Cu(OAc)2,CMP0026,‘1660-93-1,0.2,Me4Phen,CMP0163,‘557-34-6,2.0,Zn(OAc)2,CMP0360,,,,,,,,,,,,,DMSO,CMP0527,100,16
+,buchwald,C102,‘7787-70-4,0.1,CuBr,CMP0032,‘147-85-3,0.2,L-proline,CMP0172,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,DMSO,CMP0527,100,16
+,buchwald,C103,‘7447-39-4,0.1,CuCl2,CMP0036,‘1660-93-1,0.2,Me4Phen,CMP0163,‘4039-32-1,2.0,LiHMDS,CMP0365,,,,,,,,,,,,,DMSO,CMP0527,100,16
+,buchwald,C104,‘7447-39-4,0.1,CuCl2,CMP0036,‘1660-93-1,0.2,Me4Phen,CMP0163,‘865-48-5,2.0,NaOtBu,CMP0348,,,,,,,,,,,,,DMSO,CMP0527,100,16
+,buchwald,C105,‘7681-65-4,0.1,CuI,CMP0038,‘957476-07-2,0.2,BTMPO,CMP0169,‘865-48-5,2.0,NaOtBu,CMP0348,,,,,,,,,,,,,DMSO,CMP0527,100,16
+,buchwald,C106,‘7681-65-4,0.1,CuI,CMP0038,‘1018295-42-5,0.2,"2,6-difluoroanilino(oxo)acetic acid",CMP0170,‘865-48-5,2.0,NaOtBu,CMP0348,,,,,,,,,,,,,DMSO,CMP0527,100,16
+,buchwald,C108,‘19999-87-2,0.1,NiCl2(PCy3)2,CMP0058,‘12150-46-8,0.2,dppf,CMP0211,‘865-47-4,2.0,KOtBu,CMP0347,,,,,,,,,,,,,DMSO,CMP0527,100,16
+,buchwald,C109,‘69861-71-8,0.1,Pd[P(o-tolyl)3]2,CMP0082,‘224311-51-7,0.2,JohnPhos,CMP0178,‘4039-32-1,2.0,LiHMDS,CMP0365,,,,,,,,,,,,,DMSO,CMP0527,100,16
+,buchwald,C110,‘69861-71-8,0.1,Pd[P(o-tolyl)3]2,CMP0082,‘857356-94-6,0.2,Me4tBuXPhos,CMP0184,‘84030-20-6,2.0,MTBD,CMP0370,,,,,,,,,,,,,DMSO,CMP0527,100,16
+,buchwald,C111,‘69861-71-8,0.1,Pd[P(o-tolyl)3]2,CMP0082,‘564483-18-7,0.2,XPhos,CMP0165,‘865-48-5,2.0,NaOtBu,CMP0348,,,,,,,,,,,,,DMSO,CMP0527,100,16
+,buchwald,C112,‘51364-51-3,0.1,Pd2(dba)3,CMP0080,‘1239478-87-5,0.2,AdBippyPhos,CMP0159,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,DMSO,CMP0527,100,16
+,buchwald,C113,‘51364-51-3,0.1,Pd2(dba)3,CMP0080,‘161265-03-8,0.2,XantPhos,CMP0180,‘865-47-4,2.0,KOtBu,CMP0347,,,,,,,,,,,,,DMSO,CMP0527,100,16
+,buchwald,C114,‘51364-51-3,0.1,Pd2(dba)3,CMP0080,‘857356-94-6,0.2,Me4tBuXPhos,CMP0184,‘4039-32-1,2.0,LiHMDS,CMP0365,,,,,,,,,,,,,DMSO,CMP0527,100,16
+,buchwald,C115,‘905459-27-0,0.1,PEPPSI-iPr,CMP0100,‘247940-06-3,0.2,CyJohnPhos,CMP0182,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,DMSO,CMP0527,100,16
+,buchwald,C116,‘905459-27-0,0.1,PEPPSI-iPr,CMP0100,‘250285-32-6,0.2,IPr.HCl,CMP0198,‘865-48-5,2.0,NaOtBu,CMP0348,,,,,,,,,,,,,DMSO,CMP0527,100,16
+,buchwald,C117,‘34946-82-2,0.1,Cu(OTf)2,CMP0028,‘1660-93-1,0.2,Me4Phen,CMP0163,‘865-48-5,2.0,NaOtBu,CMP0348,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C118,‘12131-44-1,0.1,[Pd(cinnamyl)Cl]2,CMP0007,‘564483-18-7,0.2,XPhos,CMP0165,‘865-47-4,2.0,KOtBu,CMP0347,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C119,‘15418-29-8,0.1,Cu(MeCN)4BF4,CMP0022,,,,,‘865-47-4,2.0,KOtBu,CMP0347,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C120,‘7681-65-4,0.1,CuI,CMP0038,‘1118-71-4,0.2,dipivaloylmethane,CMP0167,‘865-48-5,2.0,NaOtBu,CMP0348,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C121,‘7789-45-9,0.1,CuBr2,CMP0034,‘1660-93-1,0.2,Me4Phen,CMP0163,‘84030-20-6,2.0,MTBD,CMP0370,,,,,,,,,,,,,xylene,CMP0571,100,16
+,buchwald,C122,‘7758-98-7,0.1,CuSO4,CMP0041,‘957476-07-2,0.2,BTMPO,CMP0169,‘84030-20-6,2.0,MTBD,CMP0370,,,,,,,,,,,,,xylene,CMP0571,100,16
+,buchwald,C124,‘37234-97-2,0.1,CuOTf,CMP0040,‘957476-07-2,0.2,BTMPO,CMP0169,‘4039-32-1,2.0,LiHMDS,CMP0365,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C125,‘3375-31-3,0.1,Pd(OAc)2,CMP0073,‘1070663-78-3,0.2,BrettPhos,CMP0185,‘557-34-6,2.0,Zn(OAc)2,CMP0360,,,,,,,,,,,,,xylene,CMP0571,100,16
+,buchwald,C126,‘14024-61-4,0.1,Pd(acac)2,CMP0065,‘1237588-12-3,0.2,MorDalPhos,CMP0160,‘84030-20-6,2.0,MTBD,CMP0370,,,,,,,,,,,,,xylene,CMP0571,100,16
+,buchwald,C127,‘29046-78-4,0.1,NiCl2-glyme,CMP0061,‘12150-46-8,0.2,dppf,CMP0211,‘865-47-4,2.0,KOtBu,CMP0347,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C128,‘13462-90-3,0.1,NiI2,CMP0062,‘12150-46-8,0.2,dppf,CMP0211,‘4039-32-1,2.0,LiHMDS,CMP0365,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C129,‘3375-31-3,0.1,Pd(OAc)2,CMP0073,‘250285-32-6,0.2,IPr.HCl,CMP0198,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C130,‘7647-10-1,0.1,PdCl2,CMP0087,‘1239478-87-5,0.2,AdBippyPhos,CMP0159,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C131,‘12131-44-1,0.1,[Pd(cinnamyl)Cl]2,CMP0007,‘247940-06-3,0.2,CyJohnPhos,CMP0182,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C132,‘478980-03-9,0.1,(IPr)Pd(allyl)Cl,CMP0002,,,,,‘584-08-7,2.0,K2CO3,CMP0334,,,,,,,,,,,,,xylene,CMP0571,100,16
+,buchwald,C133,‘478980-03-9,0.1,(IPr)Pd(allyl)Cl,CMP0002,,,,,‘557-34-6,2.0,Zn(OAc)2,CMP0360,,,,,,,,,,,,,xylene,CMP0571,100,16
+,buchwald,C135,‘1317-39-1,0.1,Cu2O,CMP0031,‘957476-07-2,0.2,BTMPO,CMP0169,‘557-34-6,2.0,Zn(OAc)2,CMP0360,,,,,,,,,,,,,xylene,CMP0571,100,16
+,buchwald,C136,‘7789-45-9,0.1,CuBr2,CMP0034,‘1660-93-1,0.2,Me4Phen,CMP0163,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,xylene,CMP0571,100,16
+,buchwald,C137,‘34946-82-2,0.1,Cu(OTf)2,CMP0028,‘1660-93-1,0.2,Me4Phen,CMP0163,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C138,‘7758-89-6,0.1,CuCl,CMP0035,‘2903-48-2,0.2,DMPAO,CMP0171,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,xylene,CMP0571,100,16
+,buchwald,C139,‘7718-54-9,0.1,NiCl2,CMP0055,‘12150-46-8,0.2,dppf,CMP0211,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C140,‘3264-82-2,0.1,Ni(acac)2,CMP0051,‘12150-46-8,0.2,dppf,CMP0211,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,xylene,CMP0571,100,16
+,buchwald,C141,‘7787-70-4,0.1,CuBr,CMP0032,‘1018295-42-5,0.2,"2,6-difluoroanilino(oxo)acetic acid",CMP0170,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C142,‘14647-23-5,0.1,NiCl2(dppe),CMP0056,,,,,‘584-08-7,2.0,K2CO3,CMP0334,,,,,,,,,,,,,xylene,CMP0571,100,16
+,buchwald,C143,‘15629-92-2,0.1,NiCl2(dppp),CMP0057,,,,,‘557-34-6,2.0,Zn(OAc)2,CMP0360,,,,,,,,,,,,,xylene,CMP0571,100,16
+,buchwald,C144,‘14024-61-4,0.1,Pd(acac)2,CMP0065,‘415941-58-1,0.2,N(Me2)PhP(tBu)2,CMP0162,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,xylene,CMP0571,100,16
+,buchwald,C146,‘19999-87-2,0.1,NiCl2(PCy3)2,CMP0058,‘12150-46-8,0.2,dppf,CMP0211,‘584-08-7,2.0,K2CO3,CMP0334,,,,,,,,,,,,,DME,CMP0551,100,16
+,buchwald,C147,‘69861-71-8,0.1,Pd[P(o-tolyl)3]2,CMP0082,‘224311-49-3,0.2,tBuDavePhos,CMP0214,‘584-08-7,2.0,K2CO3,CMP0334,,,,,,,,,,,,,DME,CMP0551,100,16
+,buchwald,C148,‘30698-64-7,0.1,[Cu(OH)TMEDA]2Cl2,CMP0006,,,,,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,t-AmOH,CMP0566,100,16
+,buchwald,C149,‘51364-51-3,0.1,Pd2(dba)3,CMP0080,‘224311-51-7,0.2,JohnPhos,CMP0178,‘584-08-7,2.0,K2CO3,CMP0334,,,,,,,,,,,,,DME,CMP0551,100,16
+,buchwald,C150,‘7787-70-4,0.1,CuBr,CMP0032,‘2903-48-2,0.2,DMPAO,CMP0171,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,t-AmOH,CMP0566,100,16
+,buchwald,C151,‘51364-51-3,0.1,Pd2(dba)3,CMP0080,‘1070663-78-3,0.2,BrettPhos,CMP0185,‘557-34-6,2.0,Zn(OAc)2,CMP0360,,,,,,,,,,,,,DME,CMP0551,100,16
+,buchwald,C152,‘905459-27-0,0.1,PEPPSI-iPr,CMP0100,‘415941-58-1,0.2,N(Me2)PhP(tBu)2,CMP0162,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,DME,CMP0551,100,16
+,buchwald,C153,‘12131-44-1,0.1,[Pd(cinnamyl)Cl]2,CMP0007,‘161265-03-8,0.2,XantPhos,CMP0180,‘865-47-4,2.0,KOtBu,CMP0347,,,,,,,,,,,,,DME,CMP0551,100,16
+,buchwald,C155,‘15629-92-2,0.1,NiCl2(dppp),CMP0057,,,,,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,t-AmOH,CMP0566,100,16
+,buchwald,C156,‘69861-71-8,0.1,Pd[P(o-tolyl)3]2,CMP0082,‘158923-11-6,0.2,CyPF-tBu,CMP0181,‘84030-20-6,2.0,MTBD,CMP0370,,,,,,,,,,,,,DME,CMP0551,100,16
+,buchwald,C157,‘3375-31-3,0.1,Pd(OAc)2,CMP0073,‘1239478-87-5,0.2,AdBippyPhos,CMP0159,‘7778-53-2,2.0,K3PO4,CMP0338,,,,,,,,,,,,,t-AmOH,CMP0566,100,16
+,buchwald,C158,‘478980-03-9,0.1,(IPr)Pd(allyl)Cl,CMP0002,,,,,‘865-47-4,2.0,KOtBu,CMP0347,,,,,,,,,,,,,t-AmOH,CMP0566,100,16
+,buchwald,C159,‘3375-31-3,0.1,Pd(OAc)2,CMP0073,‘161265-03-8,0.2,XantPhos,CMP0180,‘865-47-4,2.0,KOtBu,CMP0347,,,,,,,,,,,,,t-AmOH,CMP0566,100,16
+,buchwald,C160,‘3375-31-3,0.1,Pd(OAc)2,CMP0073,‘564483-18-7,0.2,XPhos,CMP0165,‘865-48-5,2.0,NaOtBu,CMP0348,,,,,,,,,,,,,t-AmOH,CMP0566,100,16
+,buchwald,C161,‘905459-27-0,0.1,PEPPSI-iPr,CMP0100,‘564483-19-8,0.2,tBuXphos,CMP0187,‘557-34-6,2.0,Zn(OAc)2,CMP0360,,,,,,,,,,,,,DME,CMP0551,100,16
+,buchwald,C162,‘3251-23-8,0.1,Cu(NO3)2,CMP0024,‘1660-93-1,0.2,Me4Phen,CMP0163,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,DME,CMP0551,100,16
+,buchwald,C163,‘3251-23-8,0.1,Cu(NO3)2,CMP0024,‘1660-93-1,0.2,Me4Phen,CMP0163,‘557-34-6,2.0,Zn(OAc)2,CMP0360,,,,,,,,,,,,,DME,CMP0551,100,16
+,buchwald,C165,‘1317-39-1,0.1,Cu2O,CMP0031,‘67579-81-1,1.6,"trans-1,2-Cy-(NHMe)2",CMP0173,‘557-34-6,2.0,Zn(OAc)2,CMP0360,,,,,,,,,,,,,DME,CMP0551,100,16
+,buchwald,C166,‘7758-89-6,0.1,CuCl,CMP0035,‘957476-07-2,0.2,BTMPO,CMP0169,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,DME,CMP0551,100,16
+,buchwald,C167,‘1295-35-8,0.1,Ni(cod)2,CMP0052,‘12150-46-8,0.2,dppf,CMP0211,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,DME,CMP0551,100,16
+,buchwald,C168,‘68986-76-5,0.1,CuTC,CMP0043,‘2903-48-2,0.2,DMPAO,CMP0171,‘84030-20-6,2.0,MTBD,CMP0370,,,,,,,,,,,,,DME,CMP0551,100,16
+,buchwald,C169,‘1295-35-8,0.1,Ni(cod)2,CMP0052,‘2622-14-2,0.2,PCy3,CMP0192,‘865-48-5,2.0,NaOtBu,CMP0348,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C170,‘7647-10-1,0.1,PdCl2,CMP0087,‘564483-18-7,0.2,XPhos,CMP0165,‘865-48-5,2.0,NaOtBu,CMP0348,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,16
+,buchwald,C171,‘30698-64-7,0.1,[Cu(OH)TMEDA]2Cl2,CMP0006,,,,,‘865-47-4,2.0,KOtBu,CMP0347,,,,,,,,,,,,,t-AmOH,CMP0566,100,16
+,buchwald,C172,‘37234-97-2,0.1,CuOTf,CMP0040,‘147-85-3,0.2,L-proline,CMP0172,‘865-47-4,2.0,KOtBu,CMP0347,,,,,,,,,,,,,t-AmOH,CMP0566,100,16
+,buchwald,C173,‘37234-97-2,0.1,CuOTf,CMP0040,‘67579-81-1,1.6,"trans-1,2-Cy-(NHMe)2",CMP0173,‘4039-32-1,2.0,LiHMDS,CMP0365,,,,,,,,,,,,,t-AmOH,CMP0566,100,16
+,buchwald,C174,‘3264-82-2,0.1,Ni(acac)2,CMP0051,‘12150-46-8,0.2,dppf,CMP0211,‘865-48-5,2.0,NaOtBu,CMP0348,,,,,,,,,,,,,t-AmOH,CMP0566,100,16
+,buchwald,C175,‘14647-23-5,0.1,NiCl2(dppe),CMP0056,,,,,‘4039-32-1,2.0,LiHMDS,CMP0365,,,,,,,,,,,,,t-AmOH,CMP0566,100,16
+,buchwald,C176,‘14024-61-4,0.1,Pd(acac)2,CMP0065,‘857356-94-6,0.2,Me4tBuXPhos,CMP0184,‘4039-32-1,2.0,LiHMDS,CMP0365,,,,,,,,,,,,,t-AmOH,CMP0566,100,16
+,buchwald,C177,‘14024-61-4,0.1,Pd(acac)2,CMP0065,‘250285-32-6,0.2,IPr.HCl,CMP0198,‘865-48-5,2.0,NaOtBu,CMP0348,,,,,,,,,,,,,t-AmOH,CMP0566,100,16
+,buchwald,C178,‘478980-03-9,0.1,(IPr)Pd(allyl)Cl,CMP0002,‘857356-94-6,0.2,Me4tBuXPhos,CMP0184,‘4039-32-1,2.0,LiHMDS,CMP0365,,,,,,,,,,,,,NMP,CMP0316,100,16
+,buchwald,C179,‘12131-44-1,0.1,[Pd(cinnamyl)Cl]2,CMP0007,‘415941-58-1,0.2,N(Me2)PhP(tBu)2,CMP0162,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,NMP,CMP0316,100,16
+,buchwald,C180,‘12131-44-1,0.1,[Pd(cinnamyl)Cl]2,CMP0007,‘224311-49-3,0.2,tBuDavePhos,CMP0214,‘584-08-7,2.0,K2CO3,CMP0334,,,,,,,,,,,,,NMP,CMP0316,100,16
+,buchwald,C181,‘12131-44-1,0.1,[Pd(cinnamyl)Cl]2,CMP0007,‘564483-19-8,0.2,tBuXphos,CMP0187,‘557-34-6,2.0,Zn(OAc)2,CMP0360,,,,,,,,,,,,,NMP,CMP0316,100,16
+,buchwald,C182,‘1317-39-1,0.1,Cu2O,CMP0031,‘1018295-42-5,0.2,"2,6-difluoroanilino(oxo)acetic acid",CMP0170,‘557-34-6,2.0,Zn(OAc)2,CMP0360,,,,,,,,,,,,,NMP,CMP0316,100,16
+,buchwald,C183,‘7789-45-9,0.1,CuBr2,CMP0034,‘1118-71-4,0.2,dipivaloylmethane,CMP0167,‘584-08-7,2.0,K2CO3,CMP0334,,,,,,,,,,,,,NMP,CMP0316,100,16
+,buchwald,C184,‘7758-89-6,0.1,CuCl,CMP0035,‘67579-81-1,1.6,"trans-1,2-Cy-(NHMe)2",CMP0173,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,NMP,CMP0316,100,16
+,buchwald,C185,‘7758-98-7,0.1,CuSO4,CMP0041,‘1660-93-1,0.2,Me4Phen,CMP0163,‘584-08-7,2.0,K2CO3,CMP0334,,,,,,,,,,,,,NMP,CMP0316,100,16
+,buchwald,C186,‘7758-98-7,0.1,CuSO4,CMP0041,‘1660-93-1,0.2,Me4Phen,CMP0163,‘557-34-6,2.0,Zn(OAc)2,CMP0360,,,,,,,,,,,,,NMP,CMP0316,100,16
+,buchwald,C187,‘68986-76-5,0.1,CuTC,CMP0043,‘147-85-3,0.2,L-proline,CMP0172,‘84030-20-6,2.0,MTBD,CMP0370,,,,,,,,,,,,,NMP,CMP0316,100,16
+,buchwald,C188,‘7718-54-9,0.1,NiCl2,CMP0055,‘12150-46-8,0.2,dppf,CMP0211,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,NMP,CMP0316,100,16
+,buchwald,C189,‘29046-78-4,0.1,NiCl2-glyme,CMP0061,‘12150-46-8,0.2,dppf,CMP0211,‘557-34-6,2.0,Zn(OAc)2,CMP0360,,,,,,,,,,,,,NMP,CMP0316,100,16
+,buchwald,C190,‘13462-90-3,0.1,NiI2,CMP0062,‘12150-46-8,0.2,dppf,CMP0211,‘84030-20-6,2.0,MTBD,CMP0370,,,,,,,,,,,,,NMP,CMP0316,100,16
+,buchwald,C191,‘7647-10-1,0.1,PdCl2,CMP0087,‘194-63-8,0.2,"dinaphtho[2,1-b:1',2'-d]furan",CMP0183,‘534-17-8,2.0,Cs2CO3,CMP0333,,,,,,,,,,,,,NMP,CMP0316,100,16
+,buchwald,C192,‘7647-10-1,0.1,PdCl2,CMP0087,‘158923-11-6,0.2,CyPF-tBu,CMP0181,‘84030-20-6,2.0,MTBD,CMP0370,,,,,,,,,,,,,NMP,CMP0316,100,16
+,suzuki,C2,‘1310584-14-5,0.05,XPhos Pd G2,CMP0116,,,,,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C3,‘29934-17-6,0.05,PdCl2(PCy3)2,CMP0094,,,,,‘865-47-4,3.0,KOtBu,CMP0347,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,12
+,suzuki,C4,‘12131-44-1,0.005,[Pd(cinnamyl)Cl]2,CMP0007,,,,,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,xylene,CMP0571,100,12
+,suzuki,C5,‘15629-92-2,0.05,NiCl2(dppp),CMP0057,,,,,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,12
+,suzuki,C6,‘29046-78-4,0.05,NiCl2-glyme,CMP0061,‘61798-24-1,0.1,"N,N'-dimethyl-1,2-cyclohexanediamine",CMP0193,‘865-47-4,3.0,KOtBu,CMP0347,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,12
+,suzuki,C7,‘95464-05-4,0.05,Pd(dppf)Cl2·CH2Cl2,CMP0091,,,,,‘534-17-8,3.0,Cs2CO3,CMP0333,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C8,‘2151915-22-7,0.05,BINAP Pd G3,CMP0013,,,,,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C9,‘2151915-22-7,0.05,BINAP Pd G3,CMP0013,,,,,‘534-17-8,3.0,Cs2CO3,CMP0333,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C10,‘1651823-59-4,0.05,CataCXium A Pd G3,CMP0017,,,,,‘534-17-8,3.0,Cs2CO3,CMP0333,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C11,‘1445086-17-8,0.05,P(tBu)3 Pd G3,CMP0063,,,,,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C12,‘1445086-17-8,0.05,P(tBu)3 Pd G3,CMP0063,,,,,‘534-17-8,3.0,Cs2CO3,CMP0333,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C13,‘1445086-12-3,0.05,PCy3 Pd G3,CMP0064,,,,,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C14,‘1445086-12-3,0.05,PCy3 Pd G3,CMP0064,,,,,‘534-17-8,3.0,Cs2CO3,CMP0333,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C15,‘205319-06-8,0.05,Pd(DPEPhos)Cl2,CMP0070,,,,,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C16,‘205319-06-8,0.05,Pd(DPEPhos)Cl2,CMP0070,,,,,‘534-17-8,3.0,Cs2CO3,CMP0333,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C17,‘19978-61-1,0.05,Pd(dppe)Cl2,CMP0072,,,,,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C18,‘19978-61-1,0.05,Pd(dppe)Cl2,CMP0072,,,,,‘534-17-8,3.0,Cs2CO3,CMP0333,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C19,‘19978-61-1,0.05,Pd(dppe)Cl2,CMP0072,,,,,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C20,‘205319-10-4,0.05,Pd(XantPhos)Cl2,CMP0078,,,,,‘534-17-8,3.0,Cs2CO3,CMP0333,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C21,‘60748-47-2,0.05,Pd2(dba)3,CMP0080,‘221187-50-4,0.1,SymPhos,CMP0194,‘13400-13-0,3.0,CsF,CMP0353,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C22,‘95408-45-0,0.05,PdCl2(dtbpf),CMP0092,,,,,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C23,‘95408-45-0,0.05,PdCl2(dtbpf),CMP0092,,,,,‘534-17-8,3.0,Cs2CO3,CMP0333,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C24,‘29934-17-6,0.05,PdCl2(PCy3)2,CMP0094,,,,,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C25,‘29934-17-6,0.05,PdCl2(PCy3)2,CMP0094,,,,,‘534-17-8,3.0,Cs2CO3,CMP0333,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C26,‘13965-03-2,0.05,PdCl2(PPh3)2,CMP0097,,,,,‘534-17-8,3.0,Cs2CO3,CMP0333,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C27,‘13965-03-2,0.05,PdCl2(PPh3)2,CMP0097,,,,,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C28,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘98327-87-8,0.1,rac-BINAP,CMP0197,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C29,‘905459-27-0,0.05,PEPPSI-iPr,CMP0100,,,,,‘1310-58-3,3.0,KOH,CMP0342,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C30,‘1445085-77-7,0.05,RuPhos Pd G3,CMP0103,,,,,‘534-17-8,3.0,Cs2CO3,CMP0333,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C31,‘1445085-82-4,0.05,SPhos Pd G3,CMP0106,,,,,‘534-17-8,3.0,Cs2CO3,CMP0333,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C32,‘1445085-82-4,0.05,SPhos Pd G3,CMP0106,,,,,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C33,‘1445085-82-4,0.05,SPhos Pd G3,CMP0106,,,,,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C34,‘1445085-55-1,0.05,XPhos Pd G3,CMP0117,,,,,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C35,‘1445085-55-1,0.05,XPhos Pd G3,CMP0117,,,,,‘534-17-8,3.0,Cs2CO3,CMP0333,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C36,‘12131-44-1,0.05,[Pd(cinnamyl)Cl]2,CMP0007,‘250285-32-6,0.1,IPr.HCl,CMP0198,‘1310-73-2,3.0,NaOH,CMP0341,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C37,‘14221-01-3,0.05,Pd(PPh3)4,CMP0075,,,,,‘497-19-8,3.0,Na2CO3,CMP0335,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C38,‘32005-36-0,0.05,Pd(dba)2,CMP0069,‘13716-12-6,0.05,P(tBu)3,CMP0203,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C39,‘95408-45-0,0.05,PdCl2(dtbpf),CMP0092,,,,,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,,,,,"1,4-dioxane/H2O (4:1)",CMP0581,100,12
+,suzuki,C40,‘185812-86-6,0.05,[PdP(tBu)3Br]2,CMP0009,,,,,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,,,,,H2O,CMP0556,100,12
+,suzuki,C41,‘1651823-59-4,0.05,CataCXium A Pd G3,CMP0017,,,,,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,12
+,suzuki,C42,‘7681-65-4,0.05,CuI,CMP0038,,,,,‘13400-13-0,3.0,CsF,CMP0353,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,12
+,suzuki,C43,‘7681-65-4,0.05,CuI,CMP0038,‘932710-63-9,0.1,N(Me)2-phenyl-P(tBu)2,CMP0190,‘13400-13-0,3.0,CsF,CMP0353,,,,,,,,,,,,,"1,4-dioxane",CMP0543,100,12
+,suzuki,C44,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘18437-78-0,0.1,P(p-F-Ph)3,CMP0204,‘21351-79-1,3.0,CsOH,CMP0343,,,,,,,,,,,,,xylene,CMP0571,100,12
+,suzuki,C45,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘1067175-36-3,0.15,AMidolePhos,CMP0205,‘13400-13-0,3.0,CsF,CMP0353,,,,,,,,,,,,,xylene,CMP0571,100,12
+,suzuki,C46,‘95464-05-4,0.05,Pd(dppf)Cl2·CH2Cl2,CMP0091,,,,,‘127-08-2,3.0,KOAc,CMP0354,,,,,,,,,,,,,xylene,CMP0571,100,12
+,suzuki,C47,‘14221-01-3,0.05,Pd(PPh3)4,CMP0075,,,,,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,xylene,CMP0571,100,12
+,suzuki,C48,‘13965-03-2,0.05,PdCl2(PPh3)2,CMP0097,,,,,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,xylene,CMP0571,100,12
+,suzuki,C49,‘13965-03-2,0.05,PdCl2(PPh3)2,CMP0097,,,,,‘497-19-8,3.0,Na2CO3,CMP0335,,,,,,,,,,,,,xylene,CMP0571,100,12
+,suzuki,C50,‘7758-89-6,0.05,CuCl,CMP0035,‘161265-03-8,0.1,XantPhos,CMP0180,‘865-48-5,3.0,NaOtBu,CMP0348,,,,,,,,,,,,,xylene,CMP0571,100,12
+,suzuki,C51,‘1295-35-8,0.05,Ni(cod)2,CMP0052,‘2622-14-2,0.2,PCy3,CMP0192,‘13400-13-0,3.0,CsF,CMP0353,,,,,,,,,,,,,xylene,CMP0571,100,12
+,suzuki,C52,‘19999-87-2,0.05,NiCl2(PCy3)2,CMP0058,,,,,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,xylene,CMP0571,100,12
+,suzuki,C53,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘312959-24-3,0.1,QPhos,CMP0206,‘7789-23-3,3.0,KF,CMP0351,,,,,,,,,,,,,xylene/H2O (4:1),CMP0608,100,12
+,suzuki,C54,‘1445085-77-7,0.05,RuPhos Pd G3,CMP0103,,,,,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,,,,,xylene/H2O (4:1),CMP0608,100,12
+,suzuki,C55,‘95464-05-4,0.05,Pd(dppf)Cl2·CH2Cl2,CMP0091,,,,,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,,,,,xylene/H2O (4:1),CMP0608,100,12
+,suzuki,C56,‘95464-05-4,0.05,Pd(dppf)Cl2·CH2Cl2,CMP0091,,,,,‘13400-13-0,1.5,CsF,CMP0353,,,,,,,,,,,,,xylene/H2O (4:1),CMP0608,100,12
+,suzuki,C57,‘14221-01-3,0.05,Pd(PPh3)4,CMP0075,‘1643-19-2,0.65,Bu4NBr,CMP0374,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,,,,,xylene/H2O (4:1),CMP0608,100,12
+,suzuki,C58,‘205319-10-4,0.05,Pd(XantPhos)Cl2,CMP0078,,,,,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,xylene/H2O (4:1),CMP0608,100,12
+,suzuki,C59,‘14221-01-3,0.05,Pd(PPh3)4,CMP0075,,,,,‘13400-13-0,3.0,CsF,CMP0353,,,,,,,,,,,,,xylene/H2O (4:1),CMP0608,100,12
+,suzuki,C60,‘32005-36-0,0.05,Pd(dba)2,CMP0069,‘213697-53-1,0.085,DavePhos,CMP0196,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,,,,,xylene/H2O (4:1),CMP0608,100,12
+,suzuki,C61,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘603-35-0,0.1,PPh3,CMP0200,‘101-83-7,3.0,DCHA,CMP0371,,,,,,,,,,,,,THF,CMP0569,100,12
+,suzuki,C62,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘22767-90-4,0.1,pivaloyltrifluoroacetone,CMP0202,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,THF,CMP0569,100,12
+,suzuki,C63,‘32005-36-0,0.05,Pd(dba)2,CMP0069,‘131274-22-1,0.1,P(tBu)3.HBF4,CMP0195,‘7789-23-3,3.0,KF,CMP0351,,,,,,,,,,,,,THF,CMP0569,100,12
+,suzuki,C64,‘14221-01-3,0.05,Pd(PPh3)4,CMP0075,‘1643-19-2,0.5,Bu4NBr,CMP0374,‘1310-73-2,3.0,NaOH,CMP0341,,,,,,,,,,,,,THF,CMP0569,100,12
+,suzuki,C65,‘53199-31-8,0.05,Pd[P(tBu3)]2,CMP0083,,,,,‘7789-23-3,3.0,KF,CMP0351,,,,,,,,,,,,,THF,CMP0569,100,12
+,suzuki,C66,‘1295-35-8,0.05,Ni(cod)2,CMP0052,‘2622-14-2,0.2,PCy3,CMP0192,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,THF,CMP0569,100,12
+,suzuki,C67,‘19999-87-2,0.05,NiCl2(PCy3)2,CMP0058,,,,,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,THF,CMP0569,100,12
+,suzuki,C68,‘14221-01-3,0.05,Pd(PPh3)4,CMP0075,,,,,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,,,,,THF/H2O (4:1),CMP0602,100,12
+,suzuki,C69,‘1445085-55-1,0.05,XPhos Pd G3,CMP0117,,,,,‘6674-22-2,3.0,DBU,CMP0372,,,,,,,,,,,,,THF/H2O (4:1),CMP0602,100,12
+,suzuki,C70,‘12012-95-2,0.05,Pd(allyl)Cl2,CMP0066,‘13716-12-6,0.12,P(tBu)3,CMP0203,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,THF/H2O (4:1),CMP0602,100,12
+,suzuki,C71,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘603-35-0,0.2,PPh3,CMP0200,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,,,,,THF/H2O (4:1),CMP0602,100,12
+,suzuki,C72,‘13965-03-2,0.05,PdCl2(PPh3)2,CMP0097,‘603-35-0,0.1,PPh3,CMP0200,‘497-19-8,3.0,Na2CO3,CMP0335,,,,,,,,,,,,,THF/H2O (4:1),CMP0602,100,12
+,suzuki,C73,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘250285-32-6,0.1,IPr.HCl,CMP0198,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,THF/H2O (4:1),CMP0602,100,12
+C77与C74一致，只保留C74,suzuki,C74,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘657408-07-6,0.1,SPhos,CMP0199,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,,,,,MeCN/H2O (3:1),CMP0596,100,12
+,suzuki,C75,‘887919-35-9,0.05,Pd(AmPhos)Cl2,CMP0067,,,,,‘127-08-2,3.0,KOAc,CMP0354,,,,,,,,,,,,,MeCN/H2O (3:1),CMP0596,100,12
+,suzuki,C76,‘887919-35-9,0.05,Pd(AmPhos)Cl2,CMP0067,,,,,‘13400-13-0,3.0,CsF,CMP0353,,,,,,,,,,,,,MeCN/H2O (3:1),CMP0596,100,12
+,suzuki,C78,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘603-35-0,0.175,PPh3,CMP0200,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,,,,,MeCN/H2O (3:1),CMP0596,100,12
+,suzuki,C79,‘60748-47-2,0.05,Pd2(dba)3,CMP0080,,,,,‘7789-23-3,3.0,KF,CMP0351,,,,,,,,,,,,,DME/H2O (4:1),CMP0585,100,12
+,suzuki,C80,‘95408-45-0,0.05,PdCl2(dtbpf),CMP0092,,,,,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,DME/H2O (4:1),CMP0585,100,12
+,suzuki,C81,‘95464-05-4,0.05,Pd(dppf)Cl2·CH2Cl2,CMP0091,,,,,‘1310-58-3,3.0,KOH,CMP0342,,,,,,,,,,,,,DME/H2O (4:1),CMP0585,100,12
+,suzuki,C82,‘13965-03-2,0.05,PdCl2(PPh3)2,CMP0097,,,,,‘497-19-8,3.0,Na2CO3,CMP0335,,,,,,,,,,,,,DME/H2O (4:1),CMP0585,100,12
+,suzuki,C83,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘603-35-0,0.05,PPh3,CMP0200,‘497-19-8,3.0,Na2CO3,CMP0335,,,,,,,,,,,,,DME/H2O (4:1),CMP0585,100,12
+,suzuki,C84,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘657408-07-6,0.2,SPhos,CMP0199,‘534-17-8,3.0,Cs2CO3,CMP0333,‘7758-89-6,1.0,CuCl,CMP0035,,,,,,,,,DMF,CMP0552,100,12
+,suzuki,C85,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘12150-46-8,0.1,dppf,CMP0211,‘534-17-8,3.0,Cs2CO3,CMP0333,‘7758-89-6,1.0,CuCl,CMP0035,,,,,,,,,DMF,CMP0552,100,12
+,suzuki,C86,‘53199-31-8,0.05,Pd[P(tBu3)]2,CMP0083,,,,,‘1310-65-2,3.0,LiOH,CMP0340,,,,,,,,,,,,,DMF,CMP0552,100,12
+,suzuki,C87,‘7681-65-4,0.05,CuI,CMP0038,,,,,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,,,,,DMF,CMP0552,100,12
+,suzuki,C88,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘603-35-0,0.15,PPh3,CMP0200,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,DMF/H2O (4:1),CMP0587,100,12
+,suzuki,C89,‘1445085-55-1,0.05,XPhos Pd G3,CMP0117,,,,,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,DMF/H2O (4:1),CMP0587,100,12
+,suzuki,C90,‘32005-36-0,0.05,Pd(dba)2,CMP0069,‘657408-07-6,0.12,SPhos,CMP0199,‘497-19-8,3.0,Na2CO3,CMP0335,,,,,,,,,,,,,EtOH/H2O (4:1),CMP0592,100,12
+,suzuki,C91,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘603-35-0,0.1,PPh3,CMP0200,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,IPA,CMP0557,100,12
+,suzuki,C92,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘1807740-34-6,0.1,(S)-AntPhos,CMP0201,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,xylene,CMP0571,100,12
+,suzuki,C93,‘1445086-17-8,0.05,P(tBu)3 Pd G3,CMP0063,,,,,‘7087-68-5,3.0,DIPEA,CMP0369,,,,,,,,,,,,,EtOH,CMP0555,100,12
+,suzuki,C94,‘3375-31-3,0.05,Pd(OAc)2,CMP0073,‘564483-18-7,0.1,XPhos,CMP0165,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,EtOH,CMP0555,100,12
+,suzuki,C95,‘1295-35-8,0.05,Ni(cod)2,CMP0052,‘58656-04-5,0.1,PCy3.HBF4,CMP0191,‘7778-53-2,3.0,K3PO4,CMP0338,,,,,,,,,,,,,EtOH/H2O (4:1),CMP0592,100,12
+,suzuki,C96,‘95464-05-4,0.05,Pd(dppf)Cl2·CH2Cl2,CMP0091,‘13400-13-0,0.05,CsF,CMP0353,‘584-08-7,3.0,K2CO3,CMP0334,,,,,,,,,,,,,2-MeTHF/H2O (10:1),CMP0584,100,12

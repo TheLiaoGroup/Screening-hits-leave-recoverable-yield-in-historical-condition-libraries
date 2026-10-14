@@ -1,0 +1,15 @@
+transformation,reactant1_smiles,reactant2_smiles,product_smiles,source_array,example_condition_id
+Acylation,CNOC,O=C(O)c1ccco1,CON(C)C(=O)c1ccco1,Acylation|1,C2
+Suzuki,Cc1c(Br)cnn1C,OB(O)c1ccsc1,Cc1c(-c2ccsc2)cnn1C,Suzuki|1,C2
+SNAr,CN1CCNCC1,O=[N+]([O-])c1ccccc1F,CN1CCN(c2ccccc2[N+](=O)[O-])CC1,SNAr|1,C43
+Buchwald-Hartwig,NC1CC1,Brc1ncc[nH]1,c1c[nH]c(NC2CC2)n1,Buchwald-Hartwig(CMC)|2,A12
+Kumada,Nc1ccc(Cl)cn1,C[Mg]Br,Cc1ccc(N)nc1,Kumada|1,C2
+Heck,C=COC(C)=O,Brc1ccccn1,CC(=O)O/C=C/c1ccccn1,Heck|1,C1
+Reductive-amination,O=Cc1ccc[nH]1,C1CCNC1,c1c[nH]c(CN2CCCC2)c1,Reductive-amination|1,C2
+Ullmann,Oc1ccccc1,Cc1cccc(Br)n1,Cc1cccc(Oc2ccccc2)n1,Ullmann|1,C2
+Chan-Lam,Cc1ccc(=O)[nH]c1,OB(O)c1ccco1,Cc1ccc(=O)n(-c2ccco2)c1,Chan-Lam|1,C2
+Sonogashira,C#CC(C)(C)N,Cc1n[nH]cc1Br,Cc1n[nH]cc1C#CC(C)(C)N,Sonogashira|1,C2
+Hiyama,CO[Si](OC)(OC)c1ccccc1,Cc1cnc(Cl)nc1,Cc1cnc(-c2ccccc2)nc1,Hiyama|1,C6
+Grignard,C[Mg]Br,O=Cc1cccnc1Cl,CC(O)c1cccnc1Cl,Grignard|1,C2
+Esterification,CCO,O=C(O)c1ccc(F)cn1,CCOC(=O)c1ccc(F)cn1,Esterification|1,C2
+C-O competitive reactions,CO,COc1ncc(C(F)(F)F)cc1Cl,COc1cc(C(F)(F)F)cnc1OC,C-O competitive reactions|1,C2

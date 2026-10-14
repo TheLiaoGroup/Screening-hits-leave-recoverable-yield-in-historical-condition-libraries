@@ -1,0 +1,12 @@
+{
+  "purpose": "Environment used to check the deposited analyses during third-round revision",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "pandas": "3.0.1",
+  "scipy": "1.18.1",
+  "input_sha256": {
+    "arrays.csv": "7c556f304a20527fa36f98c183d1ed4dc6e83810ad9a5398f31b61baef1a773e",
+    "conditions.csv": "b60c2c307d500fed3169eba466600084be0a7c11084b252cef33620e47a6f980"
+  },
+  "scope": "Recorded analysis verification environment, not a requirement on the reader checker runtime."
+}

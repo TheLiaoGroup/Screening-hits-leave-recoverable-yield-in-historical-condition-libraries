@@ -1,0 +1,313 @@
+{
+ "scored_from": "FREEZE_transported_seven.json",
+ "freeze_sha256": "4ff78309f9492f896e505efba1839b0ccbb319370a1cd2c31919d696d149bfa0",
+ "registered_criteria": {
+  "supports": "the median R6 over resolvable blocks is not more than 0.10 below the median of their controls, AND at least two thirds of resolvable blocks have R6 at or above 0.60",
+  "does_not_support": "the median R6 is more than 0.10 below the median control, or fewer than two thirds of resolvable blocks reach 0.60; the manuscript then reports the shortfall and names the transformations where the panel failed",
+  "direction": "The criterion is one-sided downward: a never-read R6 ABOVE its control is not a failure. Stated explicitly because a two-sided interval can be satisfied in the wrong direction."
+ },
+ "resolvability_rule": {
+  "min_pairs_reaching_0.20": 8,
+  "effect": "A block with fewer than 8 never-read pairs reaching 0.20 is reported as UNRESOLVED and is excluded from the median and from every pooled figure. Its pair count is still reported. This rule exists because freeze 1 produced three blocks of three to four productive pairs and had no such rule.",
+  "floor_of_the_whole_freeze": "If fewer than four blocks are resolvable, the freeze reports UNRESOLVED as a whole and no verdict is drawn."
+ },
+ "blocks": [
+  {
+   "screen": "Acylation|1",
+   "rxn_class": "Acylation",
+   "never_read_pairs": 32,
+   "reference_conditions": 25,
+   "array_library_conditions": 94,
+   "pairs_with_any_product": 31,
+   "pairs_reaching_0.20": 31,
+   "resolvable": true,
+   "resolvable_rule": "at least 8 never-read pairs reaching 0.20",
+   "S1_R6": 0.9609538292807206,
+   "S1_R6_ci": [
+    0.9118892604739451,
+    0.9895097150826213
+   ],
+   "control_R6_same_columns": 0.9535260112370038,
+   "control_R6_full_library": 0.908482883354078,
+   "S1_minus_control": 0.007427818043716838,
+   "control_inside_S1_ci": true,
+   "S2_hit_recovery": 1.0,
+   "S2_counts": [
+    31,
+    31
+   ],
+   "S2_ci": [
+    0.88781125307763,
+    1.0
+   ],
+   "control_hit_recovery": 0.9850107066381156,
+   "S3_severe_loss": 0.03225806451612903,
+   "S3_counts": [
+    1,
+    31
+   ],
+   "S3_ci": [
+    0.000816370071846613,
+    0.16702111623022775
+   ],
+   "control_severe_loss": 0.028225806451612902,
+   "mean_per_pair_reference_best": 0.7206077687008753,
+   "mean_yield_per_well": 0.4895041435590835
+  },
+  {
+   "screen": "Buchwald-Hartwig|1",
+   "rxn_class": "Buchwald-Hartwig",
+   "never_read_pairs": 17,
+   "reference_conditions": 31,
+   "array_library_conditions": 95,
+   "pairs_with_any_product": 16,
+   "pairs_reaching_0.20": 14,
+   "resolvable": true,
+   "resolvable_rule": "at least 8 never-read pairs reaching 0.20",
+   "S1_R6": 0.9609950156707135,
+   "S1_R6_ci": [
+    0.91449511448711,
+    0.9901702992378844
+   ],
+   "control_R6_same_columns": 0.9211886492391662,
+   "control_R6_full_library": 0.8761366800795238,
+   "S1_minus_control": 0.039806366431547335,
+   "control_inside_S1_ci": true,
+   "S2_hit_recovery": 1.0,
+   "S2_counts": [
+    14,
+    14
+   ],
+   "S2_ci": [
+    0.7683642383498834,
+    1.0
+   ],
+   "control_hit_recovery": 0.9485714285714286,
+   "S3_severe_loss": 0.0625,
+   "S3_counts": [
+    1,
+    16
+   ],
+   "S3_ci": [
+    0.0015811117227658871,
+    0.30232073843453194
+   ],
+   "control_severe_loss": 0.08648648648648649,
+   "mean_per_pair_reference_best": 0.6906957471208074,
+   "mean_yield_per_well": 0.27370602125802174
+  },
+  {
+   "screen": "Heck|1",
+   "rxn_class": "Heck",
+   "never_read_pairs": 13,
+   "reference_conditions": 26,
+   "array_library_conditions": 90,
+   "pairs_with_any_product": 13,
+   "pairs_reaching_0.20": 13,
+   "resolvable": true,
+   "resolvable_rule": "at least 8 never-read pairs reaching 0.20",
+   "S1_R6": 0.9457601057066326,
+   "S1_R6_ci": [
+    0.8981399699482532,
+    0.981625869612827
+   ],
+   "control_R6_same_columns": 0.9610243394052813,
+   "control_R6_full_library": 0.8632452408233082,
+   "S1_minus_control": -0.01526423369864871,
+   "control_inside_S1_ci": true,
+   "S2_hit_recovery": 1.0,
+   "S2_counts": [
+    13,
+    13
+   ],
+   "S2_ci": [
+    0.7529473619995289,
+    1.0
+   ],
+   "control_hit_recovery": 0.9459459459459459,
+   "S3_severe_loss": 0.0,
+   "S3_counts": [
+    0,
+    13
+   ],
+   "S3_ci": [
+    0.0,
+    0.24705263800047095
+   ],
+   "control_severe_loss": 0.011235955056179775,
+   "mean_per_pair_reference_best": 0.6964644416153845,
+   "mean_yield_per_well": 0.34388490997633137
+  },
+  {
+   "screen": "Kumada|1",
+   "rxn_class": "Kumada",
+   "never_read_pairs": 14,
+   "reference_conditions": 28,
+   "array_library_conditions": 89,
+   "pairs_with_any_product": 14,
+   "pairs_reaching_0.20": 14,
+   "resolvable": true,
+   "resolvable_rule": "at least 8 never-read pairs reaching 0.20",
+   "S1_R6": 0.9823898357813982,
+   "S1_R6_ci": [
+    0.9600341113735886,
+    1.0
+   ],
+   "control_R6_same_columns": 0.9574091467602307,
+   "control_R6_full_library": 0.9110175268746191,
+   "S1_minus_control": 0.024980689021167457,
+   "control_inside_S1_ci": false,
+   "S2_hit_recovery": 1.0,
+   "S2_counts": [
+    14,
+    14
+   ],
+   "S2_ci": [
+    0.7683642383498834,
+    1.0
+   ],
+   "control_hit_recovery": 1.0,
+   "S3_severe_loss": 0.0,
+   "S3_counts": [
+    0,
+    14
+   ],
+   "S3_ci": [
+    0.0,
+    0.23163576165011648
+   ],
+   "control_severe_loss": 0.030927835051546393,
+   "mean_per_pair_reference_best": 0.6845470357142858,
+   "mean_yield_per_well": 0.2955061244795918
+  },
+  {
+   "screen": "Sonogashira|1",
+   "rxn_class": "Sonogashira",
+   "never_read_pairs": 11,
+   "reference_conditions": 29,
+   "array_library_conditions": 95,
+   "pairs_with_any_product": 11,
+   "pairs_reaching_0.20": 11,
+   "resolvable": true,
+   "resolvable_rule": "at least 8 never-read pairs reaching 0.20",
+   "S1_R6": 0.8982463211391882,
+   "S1_R6_ci": [
+    0.8152887543944433,
+    0.9643159597525969
+   ],
+   "control_R6_same_columns": 0.9405159321143519,
+   "control_R6_full_library": 0.8866696044391872,
+   "S1_minus_control": -0.042269610975163685,
+   "control_inside_S1_ci": true,
+   "S2_hit_recovery": 1.0,
+   "S2_counts": [
+    11,
+    11
+   ],
+   "S2_ci": [
+    0.7150858470818455,
+    1.0
+   ],
+   "control_hit_recovery": 0.9411764705882353,
+   "S3_severe_loss": 0.2727272727272727,
+   "S3_counts": [
+    3,
+    11
+   ],
+   "S3_ci": [
+    0.06021773417290665,
+    0.6097425595724211
+   ],
+   "control_severe_loss": 0.057971014492753624,
+   "mean_per_pair_reference_best": 0.828936135129863,
+   "mean_yield_per_well": 0.4393666410831995
+  },
+  {
+   "screen": "Suzuki|1",
+   "rxn_class": "Suzuki",
+   "never_read_pairs": 31,
+   "reference_conditions": 32,
+   "array_library_conditions": 94,
+   "pairs_with_any_product": 31,
+   "pairs_reaching_0.20": 30,
+   "resolvable": true,
+   "resolvable_rule": "at least 8 never-read pairs reaching 0.20",
+   "S1_R6": 0.8977296813662297,
+   "S1_R6_ci": [
+    0.8618809248982578,
+    0.9336000675831737
+   ],
+   "control_R6_same_columns": 0.9135396019562173,
+   "control_R6_full_library": 0.8691704590033691,
+   "S1_minus_control": -0.015809920589987647,
+   "control_inside_S1_ci": true,
+   "S2_hit_recovery": 0.9666666666666667,
+   "S2_counts": [
+    29,
+    30
+   ],
+   "S2_ci": [
+    0.8278305443665873,
+    0.9991564290733695
+   ],
+   "control_hit_recovery": 0.9726027397260274,
+   "S3_severe_loss": 0.06451612903225806,
+   "S3_counts": [
+    2,
+    31
+   ],
+   "S3_ci": [
+    0.007910983461854705,
+    0.21421615716340225
+   ],
+   "control_severe_loss": 0.06926406926406926,
+   "mean_per_pair_reference_best": 0.6150861251612902,
+   "mean_yield_per_well": 0.3819980917339035
+  },
+  {
+   "screen": "Ullmann|1",
+   "rxn_class": "Ullmann",
+   "never_read_pairs": 11,
+   "reference_conditions": 35,
+   "array_library_conditions": 95,
+   "pairs_with_any_product": 11,
+   "pairs_reaching_0.20": 11,
+   "resolvable": true,
+   "resolvable_rule": "at least 8 never-read pairs reaching 0.20",
+   "S1_R6": 0.9187550741333795,
+   "S1_R6_ci": [
+    0.8295657252356047,
+    0.9891422238485319
+   ],
+   "control_R6_same_columns": 0.8913434298661966,
+   "control_R6_full_library": 0.8551842661568502,
+   "S1_minus_control": 0.0274116442671829,
+   "control_inside_S1_ci": true,
+   "S2_hit_recovery": 1.0,
+   "S2_counts": [
+    11,
+    11
+   ],
+   "S2_ci": [
+    0.7150858470818455,
+    1.0
+   ],
+   "control_hit_recovery": 0.8928571428571429,
+   "S3_severe_loss": 0.09090909090909091,
+   "S3_counts": [
+    1,
+    11
+   ],
+   "S3_ci": [
+    0.0022989722138142673,
+    0.4127799169883827
+   ],
+   "control_severe_loss": 0.11475409836065574,
+   "mean_per_pair_reference_best": 0.6866684378349974,
+   "mean_yield_per_well": 0.28010985688670903
+  }
+ ],
+ "verdict": "supports",
+ "verdict_basis": "median R6 0.946 against median control 0.941 (within 0.10: True); 7 of 7 resolvable blocks at or above 0.60 (100%, needs two thirds: True)",
+ "unresolved_blocks": []
+}

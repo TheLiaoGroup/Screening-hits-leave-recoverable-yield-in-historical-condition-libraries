@@ -1,0 +1,138 @@
+{
+ "scored_from": "FREEZE_transported_fullish.json",
+ "freeze_sha256": "11b0b291d4cede1bb6da321f173102a8513456b21ce29c61f3ef7e88003e2bb9",
+ "registered_criteria": {
+  "a_block_supports": "F1 at or above 0.60 AND F2 at or above 0.90. Both are required: retention alone cannot distinguish a good panel from an easy block.",
+  "a_block_does_not_support": "either condition fails; the manuscript then names the transformation and reports both numbers",
+  "the_freeze_supports": "every resolvable block supports",
+  "direction": "One-sided upward for F2 and F1: a panel above its threshold is support, and there is no upper bound at which support becomes failure.",
+  "why_F2_is_primary_here": "Freeze 3 registered retention without a random baseline and its Suzuki block therefore counted as support at the 61st percentile of random sixes, beating them by 0.007. That will not recur under these criteria."
+ },
+ "blocks": [
+  {
+   "screen": "Suzuki|1",
+   "rxn_class": "Suzuki",
+   "never_read_pairs": 17,
+   "library_conditions": 94,
+   "coverage_median": 0.862,
+   "pairs_with_any_product": 17,
+   "pairs_reaching_0.20": 17,
+   "resolvable": true,
+   "F1_R6": 0.9179941414603948,
+   "F1_R6_ci": [
+    0.8718585599209494,
+    0.9564230663549544
+   ],
+   "F2_random_six_percentile": 0.99485,
+   "F2_random_six_median": 0.8134502813901273,
+   "F2_random_six_p95": 0.8917555986154104,
+   "F2_margin_over_random_median": 0.1045438600702675,
+   "best_single_condition_R6": 0.8199873571598907,
+   "F3_hit_recovery": 1.0,
+   "F3_counts": [
+    17,
+    17
+   ],
+   "F3_ci": [
+    0.8049356770309067,
+    1.0
+   ],
+   "F4_severe_loss": 0.058823529411764705,
+   "F4_counts": [
+    1,
+    17
+   ],
+   "inflation_from_partial_coverage": 0.0063054277298106864,
+   "analysed_pairs_R6_full_library": 0.8691704590033691,
+   "gate_retention_0.60": true,
+   "gate_random_six_percentile_0.90": true,
+   "block_verdict": "supports",
+   "mean_per_pair_reference_best": 0.8651897823529412,
+   "mean_yield_per_well": 0.4063926477844295
+  },
+  {
+   "screen": "Acylation|1",
+   "rxn_class": "Acylation",
+   "never_read_pairs": 15,
+   "library_conditions": 94,
+   "coverage_median": 0.872,
+   "pairs_with_any_product": 14,
+   "pairs_reaching_0.20": 14,
+   "resolvable": true,
+   "F1_R6": 0.9126500275456705,
+   "F1_R6_ci": [
+    0.8739009827679421,
+    0.9497287881704525
+   ],
+   "F2_random_six_percentile": 0.9877,
+   "F2_random_six_median": 0.8083953145428043,
+   "F2_random_six_p95": 0.8895014257967309,
+   "F2_margin_over_random_median": 0.10425471300286615,
+   "best_single_condition_R6": 0.861371585342803,
+   "F3_hit_recovery": 1.0,
+   "F3_counts": [
+    14,
+    14
+   ],
+   "F3_ci": [
+    0.7683642383498834,
+    1.0
+   ],
+   "F4_severe_loss": 0.07142857142857142,
+   "F4_counts": [
+    1,
+    14
+   ],
+   "inflation_from_partial_coverage": 0.006330119558478509,
+   "analysed_pairs_R6_full_library": 0.908482883354078,
+   "gate_retention_0.60": true,
+   "gate_random_six_percentile_0.90": true,
+   "block_verdict": "supports",
+   "mean_per_pair_reference_best": 0.8393716533333334,
+   "mean_yield_per_well": 0.3626919089130996
+  },
+  {
+   "screen": "Grignard|1",
+   "rxn_class": "Grignard",
+   "never_read_pairs": 14,
+   "library_conditions": 46,
+   "coverage_median": 0.891,
+   "pairs_with_any_product": 14,
+   "pairs_reaching_0.20": 14,
+   "resolvable": true,
+   "F1_R6": 0.9215286586703763,
+   "F1_R6_ci": [
+    0.8660309398034057,
+    0.9642462077146381
+   ],
+   "F2_random_six_percentile": 0.9972,
+   "F2_random_six_median": 0.8429899609529536,
+   "F2_random_six_p95": 0.893473918706089,
+   "F2_margin_over_random_median": 0.07853869771742261,
+   "best_single_condition_R6": 0.7795850818126698,
+   "F3_hit_recovery": 1.0,
+   "F3_counts": [
+    14,
+    14
+   ],
+   "F3_ci": [
+    0.7683642383498834,
+    1.0
+   ],
+   "F4_severe_loss": 0.0,
+   "F4_counts": [
+    0,
+    14
+   ],
+   "inflation_from_partial_coverage": 0.002826571795143673,
+   "analysed_pairs_R6_full_library": 0.9442303811468522,
+   "gate_retention_0.60": true,
+   "gate_random_six_percentile_0.90": true,
+   "block_verdict": "supports",
+   "mean_per_pair_reference_best": 0.5442887868513437,
+   "mean_yield_per_well": 0.32379283837454775
+  }
+ ],
+ "verdict": "supports",
+ "verdict_basis": "3 of 3 resolvable blocks support under both gates; all of them"
+}

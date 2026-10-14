@@ -1,0 +1,118 @@
+{
+ "status": "PRE-SCORING. No yield value from these blocks has been read.",
+ "frozen_by": "six-condition manuscript, corpus hold-out",
+ "source": {
+  "private_csv": "C:\\Users\\Kb\\我的云端硬盘\\ManuscriptForSubmission\\HTE-Data-Papers\\HTE data\\03_不公开\\PRIVATE_never_release.csv",
+  "private_sha256": "33e658caa7d6003c082001b9d3d6d372b7b242dd0ea4389a1dac05c13cfcaba0",
+  "raw_condition_table": "C:\\Users\\Kb\\我的云端硬盘\\ManuscriptForSubmission\\HTE-Data-Papers\\HTE data\\01_原始数据\\0_total condition_260810.xlsx",
+  "raw_condition_sha256": "8cd865ca3d4763dd93a09ee60d73c63b3006f8fff3b7a5c8b81b4f4ba768d319",
+  "allocation_filter": "reserve: outside any qualifying screen",
+  "check_passed": true
+ },
+ "why_these_rows_are_unread": "The corpus excluded them when it formed the eighteen arrays, using thresholds on pair count, condition count, completeness and condition-set agreement. Those thresholds never referred to a yield.",
+ "blocks": [
+  {
+   "block_id": "Chan-Lam|25C",
+   "rxn_class": "Chan-Lam",
+   "temperature_C": 25.0,
+   "time_h": 16.0,
+   "role": "replication: identical 32-condition library, new pairs",
+   "pairs": 61,
+   "conditions": 32,
+   "wells": 1952,
+   "shares_condition_ids_with_analysed_array": 32,
+   "analysed_array_condition_count": 32,
+   "membership_file": "Chan-Lam_25C.csv",
+   "membership_sha256": "0057b7932386b71badbe197546b0bee56fc1592d98414d82d7601ca16ddbb045"
+  },
+  {
+   "block_id": "Chan-Lam|70C",
+   "rxn_class": "Chan-Lam",
+   "temperature_C": 70.0,
+   "time_h": 16.0,
+   "role": "second campaign of the same transformation, disjoint library",
+   "pairs": 116,
+   "conditions": 32,
+   "wells": 3712,
+   "shares_condition_ids_with_analysed_array": 0,
+   "analysed_array_condition_count": 32,
+   "membership_file": "Chan-Lam_70C.csv",
+   "membership_sha256": "346cacd33b205b1173639c87b06dd6cf27a5509ed8a5b9eca84f1a27189fb3eb"
+  },
+  {
+   "block_id": "Allylic-substitution|25C",
+   "rxn_class": "Allylic-substitution",
+   "temperature_C": 25.0,
+   "time_h": 16.0,
+   "role": "transformation absent from the eighteen arrays",
+   "pairs": 45,
+   "conditions": 90,
+   "wells": 4050,
+   "shares_condition_ids_with_analysed_array": 0,
+   "analysed_array_condition_count": null,
+   "membership_file": "Allylic-substitution_25C.csv",
+   "membership_sha256": "00ba334b39efb5be7b9f2ff1dad1e60189742a5de51571ff0784a56576ac4a4a"
+  },
+  {
+   "block_id": "Pd-carbonylation|100C",
+   "rxn_class": "Pd-carbonylation",
+   "temperature_C": 100.0,
+   "time_h": 16.0,
+   "role": "transformation absent from the eighteen arrays",
+   "pairs": 32,
+   "conditions": 84,
+   "wells": 2688,
+   "shares_condition_ids_with_analysed_array": 0,
+   "analysed_array_condition_count": null,
+   "membership_file": "Pd-carbonylation_100C.csv",
+   "membership_sha256": "0bfb928de5a4cc049af2bc48c760cf5fcd9fbcf4f8cffadbbeb9c2f004af0d58"
+  },
+  {
+   "block_id": "Minisci|60C",
+   "rxn_class": "Minisci",
+   "temperature_C": 60.0,
+   "time_h": 4.0,
+   "role": "transformation absent from the eighteen arrays",
+   "pairs": 19,
+   "conditions": 29,
+   "wells": 551,
+   "shares_condition_ids_with_analysed_array": 0,
+   "analysed_array_condition_count": null,
+   "membership_file": "Minisci_60C.csv",
+   "membership_sha256": "baba62c33f2933022b3b91a70e67375c0d732fca3c4a5da27f0276558531d464"
+  }
+ ],
+ "criteria": {
+  "estimand": "R_k = sum over pairs of the best yield within the first k members of the panel, divided by the sum of the best yield over the block's full condition set. Identical to the manuscript.",
+  "panel_selection": "lib.greedy_kit on the training pairs of each fold; ten-fold cross-validation over pairs, numpy RandomState(3) permutation, identical to the manuscript.",
+  "endpoints": {
+   "E1_retention_k6": "cross-validated R_6 per block",
+   "E2_hit_recovery": "among pairs whose full-block best is at least 0.20, the share whose best within the six-condition panel is also at least 0.20",
+   "E3_severe_loss": "among pairs whose full-block best exceeds 0, the share losing more than 0.20 absolute yield, reported at k = 6 and k = 12"
+  },
+  "predictions_from_the_eighteen_analysed_arrays": {
+   "E1_median": 0.85,
+   "E1_range_across_arrays": [
+    0.71,
+    0.98
+   ],
+   "E2_pooled": 0.925,
+   "E3_pooled_k6": 0.154,
+   "E3_pooled_k12": 0.069
+  },
+  "outcomes_fixed_in_advance": {
+   "reproduces": "median E1 across blocks within 0.10 of 0.85 and every block inside [0.71, 0.98]",
+   "partly": "median E1 inside the range but one or more blocks outside it; report per block, no pooling",
+   "fails": "median E1 below 0.75; the claim is then restricted to the transformation classes of the eighteen analysed arrays and the boundary is stated in the abstract"
+  },
+  "rules": [
+   "Blocks were formed from measurement presence and the platform validation flag only; no yield was read.",
+   "No block, pair or condition may be added, dropped or reselected after scoring begins.",
+   "Pairs whose full-block best is zero contribute to neither E2 nor E3 and are counted separately.",
+   "Blocks are reported individually; a pooled number appears only alongside the per-block values.",
+   "Small blocks are not pooled with large ones without stating the pair counts."
+  ]
+ },
+ "total_pairs": 273,
+ "total_wells": 12953
+}

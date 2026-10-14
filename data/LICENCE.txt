@@ -1,0 +1,7 @@
+Data files in this directory: Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+
+This licence also covers the 23,617 fixed-member well rows and 739 recipe rows in
+06_CORPUS_HOLDOUT/data/. The remaining source corpus is not part of this release.
+The pinned third-party reference in public_reference/ retains its source attribution
+and licensing information.
