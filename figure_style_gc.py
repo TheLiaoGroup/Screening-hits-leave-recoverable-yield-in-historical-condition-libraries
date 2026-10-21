@@ -12,7 +12,12 @@ positions: in each column the letters stand at the leftmost ink of that column's
 and axis titles included), every title starts the same distance right of its letter, and the
 letters and titles of one row share their top edge.
 """
+import os
+
 from matplotlib import font_manager, pyplot as plt
+
+# A fixed PDF creation date (2026-10-18 UTC), so a rebuilt figure is byte-identical to the deposited one.
+os.environ.setdefault("SOURCE_DATE_EPOCH", "1792281600")
 
 LARGE = 9.0
 SMALL = 8.0

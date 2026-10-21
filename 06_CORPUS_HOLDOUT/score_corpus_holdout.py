@@ -158,7 +158,7 @@ def cross_validate(M):
         full[f] = fb
         fold_of[f] = fi
         kit12 = lib.greedy_kit(Ytr, max(KS))
-        rank = np.argsort(-np.nanmean(np.where(np.isnan(Ytr), 0.0, Ytr), 0))
+        rank = np.argsort(-np.nanmean(Ytr, 0))
         panels[fi] = {"greedy12": [M.columns[c] for c in kit12],
                       "topmean12": [M.columns[c] for c in rank[:max(KS)]]}
         for k in KS:

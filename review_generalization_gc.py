@@ -103,7 +103,7 @@ def cv_curve(Y):
         tr = np.setdiff1d(np.arange(n), f)
         fold_id[f] = fi
         kit = lib.greedy_kit(Y[tr], 24)
-        rank = np.argsort(-np.nanmean(np.where(np.isnan(Y[tr]), 0., Y[tr]), axis=0))
+        rank = np.argsort(-np.nanmean(Y[tr], axis=0))
         for k in range(1, 25):
             pred["greedy"][f, k-1] = lib.retention(Y[f], kit[:k])[0]
             pred["meanyield"][f, k-1] = lib.retention(Y[f], list(rank[:k]))[0]
@@ -114,7 +114,7 @@ def cv_curve(Y):
 
 def score(Y, tr, te):
     kit = lib.greedy_kit(Y[tr], max(KS))
-    rank = np.argsort(-np.nanmean(np.where(np.isnan(Y[tr]), 0., Y[tr]), axis=0))
+    rank = np.argsort(-np.nanmean(Y[tr], axis=0))
     full = lib.retention(Y[te], list(range(Y.shape[1])))[1]
     if full.sum() <= 0:
         return []
@@ -324,6 +324,7 @@ def main():
         raise FileNotFoundError("Released data/arrays.csv is required for the generalization analysis")
     path = lib.DATASET / "arrays.csv"
     raw = pd.read_csv(path, low_memory=False)
+    raw = raw[raw["measurement_status"].isin(["quantified", "zero_by_rule"])].copy()  # measured cells only
     raw["yield"] = pd.to_numeric(raw["yield"], errors="coerce")
     bad = int(raw["yield"].isna().sum())
     raw = raw.rename(columns={"array_id": "screen", "array": "screen_label"})
@@ -376,7 +377,7 @@ def main():
                 nv["fold"] = fi
                 novelty_rows.extend(nv.to_dict("records"))
         kit = lib.greedy_kit(Y, 24)
-        rank = np.argsort(-np.nanmean(np.where(np.isnan(Y), 0., Y), axis=0))
+        rank = np.argsort(-np.nanmean(Y, axis=0))
         for which in ("sealed", "reserve"):
             hd = data[(data.screen == screen) & (data.set == which)]
             if not len(hd):
@@ -429,7 +430,7 @@ def main():
     save(pd.DataFrame(mol_rows), "review_generalization_molecule_novelty_per_array.csv")
     save(ds, "review_generalization_disjoint_repeats.csv")
     save(av, "review_generalization_disjoint_availability.csv")
-    pd.DataFrame(partition_rows).to_csv(HERE / "out" / "review_generalization_disjoint_assignments.csv.gz", index=False, compression="gzip")
+    pd.DataFrame(partition_rows).to_csv(HERE / "out" / "review_generalization_disjoint_assignments.csv.gz", index=False, compression={"method": "gzip", "mtime": 0})
     save(sz, "review_generalization_training_size_repeats.csv")
 
     ns = nv.groupby(["screen", "screen_label", "set", "scope", "novelty"]).size().unstack(fill_value=0).reset_index()

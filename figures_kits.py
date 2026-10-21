@@ -1,12 +1,10 @@
 """Figures.
  Fig 1  is drawn by figure1_gc.py, which reuses the library constants below
  Supplementary Fig 5  the fourteen transformations as generic schemes (the author ChemDraw panel)
- Fig 2  what a screening hit leaves behind: severe shortfalls among hits, what six more conditions recover
  Supplementary Fig 3  retention against panel size, with historical-mean and random baselines
  Supplementary Fig 4  panels scored out of sample: the sealed hold-out and the reserve
  Supplementary Fig 2  composition restrictions and how well the kit size is determined
  Supplementary Fig 6  levels of each condition variable that each array moves
- Fig 3  yield history, not reagent spread: median retention curves and ligand-spread rules
 """
 import io, json, numpy as np, pandas as pd, matplotlib
 matplotlib.use("Agg"); import matplotlib.pyplot as plt
@@ -135,7 +133,7 @@ def sfig5(write_outputs=True):
                         if source[0].get_images():
                             raise RuntimeError("RDKit chemical SVG unexpectedly contains a raster image")
                         document[0].show_pdf_page(rect, source, 0)
-            pdf_payload = document.tobytes(garbage=4, deflate=True)
+            pdf_payload = document.tobytes(garbage=4, deflate=True, no_new_id=True)
         for target, payload in ((FIG / "SupplementaryFigure5_schemes.pdf", pdf_payload),
                                 (FIG / "SupplementaryFigure5_schemes.png", png_buffer.getvalue())):
             if not payload:
@@ -168,9 +166,9 @@ def sfig3():
         ax.xaxis.set_tick_params(labelbottom=True)
         ax.set_xlabel("panel size, k")
     fig.supylabel("retention of mean best yield", fontsize=LARGE, x=0.012)
-    h = [plt.Line2D([], [], color=BLUE, lw=1.4, label="Greedy"),
-         plt.Line2D([], [], color=DARK, lw=0.9, ls=(0, (3, 2)), label="Historical mean"),
-         plt.Line2D([], [], color=GREY, lw=0.9, ls=":", label="Random"),
+    h = [plt.Line2D([], [], color=BLUE, lw=1.4, label="history-ranked (greedy)"),
+         plt.Line2D([], [], color=DARK, lw=0.9, ls=(0, (3, 2)), label="historical mean"),
+         plt.Line2D([], [], color=GREY, lw=0.9, ls=":", label="random"),
          plt.Line2D([], [], color=ORANGE, lw=0.6, ls=":", label="90% of the best yield")]
     fig.tight_layout(rect=(0.02, 0, 1, 1), h_pad=0.9, w_pad=0.4)
     # Titles of one row share their top edge, whether they run to one line or two.
@@ -230,150 +228,6 @@ def sfig2():
     fig.savefig(FIG/"SupplementaryFigure2_axes_and_size.pdf"); fig.savefig(FIG/"SupplementaryFigure2_axes_and_size.png",dpi=300); plt.close(fig)
 
 
-def fig2():
-    """Severe shortfalls among screening hits, the gap six more conditions recover, and the yield ceiling."""
-    S = json.load(open(OUT / "posthit_summary.json")); B = pd.read_csv(OUT / "posthit_yield_bands.csv")
-    an, nb, ho, ex = S["analysed"], S["molecule_node_intervals"], S["holdout"]["all"], S["extension_and_support"]
-    # Drawn at the 6.5-inch text width and embedded at 100%: sizes here are printed sizes.
-    fig = plt.figure(figsize=(6.5, 5.9))
-    # Top row: a (rates) and b (yield bands); bottom row: c (recovery bars, long labels) and d (per-hit gain).
-    top = fig.add_gridspec(1, 2, left=0.115, right=0.975, top=0.925, bottom=0.625, wspace=0.42)
-    bottom = fig.add_gridspec(1, 1, left=0.30, right=0.63, top=0.465, bottom=0.085)
-    right = fig.add_gridspec(1, 1, left=0.79, right=0.975, top=0.465, bottom=0.085)
-    ax, cx, bx = fig.add_subplot(top[0, 0]), fig.add_subplot(top[0, 1]), fig.add_subplot(bottom[0, 0])
-    dx = fig.add_subplot(right[0, 0])
-    # a: hits below 80%, the only hits that can fall more than twenty points short.
-    bc = S["below_ceiling"]
-    ks = [6, 12, 24]
-    rate = [100 * bc["severe_rate_k%d" % k] for k in ks]
-    lo = [100 * bc["severe_rate_k%d_lo" % k] for k in ks]
-    hi = [100 * bc["severe_rate_k%d_hi" % k] for k in ks]
-    ax.vlines(ks, lo, hi, color=BLUE, lw=1.2)
-    ax.plot(ks, rate, "o-", color=BLUE, ms=4.5, lw=1.2, label="analysed (%d hits)" % bc["pairs"])
-    ax.plot([6, 12], [100 * ho["severe_rate_below_ceiling_k6"], 100 * ho["severe_rate_below_ceiling_k12"]], "s--",
-            color=ORANGE, ms=4.5, lw=1, label="held-out (%d hits)" % ho["hit6_below_ceiling"])
-    offsets = {6: ((-7, -3), "right"), 12: ((6, 4), "left"), 24: ((-6, 12), "right")}
-    for k, r in zip(ks, rate):
-        ax.annotate("%.1f%%" % r, (k, r), xytext=offsets[k][0], textcoords="offset points",
-                    ha=offsets[k][1], fontsize=SMALL, color=BLUE)
-    ax.set_xticks(ks); ax.set_xlim(1.5, 26); ax.set_ylim(0, 30)
-    ax.set_xlabel("conditions screened")
-    ax.set_ylabel("hits below 80% that are >20\npoints below the library best (%)")
-    ax.legend(frameon=False, loc="upper right")
-    panel_title(fig, ax, "a", "Hits far from the best recipe", row=0, col=0)
-    # The analysed cohort has molecular-reweighting intervals; held-out point
-    # estimates are shown without intervals because the frozen scores do not
-    # support the same uncertainty calculation.
-    rows = [("analysed: Greedy", 100 * an["gap_recovery_k6_to_12"],
-             100 * nb["gap_recovery_k6_to_12_lo"], 100 * nb["gap_recovery_k6_to_12_hi"], BLUE, ""),
-            ("analysed: Historical mean", 100 * ex["gap_recovery_meanyield_plus6"],
-             100 * nb["meanyield_recovery_lo"], 100 * nb["meanyield_recovery_hi"], "#56B4E9", ""),
-            ("analysed: Random", 100 * ex["gap_recovery_random_plus6"], 100 * nb["random_recovery_lo"],
-             100 * nb["random_recovery_hi"], GREY, ""),
-            ("held-out: Greedy", 100 * ho["gap_recovery_k6_to_12"], None, None, BLUE, "///"),
-            ("held-out: Historical mean", 100 * ho["gap_recovery_meanyield_plus6"], None, None, "#56B4E9", "///"),
-            ("held-out: Random", 100 * ho["gap_recovery_random_plus6"], None, None, GREY, "///")]
-    for y, (lab, v, l, h, c, hatch) in enumerate(rows):
-        # Opaque colors preserve hatch contrast in PDF tiling patterns.
-        rgb = np.asarray(matplotlib.colors.to_rgb(c))
-        weight = 0.28 if hatch else 0.9
-        face = tuple(1 - weight + weight * rgb)
-        edge = tuple(0.4 + 0.6 * rgb) if hatch else face
-        bx.barh(y, v, color=face, edgecolor=edge, hatch=hatch, height=0.6)
-        if l is not None:
-            bx.hlines(y, l, h, color="black", lw=0.9)
-        bx.text((h if h is not None else v) + 1.5, y, "%.0f%%" % v, va="center", fontsize=SMALL)
-    bx.set_yticks(range(len(rows))); bx.set_yticklabels([r[0] for r in rows]); bx.invert_yaxis()
-    bx.set_xlim(0, 62); bx.set_xlabel("share of the hits' yield gap recovered (%)")
-    panel_title(fig, bx, "c", "What six further conditions recover", row=1, col=0)
-    # d: what each hit gains from the six further Greedy conditions, hits below 80% against severe shortfalls.
-    P = pd.read_csv(OUT / "posthit_pair_support.csv")
-    gain = 100 * (P.m12 - P.m6)
-    severe = (P.b - P.m6) > 0.20
-    below = P.m6 < 0.80
-    groups = [gain[below].values, gain[severe].values]
-    assert len(P) == an["pairs"] and int(severe.sum()) == ex["severe_k6"] and int(below.sum()) == bc["pairs"]
-    assert np.isclose(np.median(groups[0]), bc["gain_points_median"]) and \
-        np.isclose(np.median(groups[1]), ex["severe_gain_points_median"])
-    box = dx.boxplot(groups, vert=False, whis=(5, 95), showfliers=False, widths=0.5, patch_artist=True,
-                     medianprops=dict(color="black", lw=1.2), whiskerprops=dict(lw=0.8), capprops=dict(lw=0.8))
-    for patch, color in zip(box["boxes"], ("#56B4E9", BLUE)):
-        patch.set(facecolor=color, edgecolor="black", lw=0.8, alpha=0.85)
-    for y, values in enumerate(groups, 1):
-        dx.text(np.percentile(values, 95) + 2, y, "median %s" % ("%+.0f" % np.median(values) if np.median(values) else "0"), va="center", fontsize=SMALL)
-    dx.set_yticks([1, 2])
-    dx.set_yticklabels(["hits below\n80%% (%d)" % bc["pairs"], "severe\n(%d)" % ex["severe_k6"]])
-    dx.invert_yaxis(); dx.set_xlim(0, 80); dx.set_xticks([0, 20, 40, 60, 80])
-    dx.set_xlabel("yield points gained")
-    panel_title(fig, dx, "d", "Gain per hit, Greedy", row=1, col=1)
-    labels = ["%d–%d%%" % (round(100 * r.m6_lower), round(100 * r.m6_upper)) for r in B.itertuples()]
-    for i, r in enumerate(B.itertuples()):
-        if r.ceiling_permits_severe:
-            v = 100 * r.severe_rate_k6
-            cx.bar(i, v, color=BLUE, width=0.65)
-            cx.text(i, v + 0.8, "%d/%d" % (r.severe_k6, r.pairs), ha="center", fontsize=SMALL)
-        else:
-            cx.text(i, 3.5, "%d/%d\nceiling-limited" % (r.severe_k6, r.pairs),
-                    ha="center", va="center", fontsize=SMALL, color="#555555")
-    cx.set_xticks(range(len(labels))); cx.set_xticklabels(labels); cx.set_ylim(0, 30)
-    cx.set_xlim(-0.5, len(labels) - 0.5)
-    cx.set_xlabel("best yield among the six screened")
-    cx.set_ylabel("hits >20 points short (%)")
-    panel_title(fig, cx, "b", "Shortfall by the hit's yield", row=0, col=1)
-    align_panels(fig)
-    fig.savefig(FIG / "Figure2_posthit.pdf"); fig.savefig(FIG / "Figure2_posthit.png", dpi=300); plt.close(fig)
-
-
-def fig3():
-    """Yield history, not reagent spread: (a) median retention against panel size over the eighteen arrays;
-    (b) per array, six ligand levels chosen without yields against random, historical-mean and greedy panels."""
-    R = pd.read_csv(OUT / "review_axes_recipes.csv")
-    fig = plt.figure(figsize=(6.5, 4.0))
-    ax = fig.add_axes([0.115, 0.26, 0.32, 0.63])
-    bx = fig.add_axes([0.695, 0.26, 0.28, 0.63])
-    for panel in (ax, bx):
-        panel.tick_params(length=2)
-    methods = [("greedy", "Greedy", BLUE, "-", 1.6), ("meanyield", "Historical mean", DARK, (0, (3, 2)), 1.1),
-               ("random", "Random", GREY, ":", 1.3)]
-    med = KC.groupby("k")[["retention_" + m for m, *_ in methods]].median()
-    q1 = KC.groupby("k").retention_greedy.quantile(0.25); q3 = KC.groupby("k").retention_greedy.quantile(0.75)
-    ax.fill_between(med.index, q1, q3, color=BLUE, alpha=0.12, lw=0)
-    for m, label, color, ls, lw in methods:
-        ax.plot(med.index, med["retention_" + m], color=color, ls=ls, lw=lw, label=label)
-    ax.axvline(6, color="#BBBBBB", lw=0.6, zorder=0)
-    # Values at six conditions, set clear of the curves: above, below, and below the random curve.
-    for (m, label, color, ls, lw), y in zip(methods, (0.97, 0.70, 0.47)):
-        v = med.loc[6, "retention_" + m]
-        ax.plot(6, v, "o", color=color, ms=3.5, zorder=4)
-        ax.text(6.4, y, "%.0f%%" % (100 * v), fontsize=SMALL, color=color, va="center")
-    ax.set_xlim(1, 24); ax.set_ylim(0, 1.0); ax.set_xticks([1, 6, 12, 18, 24])
-    ax.set_yticks([0, 0.25, 0.5, 0.75, 1.0]); ax.set_yticklabels(["0", "25", "50", "75", "100"])
-    ax.set_xlabel("conditions in the panel")
-    ax.set_ylabel("share of library-best\nyield found (%)")
-    ax.legend(frameon=False, loc="lower right")
-    panel_title(fig, ax, "a", "Median of 18 libraries", row=0, col=0)
-    rules = [("ligand_uniform6", "six ligand levels", ORANGE, "D"), ("random6", "Random", GREY, "o"),
-             ("topmean6", "Historical mean", DARK, "s"), ("greedy6", "Greedy", BLUE, "o")]
-    P = R.pivot_table(index="screen", columns="method", values="retention")
-    P = P.sort_values("greedy6")
-    assert len(P) == 12 and P[[r[0] for r in rules]].notna().all().all()
-    for y, (screen, row) in enumerate(P.iterrows()):
-        bx.hlines(y, row[[r[0] for r in rules]].min(), row[[r[0] for r in rules]].max(), color="#DDDDDD", lw=1.0, zorder=1)
-        for method, label, color, marker in rules:
-            bx.plot(row[method], y, marker, color=color, ms=4.6, zorder=3,
-                    mfc="white" if method == "topmean6" else color, mew=1.0)
-    bx.set_yticks(range(len(P))); bx.set_yticklabels([array_label(s) for s in P.index])
-    bx.set_xlim(0, 1.0); bx.set_xticks([0, 0.25, 0.5, 0.75, 1.0]); bx.set_xticklabels(["0", "25", "50", "75", "100"])
-    bx.set_xlabel("share of library-best\nyield found by six (%)")
-    handles = [plt.Line2D([], [], color=c, marker=mk, ls="none", ms=4.6, mfc="white" if m == "topmean6" else c,
-                          label="%s (median %.0f%%)" % (lab, 100 * P[m].median())) for m, lab, c, mk in rules[::-1]]
-    fig.legend(handles=handles, frameon=False, loc="lower center", bbox_to_anchor=(0.62, 0.0),
-               ncol=2, columnspacing=1.2, handletextpad=0.3)
-    panel_title(fig, bx, "b", "Ligand spread, no yields", row=0, col=1)
-    align_panels(fig)
-    fig.savefig(FIG / "Figure3_rules.pdf"); fig.savefig(FIG / "Figure3_rules.png", dpi=300); plt.close(fig)
-
-
 def sfig4():
     """All held-out arrays, paired CV references and conditional pair-bootstrap intervals."""
     D=pd.read_csv(OUT/"review_generalization_heldout_cv_per_array.csv")
@@ -429,4 +283,4 @@ def sfig6():
 
 
 if __name__ == "__main__":
-    fig2(); fig3(); sfig2(); sfig3(); sfig4(); sfig5(); sfig6(); print("figures written to", FIG)
+    sfig2(); sfig3(); sfig4(); sfig5(); sfig6(); print("figures written to", FIG)
