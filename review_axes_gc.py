@@ -186,7 +186,6 @@ def library_audit(a, matrices):
 
 def duplicate_audit():
     raw = pd.read_csv(lib.DATASET / "arrays.csv", low_memory=False)
-    raw = raw[raw["measurement_status"].isin(["quantified", "zero_by_rule"])]  # measured cells only
     metadata = pd.read_csv(lib.DATASET / "conditions.csv", low_memory=False)
     dup_meta = metadata[(metadata.rxn_class == "Hiyama") & metadata.condition_id.isin(["C43", "C46"])].set_index("condition_id")
     composition = [col for col in metadata.columns if col.startswith("reagent")] + ["solvent", "solvent_id", "temperature_C", "time_h"]
@@ -255,8 +254,8 @@ def main():
             train = np.setdiff1d(np.arange(n_pairs), test)
             yt = y[train]
             free = lib.greedy_kit(yt, K)
-            # Match the kits.py baseline: condition means use measured training wells only.
-            top = list(np.argsort(-np.nanmean(yt, axis=0))[:K])
+            # Match the established kits.py baseline, including zero-filled missing wells.
+            top = list(np.argsort(-np.nan_to_num(yt, nan=0.0).mean(axis=0))[:K])
             for method, kit in (("greedy6", free), ("topmean6", top)):
                 scores[method][test] = lib.retention(y[test], kit)[0]
                 panel_rows.append({"screen": screen, "fold": fold, "method": method,
@@ -438,8 +437,8 @@ The rules were specified for this retrospective audit, not prospectively registe
 Different expert choices of ligands/conditions are not evaluated by this rule.
 
 `greedy6` and `topmean6` use training yields from the same ten folds and are scored
-on the same held-out pairs. Topmean takes the six greatest column means over
-measured wells only, with the existing `kits.py` NumPy ordering; greedy
+on the same held-out pairs. Topmean takes the six greatest column means after
+zero-filling missing wells, with the existing `kits.py` NumPy ordering; greedy
 maximizes training mean best yield. Core recipe
 comparisons are restricted to the same 12 arrays with at least six ligand levels,
 and every panel has exactly six distinct conditions. The ligand-free encoded level

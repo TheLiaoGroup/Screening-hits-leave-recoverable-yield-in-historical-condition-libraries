@@ -6,5 +6,5 @@ the commit recorded in `manifest.json`. That file is not included here. To rerun
 `zhang_overlap_gc.py`, download it from the URL in `manifest.json` into this folder as
 `amide_coupling.csv` (or set `ZHANG_REFERENCE` to its path); the script checks its SHA-256 and size.
 
-The overlap counts are written to `out/zhang_overlap_summary.json` and `out/zhang_overlap_summary.csv`.
+The records that differ between the two releases are supplied in `../measurement_version_differences.csv`.
 Unmatched rows are not interpreted as proof that a measurement was unpublished.

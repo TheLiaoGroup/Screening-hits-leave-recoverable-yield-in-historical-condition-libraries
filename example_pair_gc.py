@@ -1,4 +1,4 @@
-"""The single substrate pair drawn in Figure 1, chosen by a stated rule and rebuilt from its fold.
+"""The single substrate pair drawn in Figure 1b, chosen by a stated rule and rebuilt from its fold.
 
 Rule, applied to the analysed screening hits (greedy six-condition out-of-fold best m6 >= 0.20):
   1. a severe shortfall, b - m6 > 0.20, at a hit yield of 40-60% (the band with the highest rate);
@@ -45,7 +45,7 @@ def select():
     c = support[(support.b - support.m6 > SEVERE) & (support.m6 >= 0.40) & (support.m6 < 0.60)
                 & (support.conditions_beating_m6_by_20 >= MIN_SUPPORT)
                 & np.isclose(support.m12, support.b, atol=1e-12)]
-    assert len(c), "no pair satisfies the Figure 1 rule"
+    assert len(c), "no pair satisfies the Figure 1b rule"
     return c.assign(gap=c.b - c.m6).sort_values(["gap", "screen", "subpair"], ascending=[False, True, True]).iloc[0]
 
 
@@ -59,7 +59,7 @@ def main():
     fold = next(f for f, test in enumerate(folds) if i in test)
     train = np.setdiff1d(np.arange(y.shape[0]), folds[fold])
     kit = lib.greedy_kit(y[train], 12)
-    rank = [c for c in np.argsort(-np.nanmean(y[train], axis=0)) if c not in kit[:6]][:6]
+    rank = [c for c in np.argsort(-np.nan_to_num(y[train], nan=0).mean(axis=0)) if c not in kit[:6]][:6]
     row = pd.Series(y[i], index=cols)
     m6 = np.nanmax(row.iloc[kit[:6]]); m12 = np.nanmax(row.iloc[kit[:12]]); b = np.nanmax(y[i])
     mean6 = max(m6, np.nanmax(row.iloc[rank]))

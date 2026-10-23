@@ -19,12 +19,9 @@ conditional on the fixed out-of-fold outcomes.
 Reads out/review_curve24_pair_scores.csv, out/review_loss_pair_scores.csv,
 out/review_generalization_heldout_pair_scores.csv, the released arrays.csv and
 06_CORPUS_HOLDOUT/transported_pair_scores.csv. Writes out/posthit_*.
-Also writes out/measurement_coverage.json from the scorable analysis-pair design grid.
-Use --coverage-only to rebuild that fact and Table 19 from the existing pair scores.
 """
 from __future__ import annotations
 
-import argparse
 import json
 from math import comb
 from pathlib import Path
@@ -66,7 +63,7 @@ def load() -> pd.DataFrame:
                                 "greedy_best_yield", "full_best_yield", "fold"])
     w = w.merge(meta, on=["screen", "subpair"], how="left", validate="1:1", indicator=True)
     assert w["_merge"].eq("both").all(), "pair metadata missing"
-    assert len(w) == 2357, len(w)
+    assert len(w) == 2360, len(w)
     return w.drop(columns="_merge")
 
 
@@ -182,22 +179,21 @@ def p_gain(rest: np.ndarray, m6: float, k: int) -> float:
 
 def library_wells(d: pd.DataFrame) -> pd.DataFrame:
     a, _ = lib.load("analysis")
-    summary = pd.read_csv(lib.DATASET / "arrays_summary.csv")
-    if len(a) != int(summary.measurements.sum()):
-        raise AssertionError("analysis rows %d != %d in arrays_summary.csv" % (len(a), int(summary.measurements.sum())))
+    if len(a) != 191174:
+        raise AssertionError("analysis rows %d != 191174" % len(a))
     groups = a.groupby(["screen", "subpair"])
     c = d[d.m6 >= HIT]
     assert np.allclose(c.m6, c.greedy_best_yield) and np.allclose(c.b, c.full_best_yield), \
         "pair maxima disagree between review_curve24 and review_loss outputs"
     # Mean-yield extension: the six highest training-mean conditions outside the pair's greedy six,
-    # training means over measured wells of the other folds' pairs of the same array,
+    # training means over the other folds' pairs of the same array with missing wells read as zero,
     # as for the mean-yield baseline.
     assert d.fold.notna().all(), "fold assignment missing"
     means = {}
     for screen, g in d.groupby("screen"):
         M = a[a.screen == screen].pivot_table(index="subpair", columns="condition_id", values="yield", aggfunc="max")
         for f, gf in g.groupby("fold"):
-            means[(screen, f)] = M.drop(index=gf.subpair).mean().sort_values(ascending=False, kind="stable")
+            means[(screen, f)] = M.drop(index=gf.subpair).fillna(0).mean().sort_values(ascending=False, kind="stable")
     rows = []
     for r in c.itertuples():
         w = groups.get_group((r.screen, r.subpair))
@@ -344,7 +340,7 @@ def holdout_extensions() -> pd.DataFrame:
     expectation over the measured held-out wells outside the same six.
     """
     raw = pd.read_csv(lib.DATASET / "arrays.csv", low_memory=False)
-    raw = raw[(raw["set"] != "replicate") & raw["measurement_status"].isin(["quantified", "zero_by_rule"])].copy()
+    raw = raw[raw["set"] != "replicate"].copy()
     raw["screen"] = raw["array_id"]
     raw["subpair"] = raw["sub_1_smiles"] + " >> " + raw["sub_2_smiles"]
     analysis = raw[raw["set"] == "analysis"]
@@ -359,7 +355,7 @@ def holdout_extensions() -> pd.DataFrame:
         Y = M.to_numpy(float)
         kit = lib.greedy_kit(Y, 24)
         panel = kit[:6]
-        means = np.nanmean(Y, axis=0)
+        means = np.nanmean(np.where(np.isnan(Y), 0.0, Y), axis=0)
         rank = np.argsort(-means, kind="stable")
         add = [j for j in rank if j not in panel][:6]
         for subpair, r in H.iterrows():
@@ -427,75 +423,6 @@ def holdout() -> tuple[dict, pd.DataFrame]:
     return res, table
 
 
-def measurement_coverage(raw: pd.DataFrame | None = None) -> tuple[dict, pd.DataFrame]:
-    """Measured share of the complete library grid of scorable analysis pairs.
-
-    The grid includes absent and excluded wells. Pairs with no quantified or rule-zero
-    cell cannot be scored and do not enter either count.
-    """
-    if raw is None:
-        raw = pd.read_csv(lib.DATASET / "arrays.csv", low_memory=False)
-    an = raw[raw["set"].eq("analysis")].copy()
-    key = ["array_id", "sub_1_smiles", "sub_2_smiles", "condition_id"]
-    assert not an.duplicated(key).any(), "duplicate analysis pair-condition cells"
-    n_cond = an.groupby("array_id").condition_id.nunique()
-    measured = an[an.measurement_status.isin(["quantified", "zero_by_rule"])]
-    pairs = measured.groupby(key[:-1]).size().rename("measured_conditions").reset_index()
-    pairs["conditions"] = pairs.array_id.map(n_cond)
-    pairs["measured_share"] = pairs.measured_conditions / pairs.conditions
-    assert pairs.measured_share.between(0, 1, inclusive="right").all()
-    by_array = []
-    for aid, g in pairs.groupby("array_id", sort=True):
-        by_array.append({"array_id": aid, "scorable_pairs": int(len(g)),
-                         "conditions": int(n_cond[aid]),
-                         "measured_cells": int(g.measured_conditions.sum()),
-                         "designed_cells": int(g.conditions.sum())})
-    numerator = int(pairs.measured_conditions.sum())
-    denominator = int(pairs.conditions.sum())
-    assert numerator == len(measured) and denominator > 0
-    pct = 100 * numerator / denominator
-    facts = {"definition": "Scorable analysis pairs times their array's full condition library; measured cells are quantified plus zero_by_rule.",
-             "scorable_pairs": int(len(pairs)), "measured_cells": numerator,
-             "quantified_cells": int(measured.measurement_status.eq("quantified").sum()),
-             "zero_by_rule_cells": int(measured.measurement_status.eq("zero_by_rule").sum()),
-             "designed_cells": denominator, "unmeasured_cells": denominator - numerator,
-             "measured_share": numerator / denominator, "measured_pct": pct,
-             "reported_pct": round(pct, 1), "reported_share": round(round(pct, 1) / 100, 3),
-             "by_array": by_array}
-    pairs["screen"] = pairs.array_id
-    pairs["subpair"] = pairs.sub_1_smiles + " >> " + pairs.sub_2_smiles
-    return facts, pairs[["screen", "subpair", "measured_share"]]
-
-
-def completeness_sensitivity(lw: pd.DataFrame,
-                             coverage: tuple[dict, pd.DataFrame] | None = None) -> pd.DataFrame:
-    """The severe-shortfall rate among hits below 80%, restricted to substrate pairs measured on at least a
-    given share of their array's conditions (the arrays admit pairs measured on at least 70%)."""
-    facts, share = coverage if coverage is not None else measurement_coverage()
-    h = lw.merge(share, on=["screen", "subpair"], how="left", validate="1:1")
-    assert h.measured_share.notna().all() and len(h) == len(lw)
-    rows = []
-    for t in (0.70, 0.80, 0.90, facts["reported_share"], 1.0):
-        q = h[(h.measured_share >= t - 1e-12) & (h.m6 < CEILING)]
-        severe = int((q.b - q.m6 > SEVERE).sum())
-        rows.append({"min_measured_share": t, "hits": int((h.measured_share >= t - 1e-12).sum()),
-                     "hits_below_ceiling": len(q), "severe": severe,
-                     "severe_rate_below_ceiling": severe / len(q) if len(q) else np.nan})
-    return pd.DataFrame(rows)
-
-
-def write_coverage_outputs(lw: pd.DataFrame, scored_pairs: pd.DataFrame) -> dict:
-    coverage = measurement_coverage()
-    facts, pairs = coverage
-    keys = ["screen", "subpair"]
-    assert set(map(tuple, pairs[keys].to_numpy())) == set(map(tuple, scored_pairs[keys].to_numpy())), \
-        "coverage grid and scored analysis pairs differ"
-    completeness_sensitivity(lw, coverage).to_csv(OUT / "posthit_completeness_sensitivity.csv",
-                                               index=False, lineterminator="\n")
-    (OUT / "measurement_coverage.json").write_text(json.dumps(facts, indent=2) + "\n", encoding="utf-8")
-    return facts
-
-
 def main() -> None:
     d = load()
     base = summarize(d)
@@ -532,19 +459,10 @@ def main() -> None:
     arrays.to_csv(OUT / "posthit_by_array.csv", index=False, lineterminator="\n")
     thresholds.to_csv(OUT / "posthit_thresholds.csv", index=False, lineterminator="\n")
     ho_table.to_csv(OUT / "posthit_holdout_by_array.csv", index=False, lineterminator="\n")
-    write_coverage_outputs(lw, d)
     (OUT / "posthit_summary.json").write_text(json.dumps(summary, indent=1) + "\n", encoding="utf-8")
     print(json.dumps(summary, indent=1))
     print(bands.to_string(index=False))
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--coverage-only", action="store_true",
-                        help="recompute the coverage fact and completeness sensitivity from existing pair scores")
-    args = parser.parse_args()
-    if args.coverage_only:
-        facts = write_coverage_outputs(pd.read_csv(OUT / "posthit_pair_support.csv"), load())
-        print(json.dumps(facts, indent=2))
-    else:
-        main()
+    main()

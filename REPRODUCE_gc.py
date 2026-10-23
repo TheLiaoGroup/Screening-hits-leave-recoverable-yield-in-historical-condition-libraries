@@ -16,7 +16,6 @@ def _read():
     for d in (DATA, HERE / "data", HERE / "02_CODE_AND_DATA" / "data"):
         if (d / "arrays.csv").exists():
             r = pd.read_csv(d / "arrays.csv", low_memory=False).rename(columns={"array_id": "screen"}); r["subpair"] = r.sub_1_smiles + " >> " + r.sub_2_smiles
-            r = r[r["measurement_status"].isin(["quantified", "zero_by_rule"])]  # measured cells only
             return r[r.set == "analysis"], r[r.set == "sealed"], r[r.set == "reserve"], r[r.set == "replicate"]
     out = []
     for f in ("DATASET_analysis.csv", "DATASET_validation_sealed.csv"):
@@ -32,10 +31,10 @@ def greedy(Y, k):
     return chosen
 def bestin(Y, kit):
     Yf = np.where(np.isnan(Y), -np.inf, Y); b = np.max(Yf[:, kit], 1); return np.where(np.isinf(b), 0, b)
-POSTHIT = {"hits_k6": 1424, "hits_below80_k6": 956, "severe_k6": 184, "recovery_6_to_12": 0.433}
-PAPER = {"median_k1": 0.54, "median_k3": 0.76, "median_k6": 0.85, "median_rand6": 0.59, "reach_k6": 1424, "reach_full": 1541, "reach_k3": 1349, "median_my6": 0.83}
+POSTHIT = {"hits_k6": 1428, "hits_below80_k6": 956, "severe_k6": 184, "recovery_6_to_12": 0.438}
+PAPER = {"median_k1": 0.54, "median_k3": 0.76, "median_k6": 0.85, "median_rand6": 0.59, "reach_k6": 1428, "reach_full": 1544, "reach_k3": 1352, "median_my6": 0.83}
 SEALED = {"Buchwald-Hartwig|1": 0.82, "Suzuki|1": 0.83, "Sonogashira|1": 0.80, "SNAr|1": 0.77, "Kumada|1": 0.73, "Grignard|1": 0.84, "Chan-Lam|1": 0.69, "Buchwald-Hartwig|2": 0.66}
-RESERVE = {"Acylation|1": 0.89, "Buchwald-Hartwig(CMC)|1": 0.67, "C-O competitive reactions|1": 0.60,
+RESERVE = {"Acylation|1": 0.90, "Buchwald-Hartwig(CMC)|1": 0.67, "C-O competitive reactions|1": 0.60,
            "Heck|1": 0.83, "Hiyama|1": 0.98, "Reductive-amination|1": 0.96, "Ullmann|1": 0.78}
 r1 = []; r3 = []; r6 = []; rr6 = []; my6 = []; reach6 = reach3 = reachf = 0; ok = bad = 0
 hits = hits80 = sev6 = 0; gap6 = gain12 = 0.0
@@ -50,7 +49,7 @@ for screen in sorted(A.screen.unique()):
         hits += int(h.sum()); hits80 += int((h & (m6 < 0.8)).sum()); sev6 += int((full - m6 > 0.2)[h].sum())
         gap6 += float((full - m6)[h].sum()); gain12 += float((m12 - m6)[h].sum())
         rnd.append(np.mean([bestin(Y[f], list(rng.choice(n, 6, replace=False))) for _ in range(50)], 0))
-        rank = np.argsort(-np.nanmean(Y[tr], 0)); my.append(bestin(Y[f], list(rank[:6])))
+        rank = np.argsort(-np.nanmean(np.where(np.isnan(Y[tr]), 0.0, Y[tr]), 0)); my.append(bestin(Y[f], list(rank[:6])))
         reach6 += int((acc[6][-1] >= 0.2).sum()); reach3 += int((acc[3][-1] >= 0.2).sum()); reachf += int((full >= 0.2).sum())
     fm = np.concatenate(full_all).mean()
     r1.append(np.concatenate(acc[1]).mean() / fm); r3.append(np.concatenate(acc[3]).mean() / fm); r6.append(np.concatenate(acc[6]).mean() / fm); rr6.append(np.concatenate(rnd).mean() / fm); my6.append(np.concatenate(my).mean() / fm)

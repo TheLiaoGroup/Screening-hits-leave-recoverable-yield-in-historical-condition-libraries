@@ -1,32 +1,37 @@
 """Condition-side ownership: which condition variable carries the substrate's condition preference.
-All definitions live here. Data: the released DATASET_* files (BH_DATA_DIR or the sibling paper's 06_Data_and_Code)."""
+All definitions live here. Data: this release's data/ directory, or BH_DATA_DIR."""
 import os, re, itertools
 import numpy as np, pandas as pd
 from pathlib import Path
 
 HERE = Path(__file__).parent
-DATA = Path(os.environ["BH_DATA_DIR"]) if os.environ.get("BH_DATA_DIR") else HERE / "data"
-# this paper's own release: BH_DATA_DIR if it holds arrays.csv, else data/ beside the code (the shipped package), else 02_CODE_AND_DATA/data/ (the working tree)
-DATASET = next((d for d in (DATA, HERE / "data", HERE / "02_CODE_AND_DATA" / "data") if (d / "arrays.csv").exists()), None)
+_ENV_DATA = os.environ.get("BH_DATA_DIR")
+_CANDIDATES = ([Path(_ENV_DATA)] if _ENV_DATA else []) + [HERE / "data", HERE / "02_CODE_AND_DATA" / "data"]
+# Prefer the package's own release. BH_DATA_DIR is an explicit override for a separate copy.
+DATASET = next((d for d in dict.fromkeys(_CANDIDATES) if (d / "arrays.csv").exists()), None)
+DATA = DATASET or (Path(_ENV_DATA) if _ENV_DATA else HERE / "data")
 SHRINK = 4.0          # pseudo-count for shrunken level means (same as the partner paper)
 MIN_SHARED = 10       # substrates two conditions must share for a pairwise r
 NFOLD = 5
 
 # ---------------------------------------------------------------- loading
+def _from_source(which):
+    f = {"analysis": "DATASET_analysis.csv", "sealed": "DATASET_validation_sealed.csv"}[which]
+    A = pd.read_csv(DATA / f, low_memory=False)
+    A = A[~((A.screen == "Hiyama|1") & (A.condition_id == "C46"))]      # duplicated condition (C43 = C46), as in the companion papers
+    return A[A["yield"].notna()]
+
 def _from_dataset(which):
     """arrays.csv of the released dataset, renamed to the columns the code expects."""
-    d = pd.read_csv(DATASET / "arrays.csv", low_memory=False)
-    # measured cells only: a numeric yield or a measured zero; unmeasured cells carry no yield
-    d = d[(d["set"] == which) & d["measurement_status"].isin(["quantified", "zero_by_rule"])].copy()
-    assert d["yield"].notna().all()
+    d = pd.read_csv(DATASET / "arrays.csv", low_memory=False); d = d[d["set"] == which].copy()
     d = d.rename(columns={"array_id": "screen", "array": "screen_label"}); d["subpair"] = d.sub_1_smiles + " >> " + d.sub_2_smiles
     return d
 
-def load(which="analysis"):
-    """(rows, conditions). Rows are the measured cells of one set of the released arrays (analysis by
-    default); conditions carry the source column names."""
-    if DATASET is None:
-        raise FileNotFoundError("arrays.csv not found: set BH_DATA_DIR or place data/ beside the code")
+def load(which="analysis", source=False):
+    """(rows, conditions). Rows are the analysis set (default) or the sealed hold-out; conditions carry the source column names.
+    Reads arrays.csv from DATASET; source=True reads legacy DATASET_* files from an explicit BH_DATA_DIR."""
+    if source or DATASET is None:
+        return _from_source(which), pd.read_csv(DATA / "DATASET_conditions.csv", low_memory=False)
     c = pd.read_csv(DATASET / "conditions.csv", low_memory=False)
     ren = {"solvent": "Standardized Name", "temperature_C": "temp_id", "time_h": "time_id", "note": "note_en"}
     for i in range(1, 7):

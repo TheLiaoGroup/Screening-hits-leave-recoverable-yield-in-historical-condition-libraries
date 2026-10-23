@@ -17,7 +17,7 @@ for screen in sorted(A.screen.unique()):
         tr = np.setdiff1d(np.arange(S), f); Ytr, Yte = Y[tr], Y[f]
         _, full = lib.retention(Yte, list(range(Y.shape[1]))); full_all.append(full)
         kit12 = lib.greedy_kit(Ytr, max(KS))
-        rank = np.argsort(-np.nanmean(Ytr, 0))   # the obvious kit: highest mean yield on the training pairs
+        rank = np.argsort(-np.nanmean(np.where(np.isnan(Ytr), 0.0, Ytr), 0))   # the obvious kit: highest mean yield on the training pairs
         for k in KS:
             greedy[k].append(lib.retention(Yte, kit12[:k])[0])
             meanyield[k].append(lib.retention(Yte, list(rank[:k]))[0])

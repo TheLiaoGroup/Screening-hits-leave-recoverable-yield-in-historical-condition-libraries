@@ -46,7 +46,7 @@ def condition_number(series: pd.Series) -> pd.Series:
 
 def audit_role(current: pd.DataFrame, public: pd.DataFrame, role: str) -> tuple[dict, pd.DataFrame]:
     current = current.reset_index(drop=True).rename_axis("current_row").reset_index()
-    current = current.rename(columns={"yield": "current_yield", "name0": "current_measurement_id"})
+    current = current.rename(columns={"yield": "current_yield"})
     public = public.copy().rename(columns={"yield": "public_yield"})
     public["public_plate"] = public["name0"].astype(str).str.replace(r"-C\d+$", "", regex=True)
     merged = current.merge(
@@ -135,7 +135,7 @@ def measurement_version_differences(current: pd.DataFrame, public: pd.DataFrame)
     """Compare reconstructed labels before structures; labels do not prove physical identity."""
     left = current.loc[current["set"].eq("analysis")].copy()
     right = public.copy()
-    left["measurement_id"] = left["name0"]
+    left["measurement_id"] = left["plate"] + "-" + left["condition_id"]
     right["plate"] = right["name0"].str.replace(r"-C\d+$", "", regex=True)
     left["condition_number"] = condition_number(left["condition_id"])
     right["condition_number"] = condition_number(right["condition_id"])
@@ -173,8 +173,6 @@ def main() -> None:
 
     public = pd.read_csv(REFERENCE, low_memory=False)
     arrays = pd.read_csv(DATA / "arrays.csv", low_memory=False)
-    arrays = arrays[arrays["measurement_status"].isin(["quantified", "zero_by_rule"])]  # measured cells only
-    assert "name0" in arrays and arrays.name0.notna().all(), "released measured cells must retain original measurement IDs"
     current = arrays[arrays["array_id"].eq("Acylation|1")].copy()
     if current.empty:
         raise AssertionError("Acylation|1 is absent from arrays.csv")
@@ -226,7 +224,7 @@ def main() -> None:
             "records": int(len(identity_conflicts)),
             "by_plate": identity_conflicts.groupby("plate").size().to_dict(),
             "comparison_file": "data/measurement_version_differences.csv",
-            "scope": "Retained measured records compared with the unchanged pinned reference.",
+            "authority": "Unresolved; no structure or yield version is selected by this comparison.",
         },
         "limitations": [
             "Numeric condition IDs are matched after removing the leading C; this is not an independent chemical-composition crosswalk.",

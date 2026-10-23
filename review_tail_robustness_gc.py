@@ -47,7 +47,7 @@ def sha(path):
 
 def save(frame, suffix, compressed=False):
     path = OUT / (PREFIX + suffix + (".csv.gz" if compressed else ".csv"))
-    frame.to_csv(path, index=False, compression={"method": "gzip", "mtime": 0} if compressed else None)
+    frame.to_csv(path, index=False, compression="gzip" if compressed else None)
     return path
 
 
@@ -115,7 +115,6 @@ def load_inputs():
                  "review_loss_pair_scores.csv", "review_generalization_smiles_identity_audit.csv")]
     before = {str(p.relative_to(HERE)): sha(p) for p in required}
     raw = pd.read_csv(data_dir / "arrays.csv", low_memory=False)
-    raw = raw[raw["measurement_status"].isin(["quantified", "zero_by_rule"])].copy()  # measured cells only
     raw["yield"] = pd.to_numeric(raw["yield"], errors="coerce")
     analysis = raw[raw["set"] == "analysis"].rename(columns={"array_id": "screen", "array": "screen_label"}).copy()
     analysis["subpair"] = analysis.sub_1_smiles + " >> " + analysis.sub_2_smiles
@@ -344,9 +343,9 @@ def frozen_noise(frames, oldpairs, replicates):
             "retention_in_fixed_stratum": group.sum_panel_yield.sum()/group.sum_full_yield.sum()})
     corpus = pd.DataFrame(corpus)
     zero = corpus[(corpus.cv == 0) & (corpus.denominator == "original_full_gt_0")].iloc[0]
-    assert (zero.tail_count, zero.denominator_count_fixed) == (255, 1642)
-    assert zero.tail_fraction == 255/1642
-    assert np.isclose(zero.tail_fraction*100, 15.529841656516444, atol=1e-12)
+    assert (zero.tail_count, zero.denominator_count_fixed) == (253, 1645)
+    assert zero.tail_fraction == 253/1645
+    assert np.isclose(zero.tail_fraction*100, 15.379939209726443, atol=1e-12)
     for den, group in corpus.groupby("denominator"):
         assert group.denominator_count_fixed.nunique() == 1
     np.testing.assert_array_equal(corpus.tail_count-corpus.original_tail_count, corpus.new_tail_events-corpus.lost_tail_events)

@@ -112,7 +112,7 @@ def rebuild_curves():
             assert not len(np.intersect1d(train, test))
             fold_id[test] = fi
             kit = lib.greedy_kit(y[train], MAXK)
-            rank = np.argsort(-np.nanmean(y[train], axis=0))
+            rank = np.argsort(-np.nan_to_num(y[train], nan=0).mean(axis=0))
             for k in range(1, MAXK+1):
                 g[test, k-1] = lib.retention(y[test], kit[:k])[0]
                 t[test, k-1] = lib.retention(y[test], list(rank[:k]))[0]
@@ -125,7 +125,7 @@ def rebuild_curves():
         print(screen, "all 24 budgets rebuilt", flush=True)
     pairs = pd.concat(frames, ignore_index=True)
     greedy, topmean = np.vstack(gs), np.vstack(ts)
-    assert len(pairs) == 2357 and not pairs.duplicated(["screen", "subpair"]).any()
+    assert len(pairs) == 2360 and not pairs.duplicated(["screen", "subpair"]).any()
     assert np.all(np.diff(greedy, axis=1) >= -1e-12) and np.all(np.diff(topmean, axis=1) >= -1e-12)
     assert np.all(greedy <= pairs.full.values[:, None] + 1e-12)
     assert np.all(topmean <= pairs.full.values[:, None] + 1e-12)
@@ -201,8 +201,8 @@ def discordance(pairs, g, t):
                          "p_is_valid_for_shared_molecules": False})
     result = save("discordance", rows)
     z = result[(result.screen == "ALL") & (result.cohort == "full_gt0")].iloc[0]
-    assert z.pairs == 1642 and z.greedy_severe == 255 and z.topmean_severe == 294
-    assert z.greedy_improves == 102 and z.greedy_worsens == 63
+    assert z.pairs == 1645 and z.greedy_severe == 253 and z.topmean_severe == 291
+    assert z.greedy_improves == 103 and z.greedy_worsens == 65
     return result
 
 
@@ -378,7 +378,7 @@ The existing review_curve24_pair_scores.csv stores only k=1,3,6,12,24. This scri
 independently rebuilds greedy and topmean predictions at every k=1..24, on identical
 training/test folds, and verifies every previously saved prediction to 1e-12.
 Greedy prefixes and topmean rankings are nested within each fold. Topmean uses
-means over measured training wells only, exactly as the established code.
+training means after zero-filling missing wells, exactly as the established code.
 Missing selected wells contribute no observed yield; the full reference is the
 maximum observed array yield. Tail loss is an absolute yield deficit strictly
 greater than 20 percentage points: 100*(full - panel) >20. This is not relative loss.
@@ -386,7 +386,7 @@ The full maximum is itself measured and subject to noise/selection effects.
 
 Separate denominator cohorts are all pairs, full>0 (productive), full>=0.20
 (20%-reachable, including exactly 20%), and full>0.20 (at risk for a >20-point loss).
-The latter two contain 1541 and 1539 pairs; they must not be interchanged. Pooled
+The latter two contain 1544 and 1542 pairs; they must not be interchanged. Pooled
 rates weight pairs equally, whereas macro means weight each of the 18 arrays
 equally. Macro median rates are separately named. Retention is sum(panel maximum)
 divided by sum(full maximum), never the mean of individual retention ratios.
@@ -484,7 +484,7 @@ def report_text(identity, discord, boot, pooled, macro, policies):
     for _, r in pooled[(pooled.method == "greedy") & pooled.k.isin([6,9,12])].iterrows():
         ma = macro[(macro.method == "greedy") & (macro.k == r.k) & (macro.cohort == r.cohort)].iloc[0]
         lines.append(f"| {r.cohort} | {int(r.k)} | {int(r.pairs)} | {int(r.severe_pairs)} | {r.tail_rate:.6f} | {r.retention:.6f} | {ma.tail_rate_macro_mean:.6f} |")
-    lines += ["", "Full>=20% includes 1541 pairs; full>20% includes 1539. All fixed-budget points 1–24 and both methods are in the CSVs. The 20-point loss is absolute yield, not relative yield loss.",
+    lines += ["", "Full>=20% includes 1544 pairs; full>20% includes 1542. All fixed-budget points 1–24 and both methods are in the CSVs. The 20-point loss is absolute yield, not relative yield loss.",
               "", "## Exploratory trigger, productive-pair outcomes", "", "| T | Strategy | Mean wells, all pairs | Retention | Tail rate |", "|---:|---|---:|---:|---:|"]
     for _, r in policies[(policies.screen == "ALL") & (policies.cohort == "full_gt0")].iterrows():
         lines.append(f"| {r.threshold_best6_lt:.1f} | {r.strategy} | {r.mean_wells_all_pairs:.6f} | {r.retention:.6f} | {r.tail_rate:.6f} |")
@@ -501,8 +501,8 @@ def main():
     pairs, g, t = rebuild_curves()
     validation = validate_prior(pairs, g, t)
     identity = identity_audit(pairs)
-    assert identity["raw_molecules"] == identity["canonical_molecules"] == 819
-    assert (pairs.full >= .20).sum() == 1541 and (pairs.full > .20).sum() == 1539
+    assert identity["raw_molecules"] == identity["canonical_molecules"] == 820
+    assert (pairs.full >= .20).sum() == 1544 and (pairs.full > .20).sum() == 1542
     long = []
     for k in range(1, MAXK+1):
         frame = pairs[["screen", "subpair", "fold", "full"]].copy()
@@ -521,7 +521,7 @@ def main():
                 "bootstrap_distribution": "independent Exponential(1) molecular weights", "budgets": list(range(1, MAXK+1)),
                 "cohorts": list(COHORTS), "numpy": np.__version__, "pandas": pd.__version__, "rdkit": rdBase.rdkitVersion,
                 "identity": identity, "checks": {**validation, "self_tests": "pass", "fixed_curves_monotone": True,
-                "same_average_policy_budget_verified": True, "raw_inputs_unchanged": True, "reachable_ge20": 1541, "reachable_gt20": 1539},
+                "same_average_policy_budget_verified": True, "raw_inputs_unchanged": True, "reachable_ge20": 1544, "reachable_gt20": 1542},
                 "input_sha256": before, "script_sha256": sha(Path(__file__))}
     (OUT / "review_tail_manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
     (OUT / "review_tail_methods.md").write_text(METHODS, encoding="utf-8")
